@@ -1,2 +1,2 @@
 # CollectorShop
-Apicação para venda e troca de itens de coleção
+Aplicação para venda e troca de itens de coleção
