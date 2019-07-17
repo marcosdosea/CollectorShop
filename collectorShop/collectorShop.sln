@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "collectorShop", "collectorShop\collectorShop.csproj", "{3B51A9E0-F08E-4C51-80C2-807CC9F576DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "collectorShop", "collectorShop\collectorShop.csproj", "{3B51A9E0-F08E-4C51-80C2-807CC9F576DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3B51A9E0-F08E-4C51-80C2-807CC9F576DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B51A9E0-F08E-4C51-80C2-807CC9F576DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B51A9E0-F08E-4C51-80C2-807CC9F576DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
