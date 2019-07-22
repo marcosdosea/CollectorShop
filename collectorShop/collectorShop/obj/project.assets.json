@@ -13324,14 +13324,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
-              "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj"
             },
-            "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
             },
-            "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
-              "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+            "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj"
             }
           }
         }

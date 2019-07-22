@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj": {}
+    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {}
   },
   "projects": {
-    "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
+    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\igsan\\.nuget\\packages\\",
-        "outputPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\obj\\",
+        "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\igsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\barbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

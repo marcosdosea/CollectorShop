@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj": {}
+    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {}
   },
   "projects": {
-    "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\igsan\\.nuget\\packages\\",
-        "outputPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\obj\\",
+        "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\igsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\barbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
