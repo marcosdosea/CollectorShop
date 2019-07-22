@@ -10,107 +10,107 @@ namespace collectorShop.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
+        public IActionResult Index()
         {
             return View();
         }
-        public ViewResult CadastroProduto()
+        public IActionResult CadastroProduto()
         {
             return View();
         }
-        public ViewResult CadastroUsuario()
+        public IActionResult CadastroUsuario()
         {
             return View();
         }
-        public ViewResult CancelarCompra()
+        public IActionResult CancelarCompra()
         {
             return View();
         }
-        public ViewResult Checkout01()
+        public IActionResult Checkout01()
         {
             return View();
         }
-        public ViewResult Checkout02()
+        public IActionResult Checkout02()
         {
             return View();
         }
-        public ViewResult Checkout03()
+        public IActionResult Checkout03()
         {
             return View();
         }
-        public ViewResult Compras()
+        public IActionResult Compras()
         {
             return View();
         }
-        public ViewResult ConfirmarCancelamentoCompra()
+        public IActionResult ConfirmarCancelamentoCompra()
         {
             return View();
         }
-        public ViewResult ListarDadosUsuario()
+        public IActionResult ListarDadosUsuario()
         {
             return View();
         }
-        public ViewResult DetalharCompra()
+        public IActionResult DetalharCompra()
         {
             return View();
         }
-        public ViewResult Duvidas()
+        public IActionResult Duvidas()
         {
             return View();
         }
-        public ViewResult ListarAnuncios()
+        public IActionResult ListarAnuncios()
         {
             return View();
         }
-        public ViewResult FazerLogin()
+        public IActionResult FazerLogin()
         {
             return View();
         }
-        public ViewResult ModificarDados()
+        public IActionResult ModificarDados()
         {
             return View();
         }
-        public ViewResult CriarNovaConta()
+        public IActionResult CriarNovaConta()
         {
             return View();
         }
-        public ViewResult PaginaUsuario()
+        public IActionResult PaginaUsuario()
         {
             return View();
         }
-        public ViewResult ProcessarPagamento()
+        public IActionResult ProcessarPagamento()
         {
             return View();
         }
-        public ViewResult ExemploProduto()
+        public IActionResult ExemploProduto()
         {
             return View();
         }
-        public ViewResult ProdutoEnvio()
+        public IActionResult ProdutoEnvio()
         {
             return View();
         }
-        public ViewResult ProdutosPorCategoria()
+        public IActionResult ProdutosPorCategoria()
         {
             return View();
         }
-        public ViewResult RecuperarSenha()
+        public IActionResult RecuperarSenha()
         {
             return View();
         }
-        public ViewResult SuporteCompras()
+        public IActionResult SuporteCompras()
         {
             return View();
         }
-        public ViewResult SuporteCompras02()
+        public IActionResult SuporteCompras02()
         {
             return View();
         }
-        public ViewResult SuporteCompras03()
+        public IActionResult SuporteCompras03()
         {
             return View();
         }
-        public ViewResult SuporteCompras04()
+        public IActionResult SuporteCompras04()
         {
             return View();
         }
