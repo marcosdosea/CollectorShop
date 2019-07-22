@@ -10,9 +10,8 @@ namespace Persistence
         public float ValorTotal { get; set; }
         public int CodEnvio { get; set; }
         public int CodPagamento { get; set; }
+        public int? CodUsuario { get; set; }
         public float? ValorUnitario { get; set; }
-        public int CodUsuario { get; set; }
-        public int CodAnuncio { get; set; }
         public int CodModelo { get; set; }
 
         public virtual Envio CodEnvioNavigation { get; set; }

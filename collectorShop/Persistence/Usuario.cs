@@ -9,6 +9,7 @@ namespace Persistence
         {
             Anuncio = new HashSet<Anuncio>();
             Compra = new HashSet<Compra>();
+            Modelo = new HashSet<Modelo>();
             Troca = new HashSet<Troca>();
             Usuariocategoria = new HashSet<Usuariocategoria>();
             Usuariosubcategoria = new HashSet<Usuariosubcategoria>();
@@ -26,6 +27,7 @@ namespace Persistence
 
         public virtual ICollection<Anuncio> Anuncio { get; set; }
         public virtual ICollection<Compra> Compra { get; set; }
+        public virtual ICollection<Modelo> Modelo { get; set; }
         public virtual ICollection<Troca> Troca { get; set; }
         public virtual ICollection<Usuariocategoria> Usuariocategoria { get; set; }
         public virtual ICollection<Usuariosubcategoria> Usuariosubcategoria { get; set; }
