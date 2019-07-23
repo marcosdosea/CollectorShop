@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\obj\\",
+=======
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+        "projectName": "collectorShop",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,6 +46,7 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
               },
@@ -40,6 +55,16 @@
               },
               "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+=======
+              "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+              },
+              "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+              },
+              "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
               }
             }
           }
@@ -82,6 +107,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,6 +116,16 @@
         "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\obj\\",
+=======
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -136,6 +172,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -144,6 +181,16 @@
         "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+=======
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -198,6 +245,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -206,6 +254,16 @@
         "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\obj\\",
+=======
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

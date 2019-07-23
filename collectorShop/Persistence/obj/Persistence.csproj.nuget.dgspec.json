@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+=======
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

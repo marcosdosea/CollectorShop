@@ -13299,11 +13299,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
       "projectName": "collectorShop",
       "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
       "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+      "projectName": "collectorShop",
+      "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+      "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\collectorShop\\obj\\",
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13324,6 +13332,7 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
             },
@@ -13332,6 +13341,16 @@
             },
             "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
               "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+=======
+            "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            },
+            "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            },
+            "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+>>>>>>> 0b4314f132147814465568b8ceffaf06dcc1cc70
             }
           }
         }
