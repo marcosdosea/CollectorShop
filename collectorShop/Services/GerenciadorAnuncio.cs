@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Model;
 using Persistence;
-//using System.Linq;
 
 namespace Services
 {
@@ -52,7 +51,8 @@ namespace Services
         /// <returns></returns>
         public IEnumerable<Model.Anuncio> ObterPorNome(string nome)
         {
-            throw new NotImplementedException();
+            IEnumerable<Model.Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.Titulo.StartsWith(nome));
+            return anuncios;
         }
         /// <summary>
         /// Obtem todos os anúncios 
@@ -60,7 +60,7 @@ namespace Services
         /// <returns></returns>
         public IEnumerable<Model.Anuncio> ObterTodos()
         {
-            throw new NotImplementedException();
+            return GetQuery();
         }
         /// <summary>
         /// Remove um anúncio da base de dados
@@ -85,10 +85,10 @@ namespace Services
 
         private IQueryable<Model.Anuncio> GetQuery()
         {
-            //GOTO ver qual problema aqui...
+           
             IQueryable<Persistence.Anuncio> TBanuncio = _context.Anuncio;
             var query = from anuncio in TBanuncio
-                        select new Persistence.Anuncio
+                        select new Model.Anuncio
                         {
                             CodAnuncio = anuncio.CodAnuncio,
                             Titulo = anuncio.Titulo
@@ -96,9 +96,18 @@ namespace Services
             return query;
         }
 
-        public void Atribuir(Model.Anuncio anuncioModel, Persistence.Anuncio anuncioEntity)
+        public void Atribuir(Model.Anuncio anuncioModel, Persistence.Anuncio anuncio)
         {
-           // anuncioEntity = anuncioModel.CodAnuncio;
+            anuncio.CodAnuncio = anuncioModel.CodAnuncio;
+            anuncio.CodUsuario = anuncioModel.CodUsuario;
+            anuncio.Descricao = anuncioModel.Descricao;
+            anuncio.Msg = anuncioModel.Msg;
+            anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
+            anuncio.QuantDisponivel = anuncioModel.QuantDisponivel;
+            anuncio.Status = anuncioModel.Status;
+            anuncio.Titulo = anuncioModel.Titulo;
+            anuncio.Valor = anuncioModel.Valor;
+            
         }
 
     }
