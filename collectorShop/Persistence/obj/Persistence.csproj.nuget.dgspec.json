@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
