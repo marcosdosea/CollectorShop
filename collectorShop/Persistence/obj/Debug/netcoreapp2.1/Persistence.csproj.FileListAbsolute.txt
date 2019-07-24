@@ -9,3 +9,9 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persis
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfoInputs.cache
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
