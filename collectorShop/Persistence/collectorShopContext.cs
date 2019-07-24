@@ -576,5 +576,10 @@ namespace Persistence
                     .HasConstraintName("fk_usuarioSubCategoria_usuario1");
             });
         }
+
+        public static implicit operator collectorShopContext(bancocollectorContext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

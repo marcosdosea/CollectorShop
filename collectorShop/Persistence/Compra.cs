@@ -18,5 +18,6 @@ namespace Persistence
         public virtual Modelo CodModeloNavigation { get; set; }
         public virtual Pagamento CodPagamentoNavigation { get; set; }
         public virtual Usuario CodUsuarioNavigation { get; set; }
+        public object CodAnuncio { get; internal set; }
     }
 }

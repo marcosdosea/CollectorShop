@@ -9,7 +9,7 @@ namespace Services
     public class GerenciadorAnuncio : IGerenciadorAnuncio
     {
         private readonly collectorShopContext _context;
-        public GerenciadorAnuncio(collectorShopContext context)
+        public GerenciadorAnuncio(bancocollectorContext context)
         {
             _context = context;
         }
