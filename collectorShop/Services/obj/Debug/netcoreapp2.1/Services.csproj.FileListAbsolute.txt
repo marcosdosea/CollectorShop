@@ -12,3 +12,11 @@ C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.dll
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete

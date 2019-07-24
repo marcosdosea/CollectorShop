@@ -450,12 +450,12 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.CodModelo).HasColumnType("int(11)");
-
-                entity.HasOne(d => d.CodModeloNavigation)
+                //GOTO Ver qual problema tem aqui!
+             /*   entity.HasOne(d => d.CodModeloNavigation)
                     .WithMany(p => p.Trocamodelo)
                     .HasForeignKey(d => d.CodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Troca_has_Modelo_Modelo1");
+                    .HasConstraintName("fk_Troca_has_Modelo_Modelo1"); */
             });
 
             modelBuilder.Entity<Usuario>(entity =>
