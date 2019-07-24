@@ -60,3 +60,5 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\Model.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\Persistence.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\Services.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
