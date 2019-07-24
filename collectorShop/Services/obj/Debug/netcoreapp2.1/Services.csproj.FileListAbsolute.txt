@@ -6,3 +6,9 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Servic
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.dll
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.dll
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete

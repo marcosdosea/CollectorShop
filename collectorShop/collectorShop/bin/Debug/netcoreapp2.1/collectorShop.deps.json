@@ -894,6 +894,7 @@
       "Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
+          "Model": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.17"
         },
         "runtime": {
@@ -904,6 +905,9 @@
         }
       },
       "Services/1.0.0": {
+        "dependencies": {
+          "Persistence": "1.0.0"
+        },
         "runtime": {
           "Services.dll": {}
         },

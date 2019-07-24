@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Model;
 
 namespace Persistence
 {
@@ -517,11 +518,11 @@ namespace Persistence
                     .HasColumnName("codCategoria")
                     .HasColumnType("int(11)");
 
-                entity.HasOne(d => d.CodCategoriaNavigation)
-                    .WithMany(p => p.Usuariocategoria)
-                    .HasForeignKey(d => d.CodCategoria)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
+                //entity.HasOne(d => d.CodCategoriaNavigation)
+                //    .WithMany(p => p.Usuariocategoria)
+                //    .HasForeignKey(d => d.CodCategoria)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
                     .WithMany(p => p.Usuariocategoria)
