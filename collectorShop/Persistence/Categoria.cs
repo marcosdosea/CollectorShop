@@ -14,5 +14,6 @@ namespace Persistence
         public string Nome { get; set; }
 
         public virtual ICollection<Usuariocategoria> Usuariocategoria { get; set; }
+        public IEnumerable<Subcategoria> Subcategoria { get; internal set; }
     }
 }

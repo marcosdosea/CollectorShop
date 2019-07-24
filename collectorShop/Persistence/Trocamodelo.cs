@@ -9,5 +9,7 @@ namespace Persistence
         public int ModeloCodModelo { get; set; }
 
         public virtual Modelo ModeloCodModeloNavigation { get; set; }
+        public object CodModelo { get; internal set; }
+        public object CodModeloNavigation { get; internal set; }
     }
 }
