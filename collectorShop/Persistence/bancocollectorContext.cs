@@ -32,11 +32,12 @@ namespace Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            /*if (!optionsBuilder.IsConfigured)
+            //COMENTEI ESSE IF ANTERIORMENTE POIS ESTAVA DANDO ERRO
+            if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=bancocollector");
-            }*/
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -519,10 +520,10 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 //entity.HasOne(d => d.CodCategoriaNavigation)
-                //    .WithMany(p => p.Usuariocategoria)
-                //    .HasForeignKey(d => d.CodCategoria)
-                //    .OnDelete(DeleteBehavior.ClientSetNull)
-                //    .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
+                  // .WithMany(p => p.Usuariocategoria)
+                 //  .HasForeignKey(d => d.CodCategoria)
+                 //  .OnDelete(DeleteBehavior.ClientSetNull)
+                  //  .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
                     .WithMany(p => p.Usuariocategoria)
