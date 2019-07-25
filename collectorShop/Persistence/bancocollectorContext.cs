@@ -29,6 +29,8 @@ namespace Persistence
         public virtual DbSet<TBUsuariocategoria> Usuariocategoria { get; set; }
         public virtual DbSet<TBUsuariosubcategoria> Usuariosubcategoria { get; set; }
 
+        //NÃO GEROU TBSUBCATEGORIA!!!!!
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             /*if (!optionsBuilder.IsConfigured)

@@ -14,10 +14,13 @@ namespace Persistence
         public float? ValorUnitario { get; set; }
         public int CodModelo { get; set; }
 
+        public int CodAnuncio { get; set; }
+
         public virtual TBEnvio CodEnvioNavigation { get; set; }
         public virtual TBModelo CodModeloNavigation { get; set; }
         public virtual TBPagamento CodPagamentoNavigation { get; set; }
         public virtual TBUsuario CodUsuarioNavigation { get; set; }
-        public object CodAnuncio { get; internal set; }
+        public virtual TBAnuncio CodAnuncioNavigation { get; set; }
+        //  public object CodAnuncio { get; internal set; }
     }
 }

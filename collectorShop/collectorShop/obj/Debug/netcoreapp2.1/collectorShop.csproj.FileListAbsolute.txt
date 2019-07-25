@@ -122,3 +122,8 @@ C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorSho
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csproj.CopyComplete
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.dll
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Index.g.cshtml.cs
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Details.g.cshtml.cs
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Create.g.cshtml.cs
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Edit.g.cshtml.cs
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Delete.g.cshtml.cs

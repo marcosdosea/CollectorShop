@@ -77,7 +77,7 @@ namespace Services
         /// </summary>
         /// <param name="codAnuncio">Identificador do anúncio</param>
         /// <returns></returns>
-        public Anuncio Visualizar(int codAnuncio)
+        public Anuncio Obter(int codAnuncio)
         {
             IEnumerable<Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.CodAnuncio.Equals(codAnuncio));
             return anuncios.ElementAtOrDefault(0);

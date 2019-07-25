@@ -9,7 +9,9 @@ namespace Persistence
         public int ModeloCodModelo { get; set; }
 
         public virtual TBModelo ModeloCodModeloNavigation { get; set; }
-        public object CodModelo { get; internal set; }
-        public object CodModeloNavigation { get; internal set; }
+
+        public virtual TBTroca TrocaCodModeloNavigation { get; set; }
+     //   public int CodModelo { get; set; }
+     //   public object CodModeloNavigation { get; internal set; }
     }
 }

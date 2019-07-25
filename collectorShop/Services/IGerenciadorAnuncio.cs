@@ -8,7 +8,7 @@ namespace Services
     {
         void Editar(Anuncio anuncioModel);
         int Inserir(Anuncio anuncioModel);
-        Anuncio Visualizar(int codAnuncio);
+        Anuncio Obter(int codAnuncio);
         IEnumerable<Anuncio> ObterPorNome(String nome);
         IEnumerable<Anuncio> ObterTodos();
         void Remover(int codAnuncio);
