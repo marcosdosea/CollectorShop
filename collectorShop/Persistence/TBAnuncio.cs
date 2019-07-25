@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class Anuncio
+    public partial class TBAnuncio
     {
-        public Anuncio()
+        public TBAnuncio()
         {
-            Anunciomodelo = new HashSet<Anunciomodelo>();
-            Trocaanuncio = new HashSet<Trocaanuncio>();
+            Anunciomodelo = new HashSet<TBAnunciomodelo>();
+            Trocaanuncio = new HashSet<TBTrocaanuncio>();
         }
 
         public int CodAnuncio { get; set; }
@@ -21,8 +21,8 @@ namespace Persistence
         public int CodUsuario { get; set; }
         public string Msg { get; set; }
 
-        public virtual Usuario CodUsuarioNavigation { get; set; }
-        public virtual ICollection<Anunciomodelo> Anunciomodelo { get; set; }
-        public virtual ICollection<Trocaanuncio> Trocaanuncio { get; set; }
+        public virtual TBUsuario CodUsuarioNavigation { get; set; }
+        public virtual ICollection<TBAnunciomodelo> Anunciomodelo { get; set; }
+        public virtual ICollection<TBTrocaanuncio> Trocaanuncio { get; set; }
     }
 }

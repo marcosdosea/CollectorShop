@@ -8,8 +8,8 @@ namespace Services
 {
     public class GerenciadorAnuncio : IGerenciadorAnuncio
     {
-        private readonly collectorShopContext _context;
-        public GerenciadorAnuncio(collectorShopContext context)
+       private readonly bancocollectorContext _context;
+        public GerenciadorAnuncio(bancocollectorContext context)
         {
             _context = context;
         }
@@ -17,9 +17,9 @@ namespace Services
         /// Atualiza/Edita um anúncio na base de dados
         /// </summary>
         /// <param name="anuncioModel">Dados do anúncio</param>
-        public void Editar(Model.Anuncio anuncioModel)
+        public void Editar(Anuncio anuncioModel)
         {
-            Persistence.Anuncio anuncio = new Persistence.Anuncio();
+            TBAnuncio anuncio = new TBAnuncio();
             Atribuir(anuncioModel, anuncio);
             _context.Update(anuncio);
             _context.SaveChanges();
@@ -30,9 +30,9 @@ namespace Services
         /// <param name="anuncioModel">Dados do anúncio</param>
         /// <returns></returns>
 
-        public int Inserir(Model.Anuncio anuncioModel)
+        public int Inserir(Anuncio anuncioModel)
         {
-            Persistence.Anuncio _anuncio = new Persistence.Anuncio();
+            TBAnuncio _anuncio = new TBAnuncio();
             _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             _anuncio.CodUsuario = anuncioModel.CodUsuario;
             _anuncio.Descricao = anuncioModel.Descricao;
@@ -49,16 +49,16 @@ namespace Services
         /// </summary>
         /// <param name="nome">Nome do anúncio a ser buscado</param>
         /// <returns></returns>
-        public IEnumerable<Model.Anuncio> ObterPorNome(string nome)
+        public IEnumerable<Anuncio> ObterPorNome(string nome)
         {
-            IEnumerable<Model.Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.Titulo.StartsWith(nome));
+            IEnumerable<Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.Titulo.StartsWith(nome));
             return anuncios;
         }
         /// <summary>
         /// Obtem todos os anúncios 
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Model.Anuncio> ObterTodos()
+        public IEnumerable<Anuncio> ObterTodos()
         {
             return GetQuery();
         }
@@ -77,18 +77,18 @@ namespace Services
         /// </summary>
         /// <param name="codAnuncio">Identificador do anúncio</param>
         /// <returns></returns>
-        public Model.Anuncio Visualizar(int codAnuncio)
+        public Anuncio Visualizar(int codAnuncio)
         {
-            IEnumerable<Model.Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.CodAnuncio.Equals(codAnuncio));
+            IEnumerable<Anuncio> anuncios = GetQuery().Where(anuncioModel => anuncioModel.CodAnuncio.Equals(codAnuncio));
             return anuncios.ElementAtOrDefault(0);
         }
 
-        private IQueryable<Model.Anuncio> GetQuery()
+        private IQueryable<Anuncio> GetQuery()
         {
            
-            IQueryable<Persistence.Anuncio> TBanuncio = _context.Anuncio;
+            IQueryable<TBAnuncio> TBanuncio = _context.Anuncio;
             var query = from anuncio in TBanuncio
-                        select new Model.Anuncio
+                        select new Anuncio
                         {
                             CodAnuncio = anuncio.CodAnuncio,
                             Titulo = anuncio.Titulo
@@ -96,7 +96,7 @@ namespace Services
             return query;
         }
 
-        public void Atribuir(Model.Anuncio anuncioModel, Persistence.Anuncio anuncio)
+        public void Atribuir(Anuncio anuncioModel, TBAnuncio anuncio)
         {
             anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             anuncio.CodUsuario = anuncioModel.CodUsuario;

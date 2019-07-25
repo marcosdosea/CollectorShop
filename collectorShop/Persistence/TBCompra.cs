@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class Compra
+    public partial class TBCompra
     {
         public int CodCompra { get; set; }
         public DateTime Data { get; set; }
@@ -14,10 +14,10 @@ namespace Persistence
         public float? ValorUnitario { get; set; }
         public int CodModelo { get; set; }
 
-        public virtual Envio CodEnvioNavigation { get; set; }
-        public virtual Modelo CodModeloNavigation { get; set; }
-        public virtual Pagamento CodPagamentoNavigation { get; set; }
-        public virtual Usuario CodUsuarioNavigation { get; set; }
+        public virtual TBEnvio CodEnvioNavigation { get; set; }
+        public virtual TBModelo CodModeloNavigation { get; set; }
+        public virtual TBPagamento CodPagamentoNavigation { get; set; }
+        public virtual TBUsuario CodUsuarioNavigation { get; set; }
         public object CodAnuncio { get; internal set; }
     }
 }

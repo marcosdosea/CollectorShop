@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-
+//using Model
 namespace Persistence
 {
     public partial class bancocollectorContext : DbContext
@@ -15,19 +15,19 @@ namespace Persistence
         {
         }
 
-        public virtual DbSet<Anuncio> Anuncio { get; set; }
-        public virtual DbSet<Anunciomodelo> Anunciomodelo { get; set; }
-        public virtual DbSet<Categoria> Categoria { get; set; }
-        public virtual DbSet<Compra> Compra { get; set; }
-        public virtual DbSet<Envio> Envio { get; set; }
-        public virtual DbSet<Modelo> Modelo { get; set; }
-        public virtual DbSet<Pagamento> Pagamento { get; set; }
-        public virtual DbSet<Troca> Troca { get; set; }
-        public virtual DbSet<Trocaanuncio> Trocaanuncio { get; set; }
-        public virtual DbSet<Trocamodelo> Trocamodelo { get; set; }
-        public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<Usuariocategoria> Usuariocategoria { get; set; }
-        public virtual DbSet<Usuariosubcategoria> Usuariosubcategoria { get; set; }
+        public virtual DbSet<TBAnuncio> Anuncio { get; set; }
+        public virtual DbSet<TBAnunciomodelo> Anunciomodelo { get; set; }
+        public virtual DbSet<TBCategoria> Categoria { get; set; }
+        public virtual DbSet<TBCompra> Compra { get; set; }
+        public virtual DbSet<TBEnvio> Envio { get; set; }
+        public virtual DbSet<TBModelo> Modelo { get; set; }
+        public virtual DbSet<TBPagamento> Pagamento { get; set; }
+        public virtual DbSet<TBTroca> Troca { get; set; }
+        public virtual DbSet<TBTrocaanuncio> Trocaanuncio { get; set; }
+        public virtual DbSet<TBTrocamodelo> Trocamodelo { get; set; }
+        public virtual DbSet<TBUsuario> Usuario { get; set; }
+        public virtual DbSet<TBUsuariocategoria> Usuariocategoria { get; set; }
+        public virtual DbSet<TBUsuariosubcategoria> Usuariosubcategoria { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -42,7 +42,7 @@ namespace Persistence
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity<Anuncio>(entity =>
+            modelBuilder.Entity<TBAnuncio>(entity =>
             {
                 entity.HasKey(e => e.CodAnuncio);
 
@@ -97,7 +97,7 @@ namespace Persistence
                     .HasConstraintName("fk_Anuncio_Usuario1");
             });
 
-            modelBuilder.Entity<Anunciomodelo>(entity =>
+            modelBuilder.Entity<TBAnunciomodelo>(entity =>
             {
                 entity.HasKey(e => new { e.CodAnuncio, e.CodModelo });
 
@@ -130,7 +130,7 @@ namespace Persistence
                     .HasConstraintName("fk_anuncio_has_modelo_modelo1");
             });
 
-            modelBuilder.Entity<Categoria>(entity =>
+            modelBuilder.Entity<TBCategoria>(entity =>
             {
                 entity.HasKey(e => e.CodCategoria);
 
@@ -148,7 +148,7 @@ namespace Persistence
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Compra>(entity =>
+            modelBuilder.Entity<TBCompra>(entity =>
             {
                 entity.HasKey(e => e.CodCompra);
 
@@ -219,7 +219,7 @@ namespace Persistence
                     .HasConstraintName("fk_Compra_Usuario1");
             });
 
-            modelBuilder.Entity<Envio>(entity =>
+            modelBuilder.Entity<TBEnvio>(entity =>
             {
                 entity.HasKey(e => e.CodEnvio);
 
@@ -239,7 +239,7 @@ namespace Persistence
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Modelo>(entity =>
+            modelBuilder.Entity<TBModelo>(entity =>
             {
                 entity.HasKey(e => e.CodModelo);
 
@@ -307,7 +307,7 @@ namespace Persistence
                     .HasConstraintName("fk_Modelo_Usuario1");
             });
 
-            modelBuilder.Entity<Pagamento>(entity =>
+            modelBuilder.Entity<TBPagamento>(entity =>
             {
                 entity.HasKey(e => e.CodPagamento);
 
@@ -327,7 +327,7 @@ namespace Persistence
                 entity.Property(e => e.Valor).HasColumnName("valor");
             });
 
-            modelBuilder.Entity<Troca>(entity =>
+            modelBuilder.Entity<TBTroca>(entity =>
             {
                 entity.HasKey(e => new { e.CodTroca, e.CodUsuario });
 
@@ -385,7 +385,7 @@ namespace Persistence
                     .HasConstraintName("fk_Troca_Usuario1");
             });
 
-            modelBuilder.Entity<Trocaanuncio>(entity =>
+            modelBuilder.Entity<TBTrocaanuncio>(entity =>
             {
                 entity.HasKey(e => new { e.CodTroca, e.CodAnuncio });
 
@@ -412,7 +412,7 @@ namespace Persistence
                     .HasConstraintName("fk_Troca_has_Anuncio_Anuncio1");
             });
 
-            modelBuilder.Entity<Trocamodelo>(entity =>
+            modelBuilder.Entity<TBTrocamodelo>(entity =>
             {
                 entity.HasKey(e => new { e.TrocaCodTroca, e.ModeloCodModelo });
 
@@ -439,7 +439,7 @@ namespace Persistence
                     .HasConstraintName("fk_Troca_has_Modelo_Modelo1");
             });
 
-            modelBuilder.Entity<Usuario>(entity =>
+            modelBuilder.Entity<TBUsuario>(entity =>
             {
                 entity.HasKey(e => e.CodUsuario);
 
@@ -497,7 +497,7 @@ namespace Persistence
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Usuariocategoria>(entity =>
+            modelBuilder.Entity<TBUsuariocategoria>(entity =>
             {
                 entity.HasKey(e => new { e.CodUsuario, e.CodCategoria });
 
@@ -516,13 +516,13 @@ namespace Persistence
                 entity.Property(e => e.CodCategoria)
                     .HasColumnName("codCategoria")
                     .HasColumnType("int(11)");
-
+//ele comentou aqui... 
                 entity.HasOne(d => d.CodCategoriaNavigation)
                     .WithMany(p => p.Usuariocategoria)
                     .HasForeignKey(d => d.CodCategoria)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
-
+//até aqui
                 entity.HasOne(d => d.CodUsuarioNavigation)
                     .WithMany(p => p.Usuariocategoria)
                     .HasForeignKey(d => d.CodUsuario)
@@ -530,7 +530,7 @@ namespace Persistence
                     .HasConstraintName("fk_Usuario_has_Categoria_Usuario1");
             });
 
-            modelBuilder.Entity<Usuariosubcategoria>(entity =>
+            modelBuilder.Entity<TBUsuariosubcategoria>(entity =>
             {
                 entity.HasKey(e => new { e.CodUsuario, e.CodSubcategoria });
 

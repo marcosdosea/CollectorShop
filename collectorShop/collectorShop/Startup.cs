@@ -39,7 +39,7 @@ namespace collectorShop
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<collectorShopContext>(options =>
+            services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
 
