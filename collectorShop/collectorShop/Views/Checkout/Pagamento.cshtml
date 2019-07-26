@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+
+<div class="col-md-9 footer-box">
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <h5><strong>1 Login/ Seu Carrinho de Compras 2/ Envio 3/Pagamento</strong></h5>
+
+            <hr>
+            <form method="post" enctype="text/plain">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <h5>SELECIONE O MÉTODO DE PAGAMENTO</h5>
+                            <hr>
+                            <form action="#">
+                                <h6>Selecione qual a bandeira do seu cartão de crédito:</h6>
+                                <input type="radio" name="envio" value="pac" required="required">Visa<img src="assets/img/visa.png" width="20px" height="30px"><br>
+                                <input type="radio" name="envio" value="sedex" required="required"> Mastercard<img src="assets/img/masterCard.jpg" width="20px" height="30px"><br>
+                                <input type="radio" name="envio" value="outro" required="required"> Paypal<img src="assets/img/paypal.jpg" width="20px" height="30px"><br>
+                                <input type="radio" name="envio" value="outro" required="required"> Banese<img src="assets/img/BaneseCard.jpg" width="20px" height="30px"><br>
+                                <hr>
+                                <h5>Entre com os dados:</h5>
+                                <hr>
+                                Número do cartão <input type="text" class="form-control" required="required" placeholder="">
+                                <h5>Data de expiração</h5>
+                                <input type="date" class="form-control" required="required" placeholder="">
+                                <h5>Número de segurança</h5>
+                                <input type="text" class="form-control" required="required" placeholder="">
+                                <input type="checkbox" formaction="mailto:magdaamaral2014@yahoo.com.br" name="checkbox" value="Sim"> Eu aceito os termos e condições da venda <br>
+                                <hr>
+                                <h5>TOTAL</h5>
+                                <hr>
+                                <p>
+                                    Produto = R$ 0,00 <br>
+                                    Envio = R$ 0,00 <br>
+                                    Total = R$ 0,00  <br>
+                                </p>
+                                <input type="submit" value="Continuar">
+                            </form>
+
+                            <br>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+            <input type="submit" value="Voltar para compras">
+        </div>
+    </div>
+
+</div>
+
+        </div>

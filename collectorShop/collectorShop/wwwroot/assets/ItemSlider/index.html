@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Simple Multi-Item Slider with CSS Animations and jQuery</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+				<a href="http://tympanus.net/Development/SliderPagination/"><strong>&laquo; Previous Demo: </strong>Slider Pagination Concept</a>
+				<span class="right"><a href="http://tympanus.net/codrops/?p=13218"><strong>Back to the Codrops Article</strong></a></span>
+			</div><!--/ Codrops top bar -->
+			<header class="clearfix">
+				<h1>Simple Multi-Item Slider <span>Category slider with CSS animations</span></h1>
+			</header>
+			<div class="main">
+				<div id="mi-slider" class="mi-slider">
+					<ul>
+						<li><a href="#"><img src="images/livro.jpg" alt="img01"><h4>Livros</h4></a></li>
+						<li><a href="#"><img src="images/mangas.jpg" alt="img02"><h4>Mangás</h4></a></li>
+						<li><a href="#"><img src="images/hqs.jpg" alt="img03"><h4>HQs</h4></a></li>
+						<li><a href="#"><img src="images/box.jpg" alt="img04"><h4>Boxes</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="images/figureaction.jpg" alt="img05"><h4>Figure Action</h4></a></li>
+						<li><a href="#"><img src="images/barbie.jpg" alt="img06"><h4>Barbie &amp; Cia</h4></a></li>
+						<li><a href="#"><img src="images/blythe.jpg" alt="img07"><h4>Blythe</h4></a></li>
+						<li><a href="#"><img src="images/bjd.jpg" alt="img08"><h4>BJD</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="images/filme.jpg" alt="img09"><h4>Filmes</h4></a></li>
+						<li><a href="#"><img src="images/anime.jpg" alt="img10"><h4>Anime</h4></a></li>
+						<li><a href="#"><img src="images/serie.png" alt="img11"><h4>Série</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="images/cd.jpg" alt="img12"><h4>CDs</h4></a></li>
+						<li><a href="#"><img src="images/miniatura.jpg" alt="img13"><h4>Miniaturas </h4></a></li>
+						<li><a href="#"><img src="images/fantasia.jpg" alt="img14"><h4>Fantasia</h4></a></li>
+						<li><a href="#"><img src="images/acessorio.png" alt="img15"><h4>Acessórios</h4></a></li>
+					</ul>
+					<nav>
+						<a href="#">Livros</a>
+						<a href="#">Brinquedos</a>
+						<a href="#">DVDs</a>
+						<a href="#">Mais</a>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+	</body>
+</html>
