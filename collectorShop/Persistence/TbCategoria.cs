@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace Persistence
 {
@@ -8,13 +7,12 @@ namespace Persistence
     {
         public TbCategoria()
         {
-            Usuariocategoria = new HashSet<Usuariocategoria>();
+            Tbsubcategoria = new HashSet<Tbsubcategoria>();
         }
 
-        [Key]
         public int CodCategoria { get; set; }
         public string Nome { get; set; }
 
-        public ICollection<Usuariocategoria> Usuariocategoria { get; set; }
+        public ICollection<Tbsubcategoria> Tbsubcategoria { get; set; }
     }
 }
