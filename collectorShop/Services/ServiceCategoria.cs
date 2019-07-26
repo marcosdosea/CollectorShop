@@ -39,8 +39,8 @@ namespace Services
 
         private void Transferir(Categoria x, TbCategoria y)
         {
-            x.CodCategoria = y.CodCategoria;
-            x.Nome = y.Nome;
+            y.CodCategoria = x.CodCategoria;
+            y.Nome = x.Nome;
         }
 
         public void Editar(Categoria entidade)
@@ -49,7 +49,6 @@ namespace Services
             Transferir(entidade, entidadeParaTabela);
 
             _Contexto.Entry(entidadeParaTabela).State = EntityState.Modified;
-            
 
             try
             {
@@ -68,12 +67,12 @@ namespace Services
 
             return _Contexto.TbCategoria
                 .Where(x => x.CodCategoria == idEntidade)
-                .Select(x => new Categoria{ Nome = x.Nome, CodCategoria = x.CodCategoria })
+                .Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria })
                 .SingleOrDefault();
 
             //return categoria;
         }
-            
+
 
         public IEnumerable<Categoria> ObterPorNome(string nome)
             => _Contexto.TbCategoria
@@ -84,11 +83,11 @@ namespace Services
         public IEnumerable<Categoria> ObterTodos()
             => _Contexto.TbCategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
 
-        public void Remover(Categoria entidade)
+        /*public void Remover(Categoria entidade)
         {
             var entidadeParaTabela = new TbCategoria();
             Transferir(entidade, entidadeParaTabela);
-            _Contexto.TbCategoria.Remove(entidadeParaTabela);
+            _Contexto.TbCategoria.Remove(entidade);
             
             try
             {
@@ -98,6 +97,23 @@ namespace Services
             {
                 throw new Exception($"Não foi possivel remover a categoria {entidadeParaTabela.Nome} com a seguinte exceção {e.Message}");
             }
+        }*/
+
+        public void Remover(int codCategoria)
+        {
+            var tbcat = _Contexto.TbCategoria.Find(codCategoria);
+            _Contexto.TbCategoria.Remove(tbcat);
+            try
+            {
+                _Contexto.SaveChanges();
+            }
+            catch (Exception)
+            {
+                //throw new Exception($"Não foi possivel remover a categoria {entidadeParaTabela.Nome} com a seguinte exceção {e.Message}");
+               
+            }
+
         }
+
     }
 }

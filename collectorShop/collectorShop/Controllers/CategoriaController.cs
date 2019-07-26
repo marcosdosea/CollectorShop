@@ -22,13 +22,14 @@ namespace collectorShop.Controllers
         // GET: Categoria
         public ActionResult Index()
         {
-            return View();
+            return View(_servicesCategoria.ObterTodos());
         }
 
         // GET: Categoria/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Categoria cat = _servicesCategoria.Obter(id);
+            return View(cat);
         }
 
         // GET: Categoria/Create
@@ -65,36 +66,40 @@ namespace collectorShop.Controllers
                 }
                 //servicesCategoria.Adicionar(categoria);
             }
-            return Index();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Categoria/Edit/5
         public ActionResult Edit(int id)
+
         {
-            return View();
+            Categoria categoria = _servicesCategoria.Obter(id);
+            return View(categoria);
         }
 
         // POST: Categoria/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Categoria categoria)
         {
             try
             {
-                // TODO: Add update logic here
-
+                // TODO: Ad_serd update logic here
+                _servicesCategoria.Editar(categoria);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                //throw new InvalidProgramException();
+                return View(categoria);
             }
         }
 
         // GET: Categoria/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Categoria cat = _servicesCategoria.Obter(id);
+            return View(cat);
         }
 
         // POST: Categoria/Delete/5
@@ -104,8 +109,7 @@ namespace collectorShop.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                _servicesCategoria.Remover(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -113,5 +117,6 @@ namespace collectorShop.Controllers
                 return View();
             }
         }
+
     }
 }

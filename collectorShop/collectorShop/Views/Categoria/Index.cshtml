@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Model.Categoria>
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
 }
 
 <!DOCTYPE html>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.CodCategoria  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.CodCategoria }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.CodCategoria })
             </td>
         </tr>
 }

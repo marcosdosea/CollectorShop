@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,8 +9,9 @@ namespace Services
     {
         void Editar(T entidade);
         int Adicionar(T entidade);
-        T Obter(int idEntidade);
-        void Remover(T entidade);
-        IEnumerable<T> ObterTodos();
+        Categoria Obter(int idEntidade);
+        void Remover(int codCategoria);
+        IEnumerable<Categoria> ObterTodos();
+        IEnumerable<Categoria> ObterPorNome(string nome);
     }
 }

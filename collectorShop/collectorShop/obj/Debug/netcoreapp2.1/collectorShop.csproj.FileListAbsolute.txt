@@ -64,3 +64,5 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Index.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Form.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Delete.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Edit.g.cshtml.cs
