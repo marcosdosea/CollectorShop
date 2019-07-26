@@ -15,7 +15,7 @@ namespace Persistence
         public string Opcao { get; set; }
         public float Valor { get; set; }
 
-        public virtual ICollection<Compra> Compra { get; set; }
-        public virtual ICollection<Troca> Troca { get; set; }
+        public ICollection<Compra> Compra { get; set; }
+        public ICollection<Troca> Troca { get; set; }
     }
 }

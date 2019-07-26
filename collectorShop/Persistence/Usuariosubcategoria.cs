@@ -8,6 +8,6 @@ namespace Persistence
         public int CodUsuario { get; set; }
         public int CodSubcategoria { get; set; }
 
-        public virtual Usuario CodUsuarioNavigation { get; set; }
+        public Usuario CodUsuarioNavigation { get; set; }
     }
 }

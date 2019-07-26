@@ -12,6 +12,9 @@ using Microsoft.EntityFrameworkCore;
 using collectorShop.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Services;
+using Model;
+using Persistence;
 
 namespace collectorShop
 {
@@ -34,16 +37,18 @@ namespace collectorShop
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
+            
+            services.AddScoped<IService<Categoria>, ServiceCategoria>();
 
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddDefaultIdentity<IdentityUser>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

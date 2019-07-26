@@ -5,6 +5,12 @@ namespace Persistence
 {
     public partial class Troca
     {
+        public Troca()
+        {
+            Trocaanuncio = new HashSet<Trocaanuncio>();
+            Trocamodelo = new HashSet<Trocamodelo>();
+        }
+
         public int CodTroca { get; set; }
         public int Quantidade { get; set; }
         public DateTime Data { get; set; }
@@ -12,8 +18,10 @@ namespace Persistence
         public int CodPagamento { get; set; }
         public int CodUsuario { get; set; }
 
-        public virtual Envio CodEnvioNavigation { get; set; }
-        public virtual Pagamento CodPagamentoNavigation { get; set; }
-        public virtual Usuario CodUsuarioNavigation { get; set; }
+        public Envio CodEnvioNavigation { get; set; }
+        public Pagamento CodPagamentoNavigation { get; set; }
+        public Usuario CodUsuarioNavigation { get; set; }
+        public ICollection<Trocaanuncio> Trocaanuncio { get; set; }
+        public ICollection<Trocamodelo> Trocamodelo { get; set; }
     }
 }

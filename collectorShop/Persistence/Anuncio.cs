@@ -21,8 +21,8 @@ namespace Persistence
         public int CodUsuario { get; set; }
         public string Msg { get; set; }
 
-        public virtual Usuario CodUsuarioNavigation { get; set; }
-        public virtual ICollection<Anunciomodelo> Anunciomodelo { get; set; }
-        public virtual ICollection<Trocaanuncio> Trocaanuncio { get; set; }
+        public Usuario CodUsuarioNavigation { get; set; }
+        public ICollection<Anunciomodelo> Anunciomodelo { get; set; }
+        public ICollection<Trocaanuncio> Trocaanuncio { get; set; }
     }
 }

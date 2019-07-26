@@ -22,9 +22,9 @@ namespace Persistence
         public int CodSubcategoria { get; set; }
         public int CodUsuario { get; set; }
 
-        public virtual Usuario CodUsuarioNavigation { get; set; }
-        public virtual ICollection<Anunciomodelo> Anunciomodelo { get; set; }
-        public virtual ICollection<Compra> Compra { get; set; }
-        public virtual ICollection<Trocamodelo> Trocamodelo { get; set; }
+        public Usuario CodUsuarioNavigation { get; set; }
+        public ICollection<Anunciomodelo> Anunciomodelo { get; set; }
+        public ICollection<Compra> Compra { get; set; }
+        public ICollection<Trocamodelo> Trocamodelo { get; set; }
     }
 }

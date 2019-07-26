@@ -15,7 +15,7 @@ namespace Persistence
         public float Preco { get; set; }
         public string Tipo { get; set; }
 
-        public virtual ICollection<Compra> Compra { get; set; }
-        public virtual ICollection<Troca> Troca { get; set; }
+        public ICollection<Compra> Compra { get; set; }
+        public ICollection<Troca> Troca { get; set; }
     }
 }

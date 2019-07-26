@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Model;
 
 namespace Persistence
 {
@@ -18,11 +17,11 @@ namespace Persistence
 
         public virtual DbSet<Anuncio> Anuncio { get; set; }
         public virtual DbSet<Anunciomodelo> Anunciomodelo { get; set; }
-        public virtual DbSet<Categoria> Categoria { get; set; }
         public virtual DbSet<Compra> Compra { get; set; }
         public virtual DbSet<Envio> Envio { get; set; }
         public virtual DbSet<Modelo> Modelo { get; set; }
         public virtual DbSet<Pagamento> Pagamento { get; set; }
+        public virtual DbSet<TbCategoria> TbCategoria { get; set; }
         public virtual DbSet<Troca> Troca { get; set; }
         public virtual DbSet<Trocaanuncio> Trocaanuncio { get; set; }
         public virtual DbSet<Trocamodelo> Trocamodelo { get; set; }
@@ -32,7 +31,6 @@ namespace Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //COMENTEI ESSE IF ANTERIORMENTE POIS ESTAVA DANDO ERRO
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
@@ -42,8 +40,6 @@ namespace Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
-
             modelBuilder.Entity<Anuncio>(entity =>
             {
                 entity.HasKey(e => e.CodAnuncio);
@@ -130,24 +126,6 @@ namespace Persistence
                     .HasForeignKey(d => d.CodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_anuncio_has_modelo_modelo1");
-            });
-
-            modelBuilder.Entity<Categoria>(entity =>
-            {
-                entity.HasKey(e => e.CodCategoria);
-
-                entity.ToTable("categoria", "bancocollector");
-
-                entity.Property(e => e.CodCategoria)
-                    .HasColumnName("codCategoria")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.Nome)
-                    .IsRequired()
-                    .HasColumnName("nome")
-                    .HasMaxLength(45)
-                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Compra>(entity =>
@@ -329,9 +307,27 @@ namespace Persistence
                 entity.Property(e => e.Valor).HasColumnName("valor");
             });
 
+            modelBuilder.Entity<TbCategoria>(entity =>
+            {
+                entity.HasKey(e => e.CodCategoria);
+
+                entity.ToTable("tb_categoria", "bancocollector");
+
+                entity.Property(e => e.CodCategoria)
+                    .HasColumnName("codCategoria")
+                    .HasColumnType("int(11)")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Nome)
+                    .IsRequired()
+                    .HasColumnName("nome")
+                    .HasMaxLength(45)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<Troca>(entity =>
             {
-                entity.HasKey(e => new { e.CodTroca, e.CodUsuario });
+                entity.HasKey(e => e.CodTroca);
 
                 entity.ToTable("troca", "bancocollector");
 
@@ -346,11 +342,8 @@ namespace Persistence
 
                 entity.Property(e => e.CodTroca)
                     .HasColumnName("codTroca")
-                    .HasColumnType("int(11)");
-
-                entity.Property(e => e.CodUsuario)
-                    .HasColumnName("codUsuario")
-                    .HasColumnType("int(11)");
+                    .HasColumnType("int(11)")
+                    .ValueGeneratedNever();
 
                 entity.Property(e => e.CodEnvio)
                     .HasColumnName("codEnvio")
@@ -358,6 +351,10 @@ namespace Persistence
 
                 entity.Property(e => e.CodPagamento)
                     .HasColumnName("codPagamento")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.CodUsuario)
+                    .HasColumnName("codUsuario")
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.Data)
@@ -412,6 +409,12 @@ namespace Persistence
                     .HasForeignKey(d => d.CodAnuncio)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_has_Anuncio_Anuncio1");
+
+                entity.HasOne(d => d.CodTrocaNavigation)
+                    .WithMany(p => p.Trocaanuncio)
+                    .HasForeignKey(d => d.CodTroca)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Troca_has_Anuncio_Troca1");
             });
 
             modelBuilder.Entity<Trocamodelo>(entity =>
@@ -439,6 +442,12 @@ namespace Persistence
                     .HasForeignKey(d => d.ModeloCodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_has_Modelo_Modelo1");
+
+                entity.HasOne(d => d.TrocaCodTrocaNavigation)
+                    .WithMany(p => p.Trocamodelo)
+                    .HasForeignKey(d => d.TrocaCodTroca)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Troca_has_Modelo_Troca1");
             });
 
             modelBuilder.Entity<Usuario>(entity =>
@@ -519,11 +528,11 @@ namespace Persistence
                     .HasColumnName("codCategoria")
                     .HasColumnType("int(11)");
 
-                //entity.HasOne(d => d.CodCategoriaNavigation)
-                  // .WithMany(p => p.Usuariocategoria)
-                 //  .HasForeignKey(d => d.CodCategoria)
-                 //  .OnDelete(DeleteBehavior.ClientSetNull)
-                  //  .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
+                entity.HasOne(d => d.CodCategoriaNavigation)
+                    .WithMany(p => p.Usuariocategoria)
+                    .HasForeignKey(d => d.CodCategoria)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
                     .WithMany(p => p.Usuariocategoria)

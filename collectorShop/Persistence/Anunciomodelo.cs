@@ -8,7 +8,7 @@ namespace Persistence
         public int CodAnuncio { get; set; }
         public int CodModelo { get; set; }
 
-        public virtual Anuncio CodAnuncioNavigation { get; set; }
-        public virtual Modelo CodModeloNavigation { get; set; }
+        public Anuncio CodAnuncioNavigation { get; set; }
+        public Modelo CodModeloNavigation { get; set; }
     }
 }

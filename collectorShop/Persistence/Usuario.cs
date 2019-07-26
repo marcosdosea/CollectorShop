@@ -25,11 +25,11 @@ namespace Persistence
         public string Cep { get; set; }
         public byte Administrador { get; set; }
 
-        public virtual ICollection<Anuncio> Anuncio { get; set; }
-        public virtual ICollection<Compra> Compra { get; set; }
-        public virtual ICollection<Modelo> Modelo { get; set; }
-        public virtual ICollection<Troca> Troca { get; set; }
-        public virtual ICollection<Usuariocategoria> Usuariocategoria { get; set; }
-        public virtual ICollection<Usuariosubcategoria> Usuariosubcategoria { get; set; }
+        public ICollection<Anuncio> Anuncio { get; set; }
+        public ICollection<Compra> Compra { get; set; }
+        public ICollection<Modelo> Modelo { get; set; }
+        public ICollection<Troca> Troca { get; set; }
+        public ICollection<Usuariocategoria> Usuariocategoria { get; set; }
+        public ICollection<Usuariosubcategoria> Usuariosubcategoria { get; set; }
     }
 }
