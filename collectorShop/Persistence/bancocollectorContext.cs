@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-//using Model
+
 namespace Persistence
 {
     public partial class bancocollectorContext : DbContext
@@ -15,59 +15,76 @@ namespace Persistence
         {
         }
 
-        public virtual DbSet<TbAnuncio> Anuncio { get; set; }
-        public virtual DbSet<TbAnunciomodelo> Anunciomodelo { get; set; }
-        public virtual DbSet<TbCategoria> Categoria { get; set; }
-        public virtual DbSet<TbCompra> Compra { get; set; }
-        public virtual DbSet<TbBEnvio> Envio { get; set; }
-        public virtual DbSet<TbModelo> Modelo { get; set; }
-        public virtual DbSet<TbPagamento> Pagamento { get; set; }
-        public virtual DbSet<TbTroca> Troca { get; set; }
-        public virtual DbSet<TbTrocaanuncio> Trocaanuncio { get; set; }
-        public virtual DbSet<TbTrocamodelo> Trocamodelo { get; set; }
-        public virtual DbSet<TbUsuario> Usuario { get; set; }
-        public virtual DbSet<TbUsuariocategoria> Usuariocategoria { get; set; }
-        public virtual DbSet<TbUsuariosubcategoria> Usuariosubcategoria { get; set; }
-
-        //NÃO GEROU TBSUBCATEGORIA!!!!!
+        public virtual DbSet<TbCategoria> TbCategoria { get; set; }
+        public virtual DbSet<Tbanuncio> Tbanuncio { get; set; }
+        public virtual DbSet<Tbanunciomodelo> Tbanunciomodelo { get; set; }
+        public virtual DbSet<Tbcompra> Tbcompra { get; set; }
+        public virtual DbSet<Tbenvio> Tbenvio { get; set; }
+        public virtual DbSet<Tbmodelo> Tbmodelo { get; set; }
+        public virtual DbSet<Tbpagamento> Tbpagamento { get; set; }
+        public virtual DbSet<Tbsubcategoria> Tbsubcategoria { get; set; }
+        public virtual DbSet<Tbtroca> Tbtroca { get; set; }
+        public virtual DbSet<Tbtrocaanuncio> Tbtrocaanuncio { get; set; }
+        public virtual DbSet<Tbtrocamodelo> Tbtrocamodelo { get; set; }
+        public virtual DbSet<Tbusuario> Tbusuario { get; set; }
+        public virtual DbSet<Tbusuariocategoria> Tbusuariocategoria { get; set; }
+        public virtual DbSet<Tbusuariosubcategoria> Tbusuariosubcategoria { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            /*if (!optionsBuilder.IsConfigured)
+            if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=bancocollector");
-            }*/
+                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=;database=bancocollector");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity<TbAnuncio>(entity =>
+            modelBuilder.Entity<TbCategoria>(entity =>
+            {
+                entity.HasKey(e => e.CodCategoria);
+
+                entity.ToTable("tb_categoria", "bancocollector");
+
+                entity.Property(e => e.CodCategoria)
+                    .HasColumnName("codCategoria")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.Nome)
+                    .IsRequired()
+                    .HasColumnName("nome")
+                    .HasMaxLength(45)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Tbanuncio>(entity =>
             {
                 entity.HasKey(e => e.CodAnuncio);
 
-                entity.ToTable("anuncio", "bancocollector");
+                entity.ToTable("tbanuncio", "bancocollector");
 
                 entity.HasIndex(e => e.CodUsuario)
                     .HasName("fk_Anuncio_Usuario1_idx");
 
                 entity.Property(e => e.CodAnuncio)
                     .HasColumnName("codAnuncio")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.CodUsuario)
                     .HasColumnName("codUsuario")
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.Descricao)
+                    .IsRequired()
                     .HasColumnName("descricao")
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Msg)
+                    .IsRequired()
                     .HasColumnName("msg")
                     .HasMaxLength(250)
                     .IsUnicode(false);
@@ -86,6 +103,7 @@ namespace Persistence
                     .HasColumnType("set('ATIVO','INATIVO')");
 
                 entity.Property(e => e.Titulo)
+                    .IsRequired()
                     .HasColumnName("titulo")
                     .HasMaxLength(45)
                     .IsUnicode(false);
@@ -93,17 +111,17 @@ namespace Persistence
                 entity.Property(e => e.Valor).HasColumnName("valor");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Anuncio)
+                    .WithMany(p => p.Tbanuncio)
                     .HasForeignKey(d => d.CodUsuario)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Anuncio_Usuario1");
             });
 
-            modelBuilder.Entity<TbAnunciomodelo>(entity =>
+            modelBuilder.Entity<Tbanunciomodelo>(entity =>
             {
                 entity.HasKey(e => new { e.CodAnuncio, e.CodModelo });
 
-                entity.ToTable("anunciomodelo", "bancocollector");
+                entity.ToTable("tbanunciomodelo", "bancocollector");
 
                 entity.HasIndex(e => e.CodAnuncio)
                     .HasName("fk_anuncio_has_modelo_anuncio1_idx");
@@ -120,64 +138,23 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 entity.HasOne(d => d.CodAnuncioNavigation)
-                    .WithMany(p => p.Anunciomodelo)
+                    .WithMany(p => p.Tbanunciomodelo)
                     .HasForeignKey(d => d.CodAnuncio)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_anuncio_has_modelo_anuncio1");
 
                 entity.HasOne(d => d.CodModeloNavigation)
-                    .WithMany(p => p.Anunciomodelo)
+                    .WithMany(p => p.Tbanunciomodelo)
                     .HasForeignKey(d => d.CodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_anuncio_has_modelo_modelo1");
             });
 
-            modelBuilder.Entity<TbCategoria>(entity =>
-            {
-                entity.HasKey(e => e.CodCategoria);
-
-                entity.ToTable("categoria", "bancocollector");
-
-                entity.Property(e => e.CodCategoria)
-                    .HasColumnName("codCategoria")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.Nome)
-                    .IsRequired()
-                    .HasColumnName("nome")
-                    .HasMaxLength(45)
-                    .IsUnicode(false);
-            });
-
-            modelBuilder.Entity<TbSubcategoria>(entity =>
-            {
-                entity.HasKey(e => e.CodCategoria);
-
-                entity.ToTable("Subcategoria", "bancocollector");
-
-                entity.Property(e => e.CodSubcategoria)
-                    .HasColumnName("codSubcategoria")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.CodCategoria)
-                   .HasColumnName("codCategoria")
-                   .HasColumnType("int(11)")
-                   .ValueGeneratedNever();
-
-                entity.Property(e => e.Nome)
-                    .IsRequired()
-                    .HasColumnName("nome")
-                    .HasMaxLength(45)
-                    .IsUnicode(false);
-            });
-
-            modelBuilder.Entity<TbCompra>(entity =>
+            modelBuilder.Entity<Tbcompra>(entity =>
             {
                 entity.HasKey(e => e.CodCompra);
 
-                entity.ToTable("compra", "bancocollector");
+                entity.ToTable("tbcompra", "bancocollector");
 
                 entity.HasIndex(e => e.CodEnvio)
                     .HasName("fk_Compra_Envio1_idx");
@@ -193,8 +170,7 @@ namespace Persistence
 
                 entity.Property(e => e.CodCompra)
                     .HasColumnName("codCompra")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.CodEnvio)
                     .HasColumnName("codEnvio")
@@ -221,39 +197,39 @@ namespace Persistence
                 entity.Property(e => e.ValorUnitario).HasColumnName("valorUnitario");
 
                 entity.HasOne(d => d.CodEnvioNavigation)
-                    .WithMany(p => p.Compra)
+                    .WithMany(p => p.Tbcompra)
                     .HasForeignKey(d => d.CodEnvio)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Compra_Envio1");
 
                 entity.HasOne(d => d.CodModeloNavigation)
-                    .WithMany(p => p.Compra)
+                    .WithMany(p => p.Tbcompra)
                     .HasForeignKey(d => d.CodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Compra_Modelo1");
 
                 entity.HasOne(d => d.CodPagamentoNavigation)
-                    .WithMany(p => p.Compra)
+                    .WithMany(p => p.Tbcompra)
                     .HasForeignKey(d => d.CodPagamento)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Compra_Pagamento1");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Compra)
+                    .WithMany(p => p.Tbcompra)
                     .HasForeignKey(d => d.CodUsuario)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Compra_Usuario1");
             });
 
-            modelBuilder.Entity<TbBEnvio>(entity =>
+            modelBuilder.Entity<Tbenvio>(entity =>
             {
                 entity.HasKey(e => e.CodEnvio);
 
-                entity.ToTable("envio", "bancocollector");
+                entity.ToTable("tbenvio", "bancocollector");
 
                 entity.Property(e => e.CodEnvio)
                     .HasColumnName("codEnvio")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.Preco).HasColumnName("preco");
 
@@ -264,22 +240,21 @@ namespace Persistence
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TbModelo>(entity =>
+            modelBuilder.Entity<Tbmodelo>(entity =>
             {
                 entity.HasKey(e => e.CodModelo);
 
-                entity.ToTable("modelo", "bancocollector");
+                entity.ToTable("tbmodelo", "bancocollector");
 
                 entity.HasIndex(e => e.CodSubcategoria)
-                    .HasName("fk_Modelo_SubCategoria1_idx");
+                    .HasName("fk_Tbmodelo_TbSubcategoria1_idx");
 
                 entity.HasIndex(e => e.CodUsuario)
                     .HasName("fk_Modelo_Usuario1_idx");
 
                 entity.Property(e => e.CodModelo)
                     .HasColumnName("codModelo")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.Ano)
                     .IsRequired()
@@ -325,23 +300,28 @@ namespace Persistence
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.HasOne(d => d.CodSubcategoriaNavigation)
+                    .WithMany(p => p.Tbmodelo)
+                    .HasForeignKey(d => d.CodSubcategoria)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Tbmodelo_TbSubcategoria1");
+
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Modelo)
+                    .WithMany(p => p.Tbmodelo)
                     .HasForeignKey(d => d.CodUsuario)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Modelo_Usuario1");
             });
 
-            modelBuilder.Entity<TbPagamento>(entity =>
+            modelBuilder.Entity<Tbpagamento>(entity =>
             {
                 entity.HasKey(e => e.CodPagamento);
 
-                entity.ToTable("pagamento", "bancocollector");
+                entity.ToTable("tbpagamento", "bancocollector");
 
                 entity.Property(e => e.CodPagamento)
                     .HasColumnName("codPagamento")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.Opcao)
                     .IsRequired()
@@ -352,11 +332,41 @@ namespace Persistence
                 entity.Property(e => e.Valor).HasColumnName("valor");
             });
 
-            modelBuilder.Entity<TbTroca>(entity =>
+            modelBuilder.Entity<Tbsubcategoria>(entity =>
             {
-                entity.HasKey(e => new { e.CodTroca, e.CodUsuario });
+                entity.HasKey(e => e.CodSubcategoria);
 
-                entity.ToTable("troca", "bancocollector");
+                entity.ToTable("tbsubcategoria", "bancocollector");
+
+                entity.HasIndex(e => e.CodCategoria)
+                    .HasName("fk_TbSubcategoria_Tb_categoria1_idx");
+
+                entity.Property(e => e.CodSubcategoria)
+                    .HasColumnName("codSubcategoria")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.CodCategoria)
+                    .HasColumnName("codCategoria")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.Nome)
+                    .IsRequired()
+                    .HasColumnName("nome")
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.CodCategoriaNavigation)
+                    .WithMany(p => p.Tbsubcategoria)
+                    .HasForeignKey(d => d.CodCategoria)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_TbSubcategoria_Tb_categoria1");
+            });
+
+            modelBuilder.Entity<Tbtroca>(entity =>
+            {
+                entity.HasKey(e => e.CodTroca);
+
+                entity.ToTable("tbtroca", "bancocollector");
 
                 entity.HasIndex(e => e.CodEnvio)
                     .HasName("fk_Troca_Envio1_idx");
@@ -371,16 +381,16 @@ namespace Persistence
                     .HasColumnName("codTroca")
                     .HasColumnType("int(11)");
 
-                entity.Property(e => e.CodUsuario)
-                    .HasColumnName("codUsuario")
-                    .HasColumnType("int(11)");
-
                 entity.Property(e => e.CodEnvio)
                     .HasColumnName("codEnvio")
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.CodPagamento)
                     .HasColumnName("codPagamento")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.CodUsuario)
+                    .HasColumnName("codUsuario")
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.Data)
@@ -392,29 +402,29 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 entity.HasOne(d => d.CodEnvioNavigation)
-                    .WithMany(p => p.Troca)
+                    .WithMany(p => p.Tbtroca)
                     .HasForeignKey(d => d.CodEnvio)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_Envio1");
 
                 entity.HasOne(d => d.CodPagamentoNavigation)
-                    .WithMany(p => p.Troca)
+                    .WithMany(p => p.Tbtroca)
                     .HasForeignKey(d => d.CodPagamento)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_Pagamento1");
 
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Troca)
+                    .WithMany(p => p.Tbtroca)
                     .HasForeignKey(d => d.CodUsuario)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_Usuario1");
             });
 
-            modelBuilder.Entity<TbTrocaanuncio>(entity =>
+            modelBuilder.Entity<Tbtrocaanuncio>(entity =>
             {
                 entity.HasKey(e => new { e.CodTroca, e.CodAnuncio });
 
-                entity.ToTable("trocaanuncio", "bancocollector");
+                entity.ToTable("tbtrocaanuncio", "bancocollector");
 
                 entity.HasIndex(e => e.CodAnuncio)
                     .HasName("fk_Troca_has_Anuncio_Anuncio1_idx");
@@ -431,17 +441,23 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 entity.HasOne(d => d.CodAnuncioNavigation)
-                    .WithMany(p => p.Trocaanuncio)
+                    .WithMany(p => p.Tbtrocaanuncio)
                     .HasForeignKey(d => d.CodAnuncio)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_has_Anuncio_Anuncio1");
+
+                entity.HasOne(d => d.CodTrocaNavigation)
+                    .WithMany(p => p.Tbtrocaanuncio)
+                    .HasForeignKey(d => d.CodTroca)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Troca_has_Anuncio_Troca1");
             });
 
-            modelBuilder.Entity<TbTrocamodelo>(entity =>
+            modelBuilder.Entity<Tbtrocamodelo>(entity =>
             {
                 entity.HasKey(e => new { e.TrocaCodTroca, e.ModeloCodModelo });
 
-                entity.ToTable("trocamodelo", "bancocollector");
+                entity.ToTable("tbtrocamodelo", "bancocollector");
 
                 entity.HasIndex(e => e.ModeloCodModelo)
                     .HasName("fk_Troca_has_Modelo_Modelo1_idx");
@@ -458,22 +474,27 @@ namespace Persistence
                     .HasColumnType("int(11)");
 
                 entity.HasOne(d => d.ModeloCodModeloNavigation)
-                    .WithMany(p => p.Trocamodelo)
+                    .WithMany(p => p.Tbtrocamodelo)
                     .HasForeignKey(d => d.ModeloCodModelo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Troca_has_Modelo_Modelo1");
+
+                entity.HasOne(d => d.TrocaCodTrocaNavigation)
+                    .WithMany(p => p.Tbtrocamodelo)
+                    .HasForeignKey(d => d.TrocaCodTroca)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Troca_has_Modelo_Troca1");
             });
 
-            modelBuilder.Entity<TbUsuario>(entity =>
+            modelBuilder.Entity<Tbusuario>(entity =>
             {
                 entity.HasKey(e => e.CodUsuario);
 
-                entity.ToTable("usuario", "bancocollector");
+                entity.ToTable("tbusuario", "bancocollector");
 
                 entity.Property(e => e.CodUsuario)
                     .HasColumnName("codUsuario")
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
+                    .HasColumnType("int(11)");
 
                 entity.Property(e => e.Administrador)
                     .HasColumnName("administrador")
@@ -522,14 +543,14 @@ namespace Persistence
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TbUsuariocategoria>(entity =>
+            modelBuilder.Entity<Tbusuariocategoria>(entity =>
             {
                 entity.HasKey(e => new { e.CodUsuario, e.CodCategoria });
 
-                entity.ToTable("usuariocategoria", "bancocollector");
+                entity.ToTable("tbusuariocategoria", "bancocollector");
 
                 entity.HasIndex(e => e.CodCategoria)
-                    .HasName("fk_Usuario_has_Categoria_Categoria1_idx");
+                    .HasName("fk_TbusuarioCategoria_Tb_categoria1_idx");
 
                 entity.HasIndex(e => e.CodUsuario)
                     .HasName("fk_Usuario_has_Categoria_Usuario1_idx");
@@ -541,28 +562,28 @@ namespace Persistence
                 entity.Property(e => e.CodCategoria)
                     .HasColumnName("codCategoria")
                     .HasColumnType("int(11)");
-//ele comentou aqui... 
+
                 entity.HasOne(d => d.CodCategoriaNavigation)
-                    .WithMany(p => p.Usuariocategoria)
+                    .WithMany(p => p.Tbusuariocategoria)
                     .HasForeignKey(d => d.CodCategoria)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Usuario_has_Categoria_Categoria1");
-//até aqui
+                    .HasConstraintName("fk_TbusuarioCategoria_Tb_categoria1");
+
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Usuariocategoria)
+                    .WithMany(p => p.Tbusuariocategoria)
                     .HasForeignKey(d => d.CodUsuario)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Usuario_has_Categoria_Usuario1");
             });
 
-            modelBuilder.Entity<TbUsuariosubcategoria>(entity =>
+            modelBuilder.Entity<Tbusuariosubcategoria>(entity =>
             {
                 entity.HasKey(e => new { e.CodUsuario, e.CodSubcategoria });
 
-                entity.ToTable("usuariosubcategoria", "bancocollector");
+                entity.ToTable("tbusuariosubcategoria", "bancocollector");
 
                 entity.HasIndex(e => e.CodSubcategoria)
-                    .HasName("fk_Usuario_has_SubCategoria_SubCategoria1_idx");
+                    .HasName("fk_TbusuarioSubCategoria_TbSubcategoria1_idx");
 
                 entity.HasIndex(e => e.CodUsuario)
                     .HasName("fk_Usuario_has_SubCategoria_Usuario1_idx");
@@ -575,8 +596,14 @@ namespace Persistence
                     .HasColumnName("codSubcategoria")
                     .HasColumnType("int(11)");
 
+                entity.HasOne(d => d.CodSubcategoriaNavigation)
+                    .WithMany(p => p.Tbusuariosubcategoria)
+                    .HasForeignKey(d => d.CodSubcategoria)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_TbusuarioSubCategoria_TbSubcategoria1");
+
                 entity.HasOne(d => d.CodUsuarioNavigation)
-                    .WithMany(p => p.Usuariosubcategoria)
+                    .WithMany(p => p.Tbusuariosubcategoria)
                     .HasForeignKey(d => d.CodUsuario)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Usuario_has_SubCategoria_Usuario1");

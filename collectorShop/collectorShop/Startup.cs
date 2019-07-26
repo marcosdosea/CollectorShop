@@ -42,7 +42,7 @@ namespace collectorShop
 
             services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
-                 Configuration.GetConnectionString("CollectorConnection")));
+                 Configuration.GetConnectionString("CollectorConection")));
             services.AddTransient<IGerenciadorAnuncio,GerenciadorAnuncio>();
 
             services.AddDefaultIdentity<IdentityUser>()

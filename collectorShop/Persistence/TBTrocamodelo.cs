@@ -3,15 +3,12 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TbTrocamodelo
+    public partial class Tbtrocamodelo
     {
         public int TrocaCodTroca { get; set; }
         public int ModeloCodModelo { get; set; }
 
-        public virtual TbModelo ModeloCodModeloNavigation { get; set; }
-
-        public virtual TbTroca TrocaCodModeloNavigation { get; set; }
-     //   public int CodModelo { get; set; }
-     //   public object CodModeloNavigation { get; internal set; }
+        public virtual Tbmodelo ModeloCodModeloNavigation { get; set; }
+        public virtual Tbtroca TrocaCodTrocaNavigation { get; set; }
     }
 }

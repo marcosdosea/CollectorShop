@@ -19,7 +19,7 @@ namespace Services
         /// <param name="anuncioModel">Dados do anúncio</param>
         public void Editar(Anuncio anuncioModel)
         {
-            TbAnuncio anuncio = new TbAnuncio();
+            Tbanuncio anuncio = new Tbanuncio();
             Atribuir(anuncioModel, anuncio);
             _context.Update(anuncio);
             _context.SaveChanges();
@@ -32,16 +32,16 @@ namespace Services
 
         public int Inserir(Anuncio anuncioModel)
         {
-            TbAnuncio _anuncio = new TbAnuncio();
+            Tbanuncio _anuncio = new Tbanuncio();
             _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             _anuncio.CodUsuario = anuncioModel.CodUsuario;
             _anuncio.Descricao = anuncioModel.Descricao;
             _anuncio.Msg = anuncioModel.Msg;
             _anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
-            _anuncio.QuantDisponivel = anuncioModel.QuantDisponivel;
+            _anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
             _anuncio.Status = anuncioModel.Status;
             _anuncio.Titulo = anuncioModel.Titulo;
-            _anuncio.Valor = anuncioModel.Valor;
+            _anuncio.Valor = (float)anuncioModel.Valor;
             return _anuncio.CodAnuncio;
         }
         /// <summary>
@@ -68,8 +68,9 @@ namespace Services
         /// <param name="codAnuncio">Identificador do Anúncio</param>
         public void Remover(int codAnuncio)
         {
-            var tbAnuncio = _context.Anuncio.Find(codAnuncio);
-            _context.Anuncio.Remove(tbAnuncio);
+            //troquei Anuncio por Tbanuncio ... ver se está certo
+            var tbAnuncio = _context.Tbanuncio.Find(codAnuncio);
+            _context.Tbanuncio.Remove(tbAnuncio);
             _context.SaveChanges();
         }
         /// <summary>
@@ -86,7 +87,7 @@ namespace Services
         private IQueryable<Anuncio> GetQuery()
         {
            
-            IQueryable<TbAnuncio> TBanuncio = _context.Anuncio;
+            IQueryable<Tbanuncio> TBanuncio = _context.Tbanuncio;
             var query = from anuncio in TBanuncio
                         select new Anuncio
                         {
@@ -96,17 +97,17 @@ namespace Services
             return query;
         }
 
-        public void Atribuir(Anuncio anuncioModel, TbAnuncio anuncio)
+        public void Atribuir(Anuncio anuncioModel, Tbanuncio anuncio)
         {
             anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             anuncio.CodUsuario = anuncioModel.CodUsuario;
             anuncio.Descricao = anuncioModel.Descricao;
             anuncio.Msg = anuncioModel.Msg;
             anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
-            anuncio.QuantDisponivel = anuncioModel.QuantDisponivel;
+            anuncio.QuantDisponivel = (int) anuncioModel.QuantDisponivel;
             anuncio.Status = anuncioModel.Status;
             anuncio.Titulo = anuncioModel.Titulo;
-            anuncio.Valor = anuncioModel.Valor;
+            anuncio.Valor = (int) anuncioModel.Valor;
             
         }
 

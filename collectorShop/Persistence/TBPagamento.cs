@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TbPagamento
+    public partial class Tbpagamento
     {
-        public TbPagamento()
+        public Tbpagamento()
         {
-            Compra = new HashSet<TbCompra>();
-            Troca = new HashSet<TbTroca>();
+            Tbcompra = new HashSet<Tbcompra>();
+            Tbtroca = new HashSet<Tbtroca>();
         }
 
         public int CodPagamento { get; set; }
         public string Opcao { get; set; }
         public float Valor { get; set; }
 
-        public virtual ICollection<TbCompra> Compra { get; set; }
-        public virtual ICollection<TbTroca> Troca { get; set; }
+        public virtual ICollection<Tbcompra> Tbcompra { get; set; }
+        public virtual ICollection<Tbtroca> Tbtroca { get; set; }
     }
 }

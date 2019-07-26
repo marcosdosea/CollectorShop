@@ -7,13 +7,14 @@ namespace Persistence
     {
         public TbCategoria()
         {
-            Usuariocategoria = new HashSet<TbUsuariocategoria>();
+            Tbsubcategoria = new HashSet<Tbsubcategoria>();
+            Tbusuariocategoria = new HashSet<Tbusuariocategoria>();
         }
 
         public int CodCategoria { get; set; }
         public string Nome { get; set; }
 
-        public virtual ICollection<TbUsuariocategoria> Usuariocategoria { get; set; }
-        public IEnumerable<TbSubcategoria> Subcategoria { get; internal set; }
+        public virtual ICollection<Tbsubcategoria> Tbsubcategoria { get; set; }
+        public virtual ICollection<Tbusuariocategoria> Tbusuariocategoria { get; set; }
     }
 }

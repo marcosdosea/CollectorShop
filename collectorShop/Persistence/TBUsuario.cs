@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TbUsuario
+    public partial class Tbusuario
     {
-        public TbUsuario()
+        public Tbusuario()
         {
-            Anuncio = new HashSet<TbAnuncio>();
-            Compra = new HashSet<TbCompra>();
-            Modelo = new HashSet<TbModelo>();
-            Troca = new HashSet<TbTroca>();
-            Usuariocategoria = new HashSet<TbUsuariocategoria>();
-            Usuariosubcategoria = new HashSet<TbUsuariosubcategoria>();
+            Tbanuncio = new HashSet<Tbanuncio>();
+            Tbcompra = new HashSet<Tbcompra>();
+            Tbmodelo = new HashSet<Tbmodelo>();
+            Tbtroca = new HashSet<Tbtroca>();
+            Tbusuariocategoria = new HashSet<Tbusuariocategoria>();
+            Tbusuariosubcategoria = new HashSet<Tbusuariosubcategoria>();
         }
 
         public int CodUsuario { get; set; }
@@ -25,11 +25,11 @@ namespace Persistence
         public string Cep { get; set; }
         public byte Administrador { get; set; }
 
-        public virtual ICollection<TbAnuncio> Anuncio { get; set; }
-        public virtual ICollection<TbCompra> Compra { get; set; }
-        public virtual ICollection<TbModelo> Modelo { get; set; }
-        public virtual ICollection<TbTroca> Troca { get; set; }
-        public virtual ICollection<TbUsuariocategoria> Usuariocategoria { get; set; }
-        public virtual ICollection<TbUsuariosubcategoria> Usuariosubcategoria { get; set; }
+        public virtual ICollection<Tbanuncio> Tbanuncio { get; set; }
+        public virtual ICollection<Tbcompra> Tbcompra { get; set; }
+        public virtual ICollection<Tbmodelo> Tbmodelo { get; set; }
+        public virtual ICollection<Tbtroca> Tbtroca { get; set; }
+        public virtual ICollection<Tbusuariocategoria> Tbusuariocategoria { get; set; }
+        public virtual ICollection<Tbusuariosubcategoria> Tbusuariosubcategoria { get; set; }
     }
 }
