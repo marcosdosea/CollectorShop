@@ -19,7 +19,7 @@ namespace Services
         /// <param name="anuncioModel">Dados do anúncio</param>
         public void Editar(Anuncio anuncioModel)
         {
-            TBAnuncio anuncio = new TBAnuncio();
+            TbAnuncio anuncio = new TbAnuncio();
             Atribuir(anuncioModel, anuncio);
             _context.Update(anuncio);
             _context.SaveChanges();
@@ -32,7 +32,7 @@ namespace Services
 
         public int Inserir(Anuncio anuncioModel)
         {
-            TBAnuncio _anuncio = new TBAnuncio();
+            TbAnuncio _anuncio = new TbAnuncio();
             _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             _anuncio.CodUsuario = anuncioModel.CodUsuario;
             _anuncio.Descricao = anuncioModel.Descricao;
@@ -86,7 +86,7 @@ namespace Services
         private IQueryable<Anuncio> GetQuery()
         {
            
-            IQueryable<TBAnuncio> TBanuncio = _context.Anuncio;
+            IQueryable<TbAnuncio> TBanuncio = _context.Anuncio;
             var query = from anuncio in TBanuncio
                         select new Anuncio
                         {
@@ -96,7 +96,7 @@ namespace Services
             return query;
         }
 
-        public void Atribuir(Anuncio anuncioModel, TBAnuncio anuncio)
+        public void Atribuir(Anuncio anuncioModel, TbAnuncio anuncio)
         {
             anuncio.CodAnuncio = anuncioModel.CodAnuncio;
             anuncio.CodUsuario = anuncioModel.CodUsuario;

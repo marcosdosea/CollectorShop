@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TBCategoria
+    public partial class TbCategoria
     {
-        public TBCategoria()
+        public TbCategoria()
         {
-            Usuariocategoria = new HashSet<TBUsuariocategoria>();
+            Usuariocategoria = new HashSet<TbUsuariocategoria>();
         }
 
         public int CodCategoria { get; set; }
         public string Nome { get; set; }
 
-        public virtual ICollection<TBUsuariocategoria> Usuariocategoria { get; set; }
-        public IEnumerable<TBSubcategoria> Subcategoria { get; internal set; }
+        public virtual ICollection<TbUsuariocategoria> Usuariocategoria { get; set; }
+        public IEnumerable<TbSubcategoria> Subcategoria { get; internal set; }
     }
 }

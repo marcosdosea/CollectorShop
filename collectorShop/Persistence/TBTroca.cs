@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TBTroca
+    public partial class TbTroca
     {
         public int CodTroca { get; set; }
         public int Quantidade { get; set; }
@@ -12,8 +12,8 @@ namespace Persistence
         public int CodPagamento { get; set; }
         public int CodUsuario { get; set; }
 
-        public virtual TBEnvio CodEnvioNavigation { get; set; }
-        public virtual TBPagamento CodPagamentoNavigation { get; set; }
-        public virtual TBUsuario CodUsuarioNavigation { get; set; }
+        public virtual TbBEnvio CodEnvioNavigation { get; set; }
+        public virtual TbPagamento CodPagamentoNavigation { get; set; }
+        public virtual TbUsuario CodUsuarioNavigation { get; set; }
     }
 }

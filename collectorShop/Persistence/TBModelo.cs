@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TBModelo
+    public partial class TbModelo
     {
-        public TBModelo()
+        public TbModelo()
         {
-            Anunciomodelo = new HashSet<TBAnunciomodelo>();
-            Compra = new HashSet<TBCompra>();
-            Trocamodelo = new HashSet<TBTrocamodelo>();
+            Anunciomodelo = new HashSet<TbAnunciomodelo>();
+            Compra = new HashSet<TbCompra>();
+            Trocamodelo = new HashSet<TbTrocamodelo>();
         }
 
         public int CodModelo { get; set; }
@@ -22,9 +22,9 @@ namespace Persistence
         public int CodSubcategoria { get; set; }
         public int CodUsuario { get; set; }
 
-        public virtual TBUsuario CodUsuarioNavigation { get; set; }
-        public virtual ICollection<TBAnunciomodelo> Anunciomodelo { get; set; }
-        public virtual ICollection<TBCompra> Compra { get; set; }
-        public virtual ICollection<TBTrocamodelo> Trocamodelo { get; set; }
+        public virtual TbUsuario CodUsuarioNavigation { get; set; }
+        public virtual ICollection<TbAnunciomodelo> Anunciomodelo { get; set; }
+        public virtual ICollection<TbCompra> Compra { get; set; }
+        public virtual ICollection<TbTrocamodelo> Trocamodelo { get; set; }
     }
 }

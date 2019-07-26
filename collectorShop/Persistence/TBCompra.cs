@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Persistence
 {
-    public partial class TBCompra
+    public partial class TbCompra
     {
         public int CodCompra { get; set; }
         public DateTime Data { get; set; }
@@ -16,11 +16,11 @@ namespace Persistence
 
         public int CodAnuncio { get; set; }
 
-        public virtual TBEnvio CodEnvioNavigation { get; set; }
-        public virtual TBModelo CodModeloNavigation { get; set; }
-        public virtual TBPagamento CodPagamentoNavigation { get; set; }
-        public virtual TBUsuario CodUsuarioNavigation { get; set; }
-        public virtual TBAnuncio CodAnuncioNavigation { get; set; }
+        public virtual TbBEnvio CodEnvioNavigation { get; set; }
+        public virtual TbModelo CodModeloNavigation { get; set; }
+        public virtual TbPagamento CodPagamentoNavigation { get; set; }
+        public virtual TbUsuario CodUsuarioNavigation { get; set; }
+        public virtual TbAnuncio CodAnuncioNavigation { get; set; }
         //  public object CodAnuncio { get; internal set; }
     }
 }
