@@ -6,6 +6,148 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\css\bootstrap.css" />
+    <Content Remove="wwwroot\assets\css\estilo.css" />
+    <Content Remove="wwwroot\assets\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\assets\css\style.css" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\assets\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\assets\img\american-express-logo.jpg" />
+    <Content Remove="wwwroot\assets\img\anuncio.jpg" />
+    <Content Remove="wwwroot\assets\img\BaneseCard.jpg" />
+    <Content Remove="wwwroot\assets\img\Barbie-Silkstone1.jpg" />
+    <Content Remove="wwwroot\assets\img\Barbie-Silkstone2.jpg" />
+    <Content Remove="wwwroot\assets\img\Barbie-Silkstone3.jpg" />
+    <Content Remove="wwwroot\assets\img\bolsa.jpg" />
+    <Content Remove="wwwroot\assets\img\box_game_of_thrones.jpg" />
+    <Content Remove="wwwroot\assets\img\carregarImagem.png" />
+    <Content Remove="wwwroot\assets\img\carrinho.jpg" />
+    <Content Remove="wwwroot\assets\img\cartoes-de-credito.png" />
+    <Content Remove="wwwroot\assets\img\elo-cartoes.jpg" />
+    <Content Remove="wwwroot\assets\img\facebook-login.png" />
+    <Content Remove="wwwroot\assets\img\facebook-sign-in-button.png" />
+    <Content Remove="wwwroot\assets\img\Hot-Toys-Jack-Sparrow.jpg" />
+    <Content Remove="wwwroot\assets\img\masterCard.jpg" />
+    <Content Remove="wwwroot\assets\img\operacao.png" />
+    <Content Remove="wwwroot\assets\img\operacao.png.jpg" />
+    <Content Remove="wwwroot\assets\img\paypal.jpg" />
+    <Content Remove="wwwroot\assets\img\perguntas.svg" />
+    <Content Remove="wwwroot\assets\img\produto1.jpg" />
+    <Content Remove="wwwroot\assets\img\produto10.jpg" />
+    <Content Remove="wwwroot\assets\img\produto11.jpg" />
+    <Content Remove="wwwroot\assets\img\produto2.jpg" />
+    <Content Remove="wwwroot\assets\img\produto3.jpg" />
+    <Content Remove="wwwroot\assets\img\produto4.jpg" />
+    <Content Remove="wwwroot\assets\img\produto5.jpg" />
+    <Content Remove="wwwroot\assets\img\produto6.jpg" />
+    <Content Remove="wwwroot\assets\img\produto7.jpg" />
+    <Content Remove="wwwroot\assets\img\produto8.jpg" />
+    <Content Remove="wwwroot\assets\img\produto9.jpg" />
+    <Content Remove="wwwroot\assets\img\visa.png" />
+    <Content Remove="wwwroot\assets\ItemSlider\css\demo.css" />
+    <Content Remove="wwwroot\assets\ItemSlider\css\main-style.css" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\acessorio.png" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\anime.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\barbie.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\bjd.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\blythe.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\box.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\cd.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\fantasia.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\figureaction.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\filme.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\hqs.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\livro.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\mangas.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\miniatura.jpg" />
+    <Content Remove="wwwroot\assets\ItemSlider\images\serie.png" />
+    <Content Remove="wwwroot\assets\ItemSlider\index.html" />
+    <Content Remove="wwwroot\assets\ItemSlider\js\jquery.catslider.js" />
+    <Content Remove="wwwroot\assets\ItemSlider\js\modernizr.custom.63321.js" />
+    <Content Remove="wwwroot\assets\js\bootstrap.js" />
+    <Content Remove="wwwroot\assets\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\assets\js\jquery-1.10.2.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\bootstrap.css" />
+    <None Include="wwwroot\assets\css\estilo.css" />
+    <None Include="wwwroot\assets\css\font-awesome.min.css" />
+    <None Include="wwwroot\assets\css\style.css" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\assets\img\american-express-logo.jpg" />
+    <None Include="wwwroot\assets\img\anuncio.jpg" />
+    <None Include="wwwroot\assets\img\BaneseCard.jpg" />
+    <None Include="wwwroot\assets\img\Barbie-Silkstone1.jpg" />
+    <None Include="wwwroot\assets\img\Barbie-Silkstone2.jpg" />
+    <None Include="wwwroot\assets\img\Barbie-Silkstone3.jpg" />
+    <None Include="wwwroot\assets\img\bolsa.jpg" />
+    <None Include="wwwroot\assets\img\box_game_of_thrones.jpg" />
+    <None Include="wwwroot\assets\img\carregarImagem.png" />
+    <None Include="wwwroot\assets\img\carrinho.jpg" />
+    <None Include="wwwroot\assets\img\cartoes-de-credito.png" />
+    <None Include="wwwroot\assets\img\elo-cartoes.jpg" />
+    <None Include="wwwroot\assets\img\facebook-login.png" />
+    <None Include="wwwroot\assets\img\facebook-sign-in-button.png" />
+    <None Include="wwwroot\assets\img\Hot-Toys-Jack-Sparrow.jpg" />
+    <None Include="wwwroot\assets\img\masterCard.jpg" />
+    <None Include="wwwroot\assets\img\operacao.png" />
+    <None Include="wwwroot\assets\img\operacao.png.jpg" />
+    <None Include="wwwroot\assets\img\paypal.jpg" />
+    <None Include="wwwroot\assets\img\perguntas.svg" />
+    <None Include="wwwroot\assets\img\produto1.jpg" />
+    <None Include="wwwroot\assets\img\produto10.jpg" />
+    <None Include="wwwroot\assets\img\produto11.jpg" />
+    <None Include="wwwroot\assets\img\produto2.jpg" />
+    <None Include="wwwroot\assets\img\produto3.jpg" />
+    <None Include="wwwroot\assets\img\produto4.jpg" />
+    <None Include="wwwroot\assets\img\produto5.jpg" />
+    <None Include="wwwroot\assets\img\produto6.jpg" />
+    <None Include="wwwroot\assets\img\produto7.jpg" />
+    <None Include="wwwroot\assets\img\produto8.jpg" />
+    <None Include="wwwroot\assets\img\produto9.jpg" />
+    <None Include="wwwroot\assets\img\visa.png" />
+    <None Include="wwwroot\assets\ItemSlider\css\demo.css" />
+    <None Include="wwwroot\assets\ItemSlider\css\main-style.css" />
+    <None Include="wwwroot\assets\ItemSlider\images\acessorio.png" />
+    <None Include="wwwroot\assets\ItemSlider\images\anime.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\barbie.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\bjd.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\blythe.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\box.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\cd.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\fantasia.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\figureaction.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\filme.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\hqs.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\livro.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\mangas.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\miniatura.jpg" />
+    <None Include="wwwroot\assets\ItemSlider\images\serie.png" />
+    <None Include="wwwroot\assets\ItemSlider\index.html" />
+    <None Include="wwwroot\assets\ItemSlider\js\jquery.catslider.js" />
+    <None Include="wwwroot\assets\ItemSlider\js\modernizr.custom.63321.js" />
+    <None Include="wwwroot\assets\js\bootstrap.js" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\jquery-1.10.2.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
@@ -15,6 +157,12 @@
     <ProjectReference Include="..\Model\Model.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
     <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Produto\CadastroProduto.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

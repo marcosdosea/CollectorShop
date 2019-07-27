@@ -64,7 +64,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(84, 757, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fdd19c6f71e84b9b9b000240034affe2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d276fcf94e1a410fade0f11aa45748fb", async() => {
                 BeginContext(90, 744, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -101,7 +101,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(843, 28864, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6231b490ac4c4b10bb3798790eb205de", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e532675a131e49519e921248573a9c8d", async() => {
                 BeginContext(849, 1827, true);
                 WriteLiteral(@"
     <nav class=""navbar navbar-default"" role=""navigation"">
@@ -141,7 +141,7 @@ using collectorShop.Models;
                 ");
                 EndContext();
                 BeginContext(2676, 373, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8925a797fce41f09264af3ff95b37b6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fe63fccc4ec435a9ee0746d3ebabc37", async() => {
                     BeginContext(2731, 311, true);
                     WriteLiteral(@"
                     <div class=""form-group"">
@@ -624,7 +624,7 @@ using collectorShop.Models;
                 ");
                 EndContext();
                 BeginContext(26299, 1271, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbaca3f8a0564ebba72825a15281c04e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec29a93654704b1eace6a53ec35b6eca", async() => {
                     BeginContext(26305, 1258, true);
                     WriteLiteral(@"
                     <div class=""row"">

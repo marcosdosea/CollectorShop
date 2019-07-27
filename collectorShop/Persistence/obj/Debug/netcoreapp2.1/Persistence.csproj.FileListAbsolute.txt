@@ -19,3 +19,4 @@ C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\persistence\
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
