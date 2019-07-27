@@ -17,10 +17,15 @@ namespace Services
             _Contexto = _contexto;
         }
 
-        public int Adicionar(Categoria entidade)
+        /// <summary>
+        ///     
+        /// </summary>
+        /// <param name="categoria"></param>
+        /// <returns></returns>
+        public int Adicionar(Categoria categoria)
         {
             var entidadeParaTabela = new TbCategoria();
-            Transferir(entidade, entidadeParaTabela);
+            Transferir(categoria, entidadeParaTabela);
 
             // chamar regra de negocio
             // invalido retutn -999999;
@@ -34,7 +39,7 @@ namespace Services
                 throw new Exception($"Não foi possivel inserir a categoria {entidadeParaTabela.Nome} com a seguinte exceção {e.Message}");
             }
 
-            return entidade.CodCategoria;
+            return categoria.CodCategoria;
         }
 
         private void Transferir(Categoria x, TbCategoria y)
@@ -73,13 +78,21 @@ namespace Services
             //return categoria;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns></returns>
         public IEnumerable<Categoria> ObterPorNome(string nome)
             => _Contexto.TbCategoria
             .Where(x => x.Nome.Equals(nome))
             .Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria })
             .ToList();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Categoria> ObterTodos()
             => _Contexto.TbCategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
 
@@ -99,6 +112,10 @@ namespace Services
             }
         }*/
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="codCategoria"></param>
         public void Remover(int codCategoria)
         {
             var tbcat = _Contexto.TbCategoria.Find(codCategoria);
@@ -107,10 +124,10 @@ namespace Services
             {
                 _Contexto.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception k)
             {
-                //throw new Exception($"Não foi possivel remover a categoria {entidadeParaTabela.Nome} com a seguinte exceção {e.Message}");
-               
+                throw new Exception($"Não foi possivel remover a categoria {tbcat.Nome} com a seguinte exceção {k.Message}");
+
             }
 
         }

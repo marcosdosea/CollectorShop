@@ -9,9 +9,12 @@ namespace Services
     {
         void Editar(T entidade);
         int Adicionar(T entidade);
-        Categoria Obter(int idEntidade);
+        // Categoria Obter(int idEntidade);
+        T Obter(int idEntidade);
         void Remover(int codCategoria);
-        IEnumerable<Categoria> ObterTodos();
+        //IEnumerable<Categoria> ObterTodos();
+        //IEnumerable<Categoria> ObterPorNome(string nome);
+        IEnumerable<T> ObterTodos();
         IEnumerable<Categoria> ObterPorNome(string nome);
     }
 }

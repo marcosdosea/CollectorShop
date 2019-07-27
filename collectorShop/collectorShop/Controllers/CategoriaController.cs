@@ -20,13 +20,13 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View(_servicesCategoria.ObterTodos());
         }
 
         // GET: Categoria/Details/5
-        public ActionResult Details(int id)
+        public IActionResult Details(int id)
         {
             Categoria cat = _servicesCategoria.Obter(id);
             return View(cat);
@@ -70,7 +70,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int id)
 
         {
             Categoria categoria = _servicesCategoria.Obter(id);
@@ -80,7 +80,7 @@ namespace collectorShop.Controllers
         // POST: Categoria/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Categoria categoria)
+        public IActionResult Edit(int id, Categoria categoria)
         {
             try
             {
@@ -96,7 +96,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria/Delete/5
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int id)
         {
             Categoria cat = _servicesCategoria.Obter(id);
             return View(cat);
@@ -105,7 +105,7 @@ namespace collectorShop.Controllers
         // POST: Categoria/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public IActionResult Delete(int id, IFormCollection collection)
         {
             try
             {
@@ -117,6 +117,7 @@ namespace collectorShop.Controllers
                 return View();
             }
         }
+        
 
     }
 }

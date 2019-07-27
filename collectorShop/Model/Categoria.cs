@@ -9,6 +9,9 @@ namespace Model
     {
         [Key]
         public int CodCategoria { get; set; }
+        [Required]
+        [Display(Name ="Nome")]
+        [MaxLength(45)]
         public string Nome { get; set; }
     }
 }
