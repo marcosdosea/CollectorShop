@@ -41,8 +41,12 @@ namespace collectorShop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Anuncio anuncio)
         {
-            gerenciadorAnuncio.Inserir(anuncio);
-            return RedirectToAction(nameof(Index));
+            if (ModelState.IsValid)
+            {
+                gerenciadorAnuncio.Inserir(anuncio);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(anuncio);
         }
 
         // GET: Anuncio/Edit/5

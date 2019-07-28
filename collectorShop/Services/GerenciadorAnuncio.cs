@@ -19,10 +19,18 @@ namespace Services
         /// <param name="anuncioModel">Dados do anúncio</param>
         public void Editar(Anuncio anuncioModel)
         {
-            Tbanuncio anuncio = new Tbanuncio();
-            Atribuir(anuncioModel, anuncio);
-            _context.Update(anuncio);
-            _context.SaveChanges();
+            try
+            {
+                Tbanuncio tbanuncio = new Tbanuncio();
+                Atribuir(anuncioModel, tbanuncio);
+                _context.Update(tbanuncio);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Anúncio não atualizado. Erro de {e.Message}");
+            }
+            
         }
         /// <summary>
         /// Insere um novo anúncio na base de dados
@@ -32,17 +40,24 @@ namespace Services
 
         public int Inserir(Anuncio anuncioModel)
         {
-            Tbanuncio _anuncio = new Tbanuncio();
-            _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
-            _anuncio.CodUsuario = anuncioModel.CodUsuario;
-            _anuncio.Descricao = anuncioModel.Descricao;
-            _anuncio.Msg = anuncioModel.Msg;
-            _anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
-            _anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
-            _anuncio.Status = anuncioModel.Status;
-            _anuncio.Titulo = anuncioModel.Titulo;
-            _anuncio.Valor = (float)anuncioModel.Valor;
-            return _anuncio.CodAnuncio;
+            try
+            {
+                Tbanuncio _anuncio = new Tbanuncio();
+                _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
+                _anuncio.CodUsuario = anuncioModel.CodUsuario;
+                _anuncio.Descricao = anuncioModel.Descricao;
+                _anuncio.Msg = anuncioModel.Msg;
+                _anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
+                _anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
+                _anuncio.Status = anuncioModel.Status;
+                _anuncio.Titulo = anuncioModel.Titulo;
+                _anuncio.Valor = (float)anuncioModel.Valor;
+                return _anuncio.CodAnuncio;
+            }
+            catch(Exception e)
+            {
+                throw new Exception($"Não foi possível inserir novo anúncio. Erro {e.Message}");
+            }
         }
         /// <summary>
         /// Obtem o anúncio pelo título
@@ -99,15 +114,22 @@ namespace Services
 
         public void Atribuir(Anuncio anuncioModel, Tbanuncio anuncio)
         {
-            anuncio.CodAnuncio = anuncioModel.CodAnuncio;
-            anuncio.CodUsuario = anuncioModel.CodUsuario;
-            anuncio.Descricao = anuncioModel.Descricao;
-            anuncio.Msg = anuncioModel.Msg;
-            anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
-            anuncio.QuantDisponivel = (int) anuncioModel.QuantDisponivel;
-            anuncio.Status = anuncioModel.Status;
-            anuncio.Titulo = anuncioModel.Titulo;
-            anuncio.Valor = (int) anuncioModel.Valor;
+            try
+            {
+                anuncio.CodAnuncio = anuncioModel.CodAnuncio;
+                anuncio.CodUsuario = anuncioModel.CodUsuario;
+                anuncio.Descricao = anuncioModel.Descricao;
+                anuncio.Msg = anuncioModel.Msg;
+                anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
+                anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
+                anuncio.Status = anuncioModel.Status;
+                anuncio.Titulo = anuncioModel.Titulo;
+                anuncio.Valor = (int)anuncioModel.Valor;
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Dados não atribuidos. Erro {e.Message}");
+            }
             
         }
 

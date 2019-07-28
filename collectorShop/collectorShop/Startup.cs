@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence;
 using Services;
+using Model;
 
 namespace collectorShop
 {
@@ -43,7 +44,10 @@ namespace collectorShop
             services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
+
             services.AddTransient<IGerenciadorAnuncio,GerenciadorAnuncio>();
+
+            services.AddScoped<IGerenciadorAnuncio, GerenciadorAnuncio>();
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
