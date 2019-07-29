@@ -24,6 +24,7 @@ namespace Model
         public string Titulo { get; set; }
         [Required]
         [Display(Name = "Descrição")]
+        [StringLength(100)]
         public string Descricao { get; set; }
         [Required]
         [Display(Name = "Valor")]
@@ -31,6 +32,8 @@ namespace Model
         [Required]
         [Display(Name = "Código do Usuário")]
         public int CodUsuario { get; set; }
+        [StringLength(250)]
+        [Display(Name = "Mensagem")]
         public string Msg { get; set; }
 
     }

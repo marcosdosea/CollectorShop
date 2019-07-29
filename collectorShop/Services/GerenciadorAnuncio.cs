@@ -40,8 +40,7 @@ namespace Services
 
         public int Inserir(Anuncio anuncioModel)
         {
-            try
-            {
+
                 Tbanuncio _anuncio = new Tbanuncio();
                 _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
                 _anuncio.CodUsuario = anuncioModel.CodUsuario;
@@ -52,12 +51,9 @@ namespace Services
                 _anuncio.Status = anuncioModel.Status;
                 _anuncio.Titulo = anuncioModel.Titulo;
                 _anuncio.Valor = (float)anuncioModel.Valor;
+                _context.Add(_anuncio);
+                _context.SaveChanges();
                 return _anuncio.CodAnuncio;
-            }
-            catch(Exception e)
-            {
-                throw new Exception($"Não foi possível inserir novo anúncio. Erro {e.Message}");
-            }
         }
         /// <summary>
         /// Obtem o anúncio pelo título
@@ -107,8 +103,16 @@ namespace Services
                         select new Anuncio
                         {
                             CodAnuncio = anuncio.CodAnuncio,
-                            Titulo = anuncio.Titulo
-                        };
+                            Titulo = anuncio.Titulo,
+                            CodUsuario = anuncio.CodUsuario,
+                            Descricao = anuncio.Descricao,
+                            Msg = anuncio.Msg,
+                            QuantAnunciada = anuncio.QuantAnunciada,
+                            QuantDisponivel = (int)anuncio.QuantDisponivel,
+                            Status = anuncio.Status,
+                            Valor = (float)anuncio.Valor,
+
+        };
             return query;
         }
 
