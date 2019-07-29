@@ -47,6 +47,7 @@ namespace collectorShop
             
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
 
+
             //services.AddDefaultIdentity<IdentityUser>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
