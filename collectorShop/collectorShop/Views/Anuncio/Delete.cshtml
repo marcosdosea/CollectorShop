@@ -1,0 +1,74 @@
+﻿@model Model.Anuncio
+
+@{
+     Layout = "_Layout";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Anuncio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodAnuncio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodAnuncio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantAnunciada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QuantAnunciada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantDisponivel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QuantDisponivel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodUsuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Msg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Msg)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

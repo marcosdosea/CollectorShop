@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Model.Anuncio>
+
+@{
+   Layout = "_Layout";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Anúncio</title>
+</head>
+<body>
+    <p>
+        <a asp-action="Create">Criar novo anúncio</a>
+        <br />
+        <a asp-action="Edit">Editar anúncio</a>
+        <br />
+        <a asp-action="Delete">Apagar anúncio</a>
+        <br />
+        <a asp-action="Details">Visualizar anúncio</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodAnuncio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuantAnunciada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuantDisponivel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodUsuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Msg)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodAnuncio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantAnunciada)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantDisponivel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodUsuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Msg)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Create", "Create", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CodAnuncio })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
