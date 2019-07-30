@@ -66,7 +66,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n\r\n<div class=\"col-md-9 footer-box\">\r\n\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-10\">\r\n            <h5><strong>1 Login/ Seu Carrinho de Compras 2/ Envio 3/Pagamento</strong></h5>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(277, 2536, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5da4de89d68044a59319a07081c37a33", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72d525a148a44b59ad5388b2a26b1b57", async() => {
                 BeginContext(318, 274, true);
                 WriteLiteral(@"
                 <div class=""row"">
@@ -77,7 +77,7 @@ using collectorShop.Models;
                             ");
                 EndContext();
                 BeginContext(592, 2074, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40b0e52bf5054d6fa44e0366dba870af", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0d49431a7ba4a67b2f01f6ac2f34a42", async() => {
                     BeginContext(609, 2050, true);
                     WriteLiteral(@"
                                 <h6>Selecione qual a bandeira do seu cartão de crédito:</h6>

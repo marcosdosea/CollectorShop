@@ -75,7 +75,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n\r\n<div class=\"col-md-9 footer-box\">\r\n\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-10\">\r\n            <h5><strong>Suporte > Compras > Resolver problema com uma compra</strong></h5>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(276, 2724, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5214dd010c144549b262c829ca980e60", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4268840e1534326b8a2ab5c9b89bdb0", async() => {
                 BeginContext(317, 543, true);
                 WriteLiteral(@"
                 <div class=""row"">
@@ -89,7 +89,7 @@ using collectorShop.Models;
                                             ");
                 EndContext();
                 BeginContext(860, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7658c1dbe3c4375a1bb45300cc99a43", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59d5d88dc95040fd8511e9cd574e9821", async() => {
                     BeginContext(895, 51, true);
                     WriteLiteral("Primeiro selecione uma categoria para seu problema:");
                     EndContext();
@@ -117,7 +117,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1001, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de80ad5c8f11414fad2eca7922793ee1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa84641e06074cbf894dd5e5d6b6f143", async() => {
                     BeginContext(1019, 30, true);
                     WriteLiteral("Produto diferente do anunciado");
                     EndContext();
@@ -139,7 +139,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1104, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fb61473e6a143cf975187ce8fbff261", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "291282ad1e5a45c790ed9ff2acfc308e", async() => {
                     BeginContext(1122, 18, true);
                     WriteLiteral("Produto danificado");
                     EndContext();
@@ -161,7 +161,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1195, 69, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "449f93f7f8834843851b1f4f81393dc1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "056573f549d34e87ac0f00cc208fc794", async() => {
                     BeginContext(1213, 42, true);
                     WriteLiteral("Vendedor não quer fazer a troca do produto");
                     EndContext();
@@ -183,7 +183,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1310, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5093dd82de6546f6adae4ea3b5f98ce2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "571a608b58164764a197b7bd18ced192", async() => {
                     BeginContext(1328, 24, true);
                     WriteLiteral("Arrependimento de compra");
                     EndContext();
@@ -205,7 +205,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1407, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0638d3b2a35c4ef181de80a6e1014a95", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79a6acb76d444c79a4d4a708047db78d", async() => {
                     BeginContext(1425, 32, true);
                     WriteLiteral("Minha encomenda ainda não chegou");
                     EndContext();
@@ -227,7 +227,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1512, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f2d32f9f1054f4c9843ef27116bb1c3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea6ee2390cab47a08c1bec006da78017", async() => {
                     BeginContext(1530, 29, true);
                     WriteLiteral("Minha encomenda foi extornada");
                     EndContext();
@@ -249,7 +249,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1614, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3a35eff5b074ad1b3b7e607188a0440", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab4b888abc104b6fbf40f748c1b940a9", async() => {
                     BeginContext(1632, 33, true);
                     WriteLiteral("Minha encomenda chegou danificada");
                     EndContext();
@@ -271,7 +271,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(1720, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d36771b786c4ed9a9b121de615a6df1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd45505911a143a589d35c3d47e2e588", async() => {
                     BeginContext(1738, 25, true);
                     WriteLiteral("Meu produto não me serviu");
                     EndContext();
