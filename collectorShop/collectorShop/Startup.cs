@@ -46,6 +46,7 @@ namespace collectorShop
                  Configuration.GetConnectionString("CollectorConection")));
             
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
+            services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
 
 
             //services.AddDefaultIdentity<IdentityUser>()
