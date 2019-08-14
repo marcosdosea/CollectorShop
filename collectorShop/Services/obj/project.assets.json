@@ -5447,11 +5447,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\obj\\",
+      "outputPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5472,11 +5472,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Model\\Model.csproj"
             },
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\source\\repos\\marcosdosea\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
             }
           }
         }
