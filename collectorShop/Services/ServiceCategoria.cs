@@ -24,12 +24,12 @@ namespace Services
         /// <returns></returns>
         public int Adicionar(Categoria categoria)
         {
-            var entidadeParaTabela = new TbCategoria();
+            var entidadeParaTabela = new Tbcategoria();
             Transferir(categoria, entidadeParaTabela);
 
             // chamar regra de negocio
             // invalido retutn -999999;
-            _Contexto.TbCategoria.Add(entidadeParaTabela);
+            _Contexto.Tbcategoria.Add(entidadeParaTabela);
             try
             {
                 _Contexto.SaveChanges();
@@ -42,7 +42,7 @@ namespace Services
             return categoria.CodCategoria;
         }
 
-        private void Transferir(Categoria x, TbCategoria y)
+        private void Transferir(Categoria x, Tbcategoria y)
         {
             y.CodCategoria = x.CodCategoria;
             y.Nome = x.Nome;
@@ -50,7 +50,7 @@ namespace Services
 
         public void Editar(Categoria entidade)
         {
-            var entidadeParaTabela = new TbCategoria();
+            var entidadeParaTabela = new Tbcategoria();
             Transferir(entidade, entidadeParaTabela);
 
             _Contexto.Entry(entidadeParaTabela).State = EntityState.Modified;
@@ -70,7 +70,7 @@ namespace Services
         {
             //var categoria = new Categoria();
 
-            return _Contexto.TbCategoria
+            return _Contexto.Tbcategoria
                 .Where(x => x.CodCategoria == idEntidade)
                 .Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria })
                 .SingleOrDefault();
@@ -84,7 +84,7 @@ namespace Services
         /// <param name="nome"></param>
         /// <returns></returns>
         public IEnumerable<Categoria> ObterPorNome(string nome)
-            => _Contexto.TbCategoria
+            => _Contexto.Tbcategoria
             .Where(x => x.Nome.Equals(nome))
             .Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria })
             .ToList();
@@ -94,7 +94,7 @@ namespace Services
         /// </summary>
         /// <returns></returns>
         public IEnumerable<Categoria> ObterTodos()
-            => _Contexto.TbCategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
+            => _Contexto.Tbcategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
 
         /*public void Remover(Categoria entidade)
         {
@@ -118,8 +118,8 @@ namespace Services
         /// <param name="codCategoria"></param>
         public void Remover(int codCategoria)
         {
-            var tbcat = _Contexto.TbCategoria.Find(codCategoria);
-            _Contexto.TbCategoria.Remove(tbcat);
+            var tbcat = _Contexto.Tbcategoria.Find(codCategoria);
+            _Contexto.Tbcategoria.Remove(tbcat);
             try
             {
                 _Contexto.SaveChanges();

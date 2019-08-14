@@ -45,7 +45,7 @@ namespace Services
                 _anuncio.CodAnuncio = anuncioModel.CodAnuncio;
                 _anuncio.CodUsuario = anuncioModel.CodUsuario;
                 _anuncio.Descricao = anuncioModel.Descricao;
-                _anuncio.Msg = anuncioModel.Msg;
+              //  _anuncio.Msg = anuncioModel.Msg;
                 _anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
                 _anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
                 _anuncio.Status = anuncioModel.Status;
@@ -106,7 +106,7 @@ namespace Services
                             Titulo = anuncio.Titulo,
                             CodUsuario = anuncio.CodUsuario,
                             Descricao = anuncio.Descricao,
-                            Msg = anuncio.Msg,
+                          //  Msg = anuncio.Msg,
                             QuantAnunciada = anuncio.QuantAnunciada,
                             QuantDisponivel = (int)anuncio.QuantDisponivel,
                             Status = anuncio.Status,
@@ -123,7 +123,7 @@ namespace Services
                 anuncio.CodAnuncio = anuncioModel.CodAnuncio;
                 anuncio.CodUsuario = anuncioModel.CodUsuario;
                 anuncio.Descricao = anuncioModel.Descricao;
-                anuncio.Msg = anuncioModel.Msg;
+              //  anuncio.Msg = anuncioModel.Msg;
                 anuncio.QuantAnunciada = anuncioModel.QuantAnunciada;
                 anuncio.QuantDisponivel = (int)anuncioModel.QuantDisponivel;
                 anuncio.Status = anuncioModel.Status;

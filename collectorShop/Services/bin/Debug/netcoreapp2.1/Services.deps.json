@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Services/1.0.0": {
         "dependencies": {
+          "Model": "1.0.0",
           "Persistence": "1.0.0"
         },
         "runtime": {
@@ -860,7 +861,6 @@
       "Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
-          "Model": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.17"
         },
         "runtime": {

@@ -21,3 +21,8 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Servic
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
