@@ -15,7 +15,6 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csproj.CoreCompileInputs.cache
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorAssemblyInfo.cache
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorAssemblyInfo.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.AssemblyInfoInputs.cache
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.AssemblyInfo.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.TagHelpers.input.cache
@@ -50,7 +49,6 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\RecuperarSenha.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\SuporteCompras04.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Produto\CadastroProduto.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Create.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -227,3 +225,8 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Edit.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Delete.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Details.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Index.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Details.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Create.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Edit.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Delete.g.cshtml.cs
