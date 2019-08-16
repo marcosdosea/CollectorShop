@@ -33,4 +33,3 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcore
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
-C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
