@@ -28,9 +28,6 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Edit.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Anuncio\Index.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Create.g.cshtml.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Delete.g.cshtml.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Details.g.cshtml.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Edit.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Index.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Checkout\Carrinho.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Checkout\Frete.g.cshtml.cs
@@ -66,7 +63,6 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Form.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Index.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Create.g.cshtml.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Edit.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorTargetAssemblyInfo.cache
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorTargetAssemblyInfo.cs
@@ -223,3 +219,11 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Create.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Edit.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Delete.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Create.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Delete.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Details.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Edit.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Index.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Edit.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Delete.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Categoria\Details.g.cshtml.cs
