@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "_Layout";
 }
 
 <h2>Index</h2>
@@ -73,9 +74,9 @@
                 @Html.DisplayFor(modelItem => item.Administrador)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id=item.CodUsuario }) |
+                @Html.ActionLink("Details", "Details", new { id=item.CodUsuario}) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.CodUsuario })
             </td>
         </tr>
 }
