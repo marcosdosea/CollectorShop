@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Model;
 using Services;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace collectorShop.Controllers
 {
@@ -27,10 +31,10 @@ namespace collectorShop.Controllers
             Subcategoria subcategoria = gerenciadorSubcategoria.Obter(id);
             return View(subcategoria);
         }
-
         // GET: Subcategoria/Create
         public ActionResult Create()
         {
+            ViewBag.CodCategoria = new SelectList(gerenciadorCategoria.ObterTodos(), "codCategoria", "Nome", null);
             return View();
         }
 
@@ -51,9 +55,12 @@ namespace collectorShop.Controllers
         public ActionResult Edit(int id)
         {
             Subcategoria subcategoria = gerenciadorSubcategoria.Obter(id);
+            IEnumerable<Categoria> listaCategoria = gerenciadorCategoria.ObterTodos();
+            ViewBag.CodCategoria = new SelectList(listaCategoria, "CodCategoria", "Nome",
+                listaCategoria.Where(categoria => categoria.CodCategoria == subcategoria.CodCategoria).FirstOrDefault());
             return View(subcategoria);
         }
-
+        
         // POST: Subcategoria/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]

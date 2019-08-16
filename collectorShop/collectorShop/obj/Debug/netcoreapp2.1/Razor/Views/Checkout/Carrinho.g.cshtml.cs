@@ -65,7 +65,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n\r\n<div class=\"col-md-9 footer-box\">\r\n\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-10\">\r\n            <h5><strong>1 Login/ Seu Carrinho de Compras</strong> 2/ Envio 3/Pagamento</h5>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(277, 1305, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80fb2851f0034c678e7b416cf4716355", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d764b2fb9ee4f94b6ae085f38ef6b85", async() => {
                 BeginContext(318, 1257, true);
                 WriteLiteral(@"
                 <div class=""row"">
