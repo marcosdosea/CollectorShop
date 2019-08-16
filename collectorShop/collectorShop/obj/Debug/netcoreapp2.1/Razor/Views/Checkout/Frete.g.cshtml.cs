@@ -66,7 +66,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n\r\n<div class=\"col-md-9 footer-box\">\r\n\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-10\">\r\n            <h5><strong>1 Login/ Seu Carrinho de Compras 2/ Envio 3</strong>/Pagamento</h5>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(277, 1325, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad37ec42f2bc4860b266b45896c8a1d5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "764fabc94b7b41bcb343e2eb028e4be2", async() => {
                 BeginContext(318, 270, true);
                 WriteLiteral(@"
                 <div class=""row"">
@@ -77,7 +77,7 @@ using collectorShop.Models;
                             ");
                 EndContext();
                 BeginContext(588, 867, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65808c9578574dcc9c005318375f396e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "245f60fcbe9f46ee918f42a9813250d8", async() => {
                     BeginContext(605, 843, true);
                     WriteLiteral(@"
                                 <input type=""radio"" name=""envio"" value=""pac"" required=""required""> Correios PAC<br>

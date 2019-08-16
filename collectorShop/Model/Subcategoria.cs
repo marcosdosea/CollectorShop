@@ -9,5 +9,6 @@ namespace Model
         public string Nome { get; set; }
         public int CodCategoria { get; set; }
 
+        public string NomeCategoria { get; set; }
     }
 }

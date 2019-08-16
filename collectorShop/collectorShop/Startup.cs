@@ -48,6 +48,9 @@ namespace collectorShop
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
             services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
 
+            //services.AddScoped<IGerenciadorSubcategoria<Subcategoria>, GerenciadorSubcategoria>();
+            services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
+
 
             //services.AddDefaultIdentity<IdentityUser>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>();

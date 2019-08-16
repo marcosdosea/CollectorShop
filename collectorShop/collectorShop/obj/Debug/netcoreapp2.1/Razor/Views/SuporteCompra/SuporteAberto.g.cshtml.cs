@@ -65,7 +65,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n\r\n<div class=\"col-md-9 footer-box\">\r\n\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-10\">\r\n            <h5><strong>Suporte > Compras > Direito de Arrependimento</strong></h5>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(269, 1151, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7592ee7e92c40fc86608c1e62035eab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b6ece7194ea496a9cf3d8d44ac560c3", async() => {
                 BeginContext(310, 1103, true);
                 WriteLiteral(@"
                 <div class=""row"">
