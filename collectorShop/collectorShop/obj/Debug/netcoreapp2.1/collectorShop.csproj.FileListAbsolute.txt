@@ -222,3 +222,4 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Details.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Create.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Edit.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Subcategoria\Delete.g.cshtml.cs
