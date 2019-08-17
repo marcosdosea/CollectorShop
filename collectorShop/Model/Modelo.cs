@@ -41,6 +41,9 @@ namespace Model
         [Display(Name = "Codigo do Usuario")]
         public int CodUsuario { get; set; }
 
-       
+        public string nomeSubCategoria { get; set; }
+        public string nomeUsuario { get; set; }
+
+
     }
 }

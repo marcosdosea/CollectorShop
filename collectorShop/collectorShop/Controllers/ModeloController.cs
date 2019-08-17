@@ -14,12 +14,14 @@ namespace collectorShop.Controllers
     {
         private readonly IServiceModelo _servicesModelo;
         private readonly IGerenciadorSubcategoria _gerenciadorSubcategoria;
+        private readonly IGerenciadorUsuario _gerenciadorUsuario;
         // GET: Modelo
 
-        public ModeloController(IServiceModelo serviceModelo, IGerenciadorSubcategoria gerenciadorSubcategoria)
+        public ModeloController(IServiceModelo serviceModelo, IGerenciadorSubcategoria gerenciadorSubcategoria, IGerenciadorUsuario gerenciadorUsuario)
         {
             _servicesModelo = serviceModelo;
             _gerenciadorSubcategoria = gerenciadorSubcategoria;
+            _gerenciadorUsuario = gerenciadorUsuario;
         }
         public IActionResult Index()
         {
@@ -58,7 +60,12 @@ namespace collectorShop.Controllers
             Modelo modelo = _servicesModelo.Obter(id);
             IEnumerable<Subcategoria> listaSubCategoria = _gerenciadorSubcategoria.ObterTodos();
             ViewBag.CodSubcategoria = new SelectList(listaSubCategoria, "codSubcategoria", "nome",
-           listaSubCategoria.Where(subcategoria => subcategoria.CodSubcategoria == modelo.CodSubcategoria).FirstOrDefault());
+            listaSubCategoria.Where(subcategoria => subcategoria.CodSubcategoria == modelo.CodSubcategoria).FirstOrDefault());
+
+            IEnumerable<Usuario> listaUsuario = _gerenciadorUsuario.ObterTodos();
+            ViewBag.CodUsuario = new SelectList(listaUsuario, "CodUsuario", "nome",
+            listaUsuario.Where(usuario => usuario.CodUsuario == modelo.CodUsuario).FirstOrDefault());
+
             return View(modelo);
         }
 

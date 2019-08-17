@@ -62,6 +62,7 @@ namespace Services
                 Marca = x.Marca,
                 QuantTiragem = x.QuantTiragem
             }).SingleOrDefault();
+            
         }
 
         public IEnumerable<Modelo> ObterPorNome(string nome) => _Contexto.Tbmodelo
@@ -90,7 +91,9 @@ namespace Services
             Colecao = x.Colecao,
             Label = x.Label,
             Marca = x.Marca,
-            QuantTiragem = x.QuantTiragem
+            QuantTiragem = x.QuantTiragem,
+            nomeSubCategoria = x.CodSubcategoriaNavigation.Nome,
+            nomeUsuario = x.TbUsuarioCodUsuarioNavigation.Nome
         }).ToList();
 
 
