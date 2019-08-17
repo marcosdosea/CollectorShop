@@ -688,27 +688,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\barbi\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\igsan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+      "projectUniqueName": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\obj\\",
+      "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\igsan\\.nuget\\packages\\",
+      "outputPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\barbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\igsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

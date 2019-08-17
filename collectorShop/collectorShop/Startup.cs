@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using collectorShop.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Services;
@@ -47,7 +40,8 @@ namespace collectorShop
             
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
             services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
-            services.AddTransient<IGerenciadorUsuario, GerenciadorUsuario>();
+            services.AddTransient<IServiceModelo, ServiceModelo>();
+
             //services.AddScoped<IGerenciadorSubcategoria<Subcategoria>, GerenciadorSubcategoria>();
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
 
