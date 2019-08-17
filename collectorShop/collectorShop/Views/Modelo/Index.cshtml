@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Model.Modelo>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodModelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantTiragem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Colecao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Label)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodSubcategoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodModelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantTiragem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Colecao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Label)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodSubcategoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodUsuario)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.CodModelo }) 
+                @Html.ActionLink("Details", "Details", new {  id=item.CodModelo  }) 
+                @Html.ActionLink("Delete", "Delete", new {  id=item.CodModelo })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
