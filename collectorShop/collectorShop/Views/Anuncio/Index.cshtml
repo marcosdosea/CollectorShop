@@ -47,9 +47,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.CodUsuario)
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Msg)
-                </th>
+                
                 <th></th>
             </tr>
         </thead>
@@ -81,9 +79,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.CodUsuario)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Msg)
-                    </td>
+                    
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.CodAnuncio }) |
                         @Html.ActionLink("Create", "Create", new { id = item.CodAnuncio }) |

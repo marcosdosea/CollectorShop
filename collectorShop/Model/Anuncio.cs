@@ -32,9 +32,15 @@ namespace Model
         [Required]
         [Display(Name = "Código do Usuário")]
         public int CodUsuario { get; set; }
-        [StringLength(250)]
-        [Display(Name = "Mensagem")]
-        public string Msg { get; set; }
+        
+        [Display(Name = "Opções de Envio")]
+        public string OpcaoEnvio { get; set; }
+
+        [Display(Name = "Categoria")]
+        public string NomeCategoria { get; set; }
+        
+        [Display(Name = "Subcategoria")]
+        public string NomeSubcategoria { get; set; }
 
     }
 }
