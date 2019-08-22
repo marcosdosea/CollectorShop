@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Model;
 using Services;
 
@@ -12,7 +13,7 @@ namespace collectorShop.Controllers
     public class AnuncioController : Controller
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
-     
+        
         public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio)
         {
             gerenciadorAnuncio = _gerenciadorAnuncio;
@@ -33,6 +34,7 @@ namespace collectorShop.Controllers
         // GET: Anuncio/Create
         public ActionResult Create()
         {
+            
             return View();
         }
 

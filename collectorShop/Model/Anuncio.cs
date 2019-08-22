@@ -42,5 +42,9 @@ namespace Model
         [Display(Name = "Subcategoria")]
         public string NomeSubcategoria { get; set; }
 
+        public int CodSubcategoria { get; set; }
+
+        public int CodCategoria { get; set; }
+
     }
 }

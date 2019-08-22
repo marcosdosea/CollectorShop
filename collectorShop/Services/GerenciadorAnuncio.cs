@@ -111,6 +111,7 @@ namespace Services
                             QuantDisponivel = (int)anuncio.QuantDisponivel,
                             Status = anuncio.Status,
                             Valor = (float)anuncio.Valor,
+                          
 
         };
             return query;

@@ -50,7 +50,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="CodSubcategoria" class="control-label"></label>
-                <input asp-for="CodSubcategoria" class="form-control" />
+                <select asp-for="CodSubcategoria" asp-items="ViewBag.CodSubcategoria">
+                </select>
                 <span asp-validation-for="CodSubcategoria" class="text-danger"></span>
             </div>
             <div class="form-group">

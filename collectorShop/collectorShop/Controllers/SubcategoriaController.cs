@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Google.Protobuf.WellKnownTypes;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Model;
+using Persistence;
 using Services;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace collectorShop.Controllers
 {
@@ -34,7 +38,7 @@ namespace collectorShop.Controllers
         // GET: Subcategoria/Create
         public ActionResult Create()
         {
-            ViewBag.CodCategoria = new SelectList(gerenciadorCategoria.ObterTodos(), "codCategoria", "Nome", null);
+            ViewBag.CodCategoria = new SelectList(gerenciadorCategoria.ObterTodos(), "CodCategoria", "Nome",null);
             return View();
         }
 
