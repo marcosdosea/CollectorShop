@@ -165,7 +165,7 @@ using collectorShop.Models;
                 ");
             EndContext();
             BeginContext(2493, 6629, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb111417dc67466c8c69bc3eed0ce2bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "169a6ca2ac274188b0913c3fe96b3995", async() => {
                 BeginContext(2530, 432, true);
                 WriteLiteral(@"
                     <div class=""row "">
@@ -178,7 +178,7 @@ using collectorShop.Models;
                                             ");
                 EndContext();
                 BeginContext(2962, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9a9df254e6494260af367b8e745f5b4d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "51385e0915d844ea97ebfe8cdaf99590", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
