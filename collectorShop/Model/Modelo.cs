@@ -35,7 +35,7 @@ namespace Model
         [StringLength(4)]
         public string Ano { get; set; }
         [Required]
-        [Display(Name = "Codigo da SubCategoria")]
+        [Display(Name = "SubCategoria")]
         public int CodSubcategoria { get; set; }
         [Required]
         [Display(Name = "Codigo do Usuario")]

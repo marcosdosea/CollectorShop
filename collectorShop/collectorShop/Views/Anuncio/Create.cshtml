@@ -46,49 +46,6 @@
                 <span asp-validation-for="CodUsuario" class="text-danger"></span>
             </div>
 
-            <div class="form-group" onsubmit="return valida();">
-                <label asp-for="NomeCategoria" class="control-label"></label>
-                <select asp-for="NomeCategoria" class="w3-select" name="option">
-                    <option value="" disabled selected>Selecione uma categoria</option>
-                    <option value="1">DVDs</option>
-                    <option value="2">CDs</option>
-                    <option value="3">Anime</option>
-                    <option value="4">Mangá</option>
-                    <option value="5">Filmes</option>
-                    <option value="6">Brinquedos</option>
-                    <option value="7">Jogos</option>
-                    <option value="8">Livros</option>
-                    <option value="9">Acessórios</option>
-                    <option value="10">Fantasia</option>
-                    <option value="11">Miniatura</option>
-                </select>
-                <span asp-validation-for="NomeCategoria" class="text-danger"></span>
-            </div>
-           <div class="form-group">
-                <label asp-for="CodCategoria" class="control-label"></label>
-                <select asp-for="CodCategoria" asp-items="ViewBag.CodCategoria">
-                </select>
-                <span asp-validation-for="CodCategoria" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CodSubcategoria" class="control-label"></label>
-                <select asp-for="CodSubcategoria" asp-items="ViewBag.CodSubcategoria">
-                </select>
-                <span asp-validation-for="CodSubcategoria" class="text-danger"></span>
-            </div> 
-            <div class="form-group" onsubmit="return valida();">
-                <label asp-for="NomeSubcategoria" class="control-label"></label>
-                <select asp-for="NomeSubcategoria" class="w3-select" name="option">
-                    <option value="" disabled selected>Selecione uma subcategoria</option>
-                    <option value="1">opcao1</option>
-                    <option value="2">opcao1</option>
-                    <option value="3">opcao1</option>
-                    <option value="4">opcao1</option>
-                    <option value="5">opcao1</option>
-                    <option value="6">opcao1</option>
-                </select>
-                <span asp-validation-for="NomeSubcategoria" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <label asp-for="OpcaoEnvio" class="control-label"></label>
                 <br />
