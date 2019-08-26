@@ -308,12 +308,14 @@
 {
     <div class="col-md-3 text-center col-sm-4 col-xs-4">
         <div class="thumbnail product-box">
-            <img src="assets/img/produto4.jpg" alt="" width="75px" height="100px" />
+            <img src="assets/img/produto4.jpg" alt="" width="75" height="100" />
             <div class="caption">
                 <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">@Html.DisplayFor(modelItem => item.Titulo)</a></h5>
-
                 <p>Preço : <strong>R$ @Html.DisplayFor(modelItem => item.Valor)</strong>  </p>
-                <p><a asp-action="Details" class="btn btn-primary" role="button">Ver Descrição</a></p>
+                @using (Html.BeginForm("Details", "Anuncio", new { id = item.CodAnuncio }))
+                {
+                    <button type="submit" class="btn btn-primary">Ver detalhes</button>
+                } 
             </div>
         </div>
     </div>
