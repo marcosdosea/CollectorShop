@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Services;
 using Model;
 using Persistence;
+using collectorShop.Data;
 
 namespace collectorShop
 {
@@ -33,7 +34,7 @@ namespace collectorShop
             //services.AddDbContext<ApplicationDbContext>(options =>
             //    options.UseSqlServer(
             //        Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("CollectorConection")));
             services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
