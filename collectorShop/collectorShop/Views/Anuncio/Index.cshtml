@@ -11,17 +11,15 @@
         <ul class="list-group">
 
             <li class="list-group-item">
-                <a href="#">Meus dados</a>
+                
+                @Html.ActionLink("Meus dados", "Details", "Usuario")
 
             </li>
             <li class="list-group-item">
                 <a href="#">Modificar dados</a>
 
             </li>
-            <li class="list-group-item">
-                <a href="#">Apagar conta</a>
-
-            </li>
+            
             <li class="list-group-item">
                 <a href="#">Segurança</a>
 
@@ -80,243 +78,171 @@
             <h3><strong>Anúncios</strong></h3>
 
             <hr>
-            <form method="post" enctype="text/plain" required="required">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                            <img src="assets/img/anuncio.jpg" width="20%" height="30%" align="left">
-                            <h4>Abertos</h4>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/produto1.jpg" alt="deadpoll toy" width="70%" height="90%" />
-                                        <div class="caption">
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                        <h4>Ativos</h4>
+                        <hr>
+                        <div class="row">
 
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="produto.html">Deadpoll Neca Toys </a></h5>
-                                            <p>Preço : <strong>R$ 745,900</strong>  </p>
-                                            <p><a href="produto.html" class="btn btn-primary" role="button">Ver Descrição</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.col -->
+                            @foreach (var item in Model)
+                            {
                                 <div class="col-md-3 text-center col-sm-4 col-xs-4">
                                     <div class="thumbnail product-box">
-                                        <img src="assets/img/produto2.jpg" alt="it a coisa" width="70px" height="90px" />
+                                        <img src="assets/img/produto4.jpg" alt="" width="75" height="100" />
                                         <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">It Neca Toys </a></h5>
-                                            <p>Preço : <strong>R$ 945,900</strong>  </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">Ver Descrição</a></p>
+                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">@Html.DisplayFor(modelItem => item.Titulo)</a></h5>
+                                            <p>Preço : <strong>R$ @Html.DisplayFor(modelItem => item.Valor)</strong>  </p>
+                                            @using (Html.BeginForm("Details", "Anuncio", new { id = item.CodAnuncio }))
+                                            {
+                                                <button type="submit" class="btn btn-primary">Ver detalhes</button>
+                                            }
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.col -->
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/produto3.jpg" alt="pinguim batman" width="70px" height="90px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Pinguim 1/4 Neca Toys</a></h5>
-                                            <p>Preço : <strong>R$ 1345,90</strong>  </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">Veja Descrição</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/produto6.jpg" alt="" width="70px" height="90px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Superman Neca Toys</a></h5>
-                                            <p>Preço : <strong>R$ 1000,00</strong>  </p>
-                                            <p>
-                                                <a href="#" class="btn btn-primary" role="button">Ver Descrição</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/Barbie-Silkstone1.jpg" alt="" width="70px" height="90px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Barbie Silkstone Trench Coat </a></h5>
-                                            <p>Preço : <strong>R$ 600,00</strong>  </p>
-                                            <p>
-                                                <a href="#" class="btn btn-primary" role="button">Ver Descrição</a>
-                                                <a href="#" class="btn btn-primary" role="button">Modificar anúncio</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/Barbie-Silkstone2.jpg" alt="" width="70px" height="80px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Barbie Silkstone Grace Kelly</a></h5>
-                                            <p>Preço : <strong>R$ 2000,00</strong>  </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">Ver Descrição</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/Barbie-Silkstone3.jpg" alt="" width="70px" height="90px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Barbie Silkstone Fashion Model</a></h5>
-                                            <p>Preço : <strong>R$ 500,00</strong>  </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">Ver Descrição</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                    <div class="thumbnail product-box">
-                                        <img src="assets/img/produto4.jpg" alt="" width="75px" height="100px" />
-                                        <div class="caption">
-                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Batman Neca Toys 1/4</a></h5>
-                                            <p>Preço : <strong>R$ 2000,00</strong>  </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">Ver Descrição</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 text-center col-sm-4 col-xs-4">
-                                        <div class="thumbnail product-box">
-                                            <img src="assets/img/produto5.jpg" alt="" width="70px" height="90px" />
-                                            <div class="caption">
-                                                <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">Coringa Neca Toys</a></h5>
-                                                <p>Preço : <strong>R$ 2000,00</strong>  </p>
-                                                <p><a href="#" class="btn btn-primary" role="button">Ver Descrição</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a asp-action="Delete">Excluir selecionados</a>
-                                <input type="submit" name="excluir" value="Excluir selecionados" space="10px">
-                                <!--     <a href="cadastroProduto.html">&#8226;Cadastrar novo anúncio</a> -->
-                                <a asp-action="Create">Criar novo anúncio</a>
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="form-group">
-                                            <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
-                                            <h4>Finalizados</h4>
-                                            <hr>
-                                            <div class="col-md-12 download-app-box text-center">
+                                <menu>
+                                    @using (Html.BeginForm("Delete", "Anuncio", new { id = item.CodAnuncio }))
+                                    {
+                                        <button type="submit" class="btn btn-primary">Apagar</button>
+                                    }
+                                    @using (Html.BeginForm("Edit", "Anuncio", new { id = item.CodAnuncio }))
+                                    {
+                                        <button type="submit" class="btn btn-primary">Editar</button>
+                                    }
+                                </menu>
+                            }
 
-                                                Você não tem anúncios finalizados!
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Create", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Criar novo anúncio</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Details", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Detalhes</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Edit", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Delele", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Apagar</button>
+                            }
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                                    <h4>Inativos</h4>
+                                    <hr>
+                                    <div class="col-md-12 download-app-box text-center">
 
-                                            </div>
-                                        </div>
+                                        Você não tem anúncios finalizados!
+
                                     </div>
                                 </div>
-                                <!-- /.col -->
                             </div>
                         </div>
-
+                        <!-- /.col -->
                     </div>
                 </div>
-            </form>
+            </div>
+
         </div>
     </div>
 </div>
 <p>
+    <!--
+        <a asp-action="Create">Criar novo anúncio</a>
+        <br />
+        <a asp-action="Edit">Editar anúncio</a>
+        <br />
+        <a asp-action="Delete">Apagar anúncio</a>
+        <br />
+        <a asp-action="Details">Visualizar anúncio</a>
+    </p>
 
-    <a asp-action="Create">Criar novo anúncio</a>
-    <br />
-    <a asp-action="Edit">Editar anúncio</a>
-    <br />
-    <a asp-action="Delete">Apagar anúncio</a>
-    <br />
-    <a asp-action="Details">Visualizar anúncio</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CodAnuncio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.QuantAnunciada)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.QuantDisponivel)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Valor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CodUsuario)
-            </th>
-
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CodAnuncio)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.QuantAnunciada)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.QuantDisponivel)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Titulo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Descricao)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Valor)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CodUsuario)
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodAnuncio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuantAnunciada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuantDisponivel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodUsuario)
+                </th>
 
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.CodAnuncio }) |
-                    @Html.ActionLink("Create", "Create", new { id = item.CodAnuncio }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.CodAnuncio }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.CodAnuncio })
-                </td>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
-@foreach (var item in Model)
-{
-    <div class="col-md-3 text-center col-sm-4 col-xs-4">
-        <div class="thumbnail product-box">
-            <img src="assets/img/produto4.jpg" alt="" width="75" height="100" />
-            <div class="caption">
-                <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">@Html.DisplayFor(modelItem => item.Titulo)</a></h5>
-                <p>Preço : <strong>R$ @Html.DisplayFor(modelItem => item.Valor)</strong>  </p>
-                @using (Html.BeginForm("Details", "Anuncio", new { id = item.CodAnuncio }))
-                {
-                    <button type="submit" class="btn btn-primary">Ver detalhes</button>
-                } 
-            </div>
-        </div>
-    </div>
-}
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodAnuncio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantAnunciada)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantDisponivel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodUsuario)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Create", "Create", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.CodAnuncio }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CodAnuncio })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    -->
