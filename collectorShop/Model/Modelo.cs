@@ -40,7 +40,11 @@ namespace Model
         [Required]
         [Display(Name = "Codigo do Usuario")]
         public int CodUsuario { get; set; }
-
+        public string Edicao { get; set; }
+        public string Roteirista { get; set; }
+        public string Desenhista { get; set; }
+        public string Isbn { get; set; }
+        public string Autor { get; set; }
         public string nomeSubCategoria { get; set; }
         public string nomeUsuario { get; set; }
 

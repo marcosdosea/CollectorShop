@@ -36,6 +36,7 @@ namespace collectorShop.Controllers
         public ActionResult Create()
         {
             ViewBag.CodUsuario= new SelectList(gerenciadorUsuario.ObterTodos(), "CodUsuario", "Nome", null);
+            
             return View();
         }
 
@@ -60,6 +61,7 @@ namespace collectorShop.Controllers
             ViewBag.CodUsuario = new SelectList(listaUsuario, "CodUsuario", "Nome",
                 listaUsuario.Where(usuario => usuario.CodUsuario == anuncio.CodUsuario).FirstOrDefault());
             return View(anuncio);
+           
         }
 
         // POST: Anuncio/Edit/5

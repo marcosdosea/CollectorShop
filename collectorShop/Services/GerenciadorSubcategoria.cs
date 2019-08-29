@@ -100,6 +100,7 @@ namespace Services
                             CodSubcategoria = subcategoria.CodSubcategoria,
                             Nome = subcategoria.Nome,
                             CodCategoria = subcategoria.CodCategoria,
+                            NomeCategoria = subcategoria.CodCategoriaNavigation.Nome
                         };
             return query;
         }

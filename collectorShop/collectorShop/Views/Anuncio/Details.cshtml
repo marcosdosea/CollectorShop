@@ -57,7 +57,7 @@
             </div>
 
             <div class="w3-display-container mySlides">
-                <img src="~/assets/img/produto8.jpg" style="width:30%">
+                <img src="~/assets/img/produto8.jpg" style="width:50%">
             </div>
 
             <div class="w3-display-container mySlides">
@@ -75,6 +75,10 @@
                 </p>
                 <!--        <p>Envio:<a href="#">Correios  @Html.DisplayFor(model => model.OpcaoEnvio)</a></p> -->
                 <p>Status: <strong>@Html.DisplayFor(model => model.Status)</strong></p>
+                <select asp-for="QuantDisponivel" class="form-control">
+                    <option value="">Selecione a quantidade:</option>
+                    <option value="1"></option>
+                </select>
                 <p>Disponivel:<strong>@Html.DisplayFor(model => model.QuantDisponivel)</strong></p>
                 <p>Vendedor : <strong>@Html.DisplayFor(model => model.NomeUsuario)</strong>  </p>
                 <p>Categoria: <a> @Html.DisplayFor(model => model.NomeCategoria)</a></p>
@@ -119,6 +123,12 @@
                     x[i].style.display = "none";
                 }
                 x[slideIndex - 1].style.display = "block";
+            }
+
+            var quantidade = document.getElementById("QuantDisponivel");
+            for (i = 0; i < quantidade.length; i = i + 1)
+            {
+                console.log(quantidade[i]=i);
             }
         </script>
         <div class="col-md-12 col-sm-12">

@@ -6,13 +6,158 @@
 
 }
 
-<p>
-    @using (Html.BeginForm("Create", "Modelo", FormMethod.Get))
-    {
-        <button type="submit" class="bg-primary col-lg-4" >Criar novo modelo</button>
-    }
+<div class="col-md-3">
+    <div>
+        <a href="#" class="list-group-item active">
+            Menu do Usuário
+        </a>
+        <ul class="list-group">
 
-</p>
+            <li class="list-group-item">
+
+                @Html.ActionLink("Meus dados", "Details", "Usuario")
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Modificar dados</a>
+
+            </li>
+
+            <li class="list-group-item">
+                <a href="#">Segurança</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Saldo</a>
+
+            </li>
+        </ul>
+    </div>
+    <!-- /.div -->
+    <div>
+        <a href="#" class="list-group-item active list-group-item-success">
+            Compras
+        </a>
+        <ul class="list-group">
+
+            <li class="list-group-item">
+                <a href="#">Compras</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Perguntas</a>
+
+            </li>
+
+        </ul>
+    </div>
+    <!-- /.div -->
+    <div>
+        <a href="#" class="list-group-item active">
+            Vendas
+        </a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#">Anúncios</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Vendas</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Perguntas</a>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="col-md-9">
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <h3><strong>Modelos</strong></h3>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <hr>
+                        <div class="row">
+
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
+                                    <div class="thumbnail product-box">
+                                        <img src="~/assets/img/produto10.jpg" alt="" width="75" height="100" />
+                                        <div class="caption">
+                                            <h5><a href="#">@Html.DisplayFor(modelItem => item.Nome)</a></h5>
+                                            <h5>Coleção: @Html.DisplayFor(modelItem => item.Colecao)</h5>
+                                            <h5>Label: @Html.DisplayFor(modelItem => item.Label)</h5>
+                                            <h5>Marca: @Html.DisplayFor(modelItem => item.Marca)</h5>
+                                            <h5>Subcategoria: @Html.DisplayFor(modelItem => item.nomeSubCategoria)</h5>
+                                            <h5>Ano: @Html.DisplayFor(modelItem => item.Ano)</h5>
+                                            <p>Tiragem: @Html.DisplayFor(modelItem => item.QuantTiragem)</p>
+                                            @using (Html.BeginForm("Details", "Modelo", new { id = item.CodModelo }))
+                                            {
+                                                <button type="submit" class="btn btn-primary">Ver detalhes</button>
+                                            }
+                                            @using (Html.BeginForm("Delete", "Modelo", new { id = item.CodModelo }))
+                                            {
+                                                <button type="submit" class="btn btn-primary">Apagar</button>
+                                            }
+
+                                            @using (Html.BeginForm("Edit", "Modelo", new { id = item.CodModelo }))
+                                            {
+                                                <button type="submit" class="btn btn-warning">Editar</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Create", "Modelo", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Cadastrar novo modelo</button>
+                            }
+                        </div>
+                        <p>
+                            @using (Html.BeginForm("Create", "Modelo", FormMethod.Get))
+                            {
+                                <button type="submit" class="bg-primary col-lg-4">Criar novo modelo</button>
+                            }
+
+                        </p>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Details", "Modelo", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Detalhes</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Edit", "Modelo", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Delele", "Modelo", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Apagar</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -47,41 +192,42 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodModelo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuantTiragem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Colecao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Label)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Marca)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ano)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodSubcategoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodUsuario)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.CodModelo }) 
-                @Html.ActionLink("Details", "Details", new {  id=item.CodModelo  }) 
-                @Html.ActionLink("Delete", "Delete", new {  id=item.CodModelo })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodModelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantTiragem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Colecao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Label)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ano)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodSubcategoria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodUsuario)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CodModelo })
+                    @Html.ActionLink("Details", "Details", new { id = item.CodModelo })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CodModelo })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

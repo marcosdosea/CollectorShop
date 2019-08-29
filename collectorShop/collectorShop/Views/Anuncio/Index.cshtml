@@ -11,7 +11,7 @@
         <ul class="list-group">
 
             <li class="list-group-item">
-                
+
                 @Html.ActionLink("Meus dados", "Details", "Usuario")
 
             </li>
@@ -19,7 +19,7 @@
                 <a href="#">Modificar dados</a>
 
             </li>
-            
+
             <li class="list-group-item">
                 <a href="#">Segurança</a>
 
@@ -100,27 +100,19 @@
                                             {
                                                 <button type="submit" class="btn btn-primary">Ver detalhes</button>
                                             }
-
                                         </div>
-                                    </div>
-                                </div>
-                                
-                                <ul class="dropdown-menu-right" >
-                                    <li>
                                         @using (Html.BeginForm("Delete", "Anuncio", new { id = item.CodAnuncio }))
                                         {
                                             <button type="submit" class="btn btn-primary">Apagar</button>
                                         }
-                                    </li>
-                                    <li>
+
                                         @using (Html.BeginForm("Edit", "Anuncio", new { id = item.CodAnuncio }))
                                         {
-                                            <button type="submit" class="btn btn-primary">Editar</button>
+                                            <button type="submit" class="btn btn-warning">Editar</button>
                                         }
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             }
-
                         </div>
                         <div class="col-md-3">
                             @using (Html.BeginForm("Create", "Anuncio", FormMethod.Get))
