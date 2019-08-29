@@ -1,67 +1,204 @@
 ﻿@model Model.Anuncio
 
 @{
-     Layout = "_Layout";
+    Layout = "_Layout";
 }
+<div class="col-md-9">
+    <div>
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Figure Action</li>
+        </ol>
+    </div>
+    <!-- /.div -->
+    <div class="row">
+        <div class="btn-group alg-right-pad">
+            <button type="button" class="btn btn-default"><strong>1235  </strong>items</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    Produtos sortidos &nbsp;
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Por Menor Preço</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Por Maior Preço</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Mais populares</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Por Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="w3-bar">
+            <h5><a asp-action="Index" class="w3-button">&laquo;Voltar para lista</a></h5>
+        </div>
 
-<h2>Details</h2>
+        <div class="w3-container">
 
-<div>
-    <h4>Anuncio</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.CodAnuncio)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.CodAnuncio)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.QuantAnunciada)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.QuantAnunciada)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.QuantDisponivel)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.QuantDisponivel)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Titulo)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Titulo)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Descricao)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Valor)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Valor)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.CodUsuario)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.CodUsuario)
-        </dd>
-        
-    </dl>
+        </div>
+
+        <div class="w3-content text-center w3-display-container">
+
+            <div class="w3-display-container mySlides">
+                <img src="~/assets/img/produto4.jpg" style="width:50%">
+
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="~/assets/img/produto5.jpg" style="width:50%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="~/assets/img/produto6.jpg" style="width:50%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="~/assets/img/produto8.jpg" style="width:30%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="~/assets/img/produto3.jpg" style="width:50%">
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            <div class="caption">
+                <h3><a href="#"> @Html.DisplayFor(model => model.Titulo) </a></h3>
+                <p>Preço : <strong>R$  @Html.DisplayFor(model => model.Valor)</strong>  </p>
+                <p>
+                    <a href="#">12x nos Cartões de crédito: </a><br>
+                    <img src="~/assets/img/cartoes-de-credito.png" style="width:10%">
+                </p>
+                <!--        <p>Envio:<a href="#">Correios  @Html.DisplayFor(model => model.OpcaoEnvio)</a></p> -->
+                <p>Status: <strong>@Html.DisplayFor(model => model.Status)</strong></p>
+                <p>Disponivel:<strong>@Html.DisplayFor(model => model.QuantDisponivel)</strong></p>
+                <p>Vendedor : <strong>@Html.DisplayFor(model => model.NomeUsuario)</strong>  </p>
+                <p>Categoria: <a> @Html.DisplayFor(model => model.NomeCategoria)</a></p>
+                <p>Subcategoria: <a> @Html.DisplayFor(model => model.NomeSubcategoria)</a></p>
+                <p>
+                    Descrição:<strong>
+                        @Html.DisplayFor(model => model.Descricao)
+                    </strong>
+                </p>
+                <p>
+                    Especificações do Modelo:<br><strong>
+                        Nome modelo<br>
+                        Fabricante: Neca Toys<br>
+                        Label: <br>
+                        Série: Epic Marvel<br>
+                        Material: PVC<br>
+                        Tamanho aproximado: 45cm<br>
+                        Idade Recomendada: 15+
+                    </strong>
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success" role="button">Comprar</a>
+                </p>
+            </div>
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        <div class="col-md-12 col-sm-12">
+            <p>Iniciar negociação com o vendedor(a) @Html.DisplayFor(model => model.NomeUsuario):</p>
+            <!--   <div class="form-group">
+                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Digite sua mensagem e o vendedor irá respondê-lo o mais rápido possível"></textarea>
+                </div> -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Iniciar uma negociação</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <ul class="pagination alg-right-pad">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
 </div>
+<!--  <div>
+      <hr />
+      <dl class="dl-horizontal">
+          <dt>
+              @Html.DisplayNameFor(model => model.CodAnuncio)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.CodAnuncio)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.Status)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.Status)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.QuantAnunciada)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.QuantAnunciada)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.QuantDisponivel)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.QuantDisponivel)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.Titulo)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.Titulo)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.Descricao)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.Descricao)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.Valor)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.Valor)
+          </dd>
+          <dt>
+              @Html.DisplayNameFor(model => model.CodUsuario)
+          </dt>
+          <dd>
+              @Html.DisplayFor(model => model.CodUsuario)
+          </dd>
+
+      </dl>
+  </div> -->
 <div>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.CodAnuncio }) |
-    <a asp-action="Index">Back to List</a>
+    <!--    @Html.ActionLink("Edit", "Edit", new { id = Model.CodAnuncio }) |
+      <a asp-action="Index">Back to List</a> -->
 </div>

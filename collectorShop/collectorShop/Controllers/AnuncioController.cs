@@ -13,10 +13,11 @@ namespace collectorShop.Controllers
     public class AnuncioController : Controller
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
-        
-        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio)
+        private readonly IGerenciadorUsuario gerenciadorUsuario;
+        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario)
         {
             gerenciadorAnuncio = _gerenciadorAnuncio;
+            gerenciadorUsuario = _gerenciadorUsuario;
         }
         // GET: Anuncio
         public ActionResult Index()
@@ -34,7 +35,7 @@ namespace collectorShop.Controllers
         // GET: Anuncio/Create
         public ActionResult Create()
         {
-            
+            ViewBag.CodUsuario= new SelectList(gerenciadorUsuario.ObterTodos(), "CodUsuario", "Nome", null);
             return View();
         }
 
@@ -55,6 +56,9 @@ namespace collectorShop.Controllers
         public ActionResult Edit(int id)
         {
             Anuncio anuncio = gerenciadorAnuncio.Obter(id);
+            IEnumerable<Usuario> listaUsuario = gerenciadorUsuario.ObterTodos();
+            ViewBag.CodUsuario = new SelectList(listaUsuario, "CodUsuario", "Nome",
+                listaUsuario.Where(usuario => usuario.CodUsuario == anuncio.CodUsuario).FirstOrDefault());
             return View(anuncio);
         }
 

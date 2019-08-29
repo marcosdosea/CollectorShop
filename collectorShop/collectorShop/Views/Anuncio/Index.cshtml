@@ -100,20 +100,25 @@
                                             {
                                                 <button type="submit" class="btn btn-primary">Ver detalhes</button>
                                             }
-                                            
+
                                         </div>
                                     </div>
                                 </div>
-                                <menu>
-                                    @using (Html.BeginForm("Delete", "Anuncio", new { id = item.CodAnuncio }))
-                                    {
-                                        <button type="submit" class="btn btn-primary">Apagar</button>
-                                    }
-                                    @using (Html.BeginForm("Edit", "Anuncio", new { id = item.CodAnuncio }))
-                                    {
-                                        <button type="submit" class="btn btn-primary">Editar</button>
-                                    }
-                                </menu>
+                                
+                                <ul class="dropdown-menu-right" >
+                                    <li>
+                                        @using (Html.BeginForm("Delete", "Anuncio", new { id = item.CodAnuncio }))
+                                        {
+                                            <button type="submit" class="btn btn-primary">Apagar</button>
+                                        }
+                                    </li>
+                                    <li>
+                                        @using (Html.BeginForm("Edit", "Anuncio", new { id = item.CodAnuncio }))
+                                        {
+                                            <button type="submit" class="btn btn-primary">Editar</button>
+                                        }
+                                    </li>
+                                </ul>
                             }
 
                         </div>
@@ -190,6 +195,9 @@
                     @Html.DisplayNameFor(model => model.QuantDisponivel)
                 </th>
                 <th>
+                    @Html.DisplayNameFor(model => model.OpcaoEnvio)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.Titulo)
                 </th>
                 <th>
@@ -225,6 +233,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Titulo)
                     </td>
+                  <th>
+                    @Html.DisplayNameFor(model => model.OpcaoEnvio)
+                </th>
                     <td>
                         @Html.DisplayFor(modelItem => item.Descricao)
                     </td>

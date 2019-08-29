@@ -38,7 +38,9 @@ namespace Model
 
         [Display(Name = "Categoria")]
         public string NomeCategoria { get; set; }
-        
+        [Display(Name = "Vendedor")]
+        public string NomeUsuario { get; set; }
+
         [Display(Name = "Subcategoria")]
         public string NomeSubcategoria { get; set; }
 
