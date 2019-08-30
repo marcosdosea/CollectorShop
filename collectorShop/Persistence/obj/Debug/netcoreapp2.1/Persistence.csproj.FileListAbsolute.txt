@@ -1,14 +1,3 @@
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.deps.json
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.json
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.dev.json
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.dll
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.pdb
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CoreCompileInputs.cache
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfoInputs.cache
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.deps.json
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.json
 C:\Users\barbi\source\repos\marcosdosea\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.dev.json
@@ -30,3 +19,14 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcore
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.deps.json
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.json
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.runtimeconfig.dev.json
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.dll
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\Persistence.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CoreCompileInputs.cache
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfoInputs.cache
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb

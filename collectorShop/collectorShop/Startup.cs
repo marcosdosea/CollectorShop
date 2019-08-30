@@ -9,6 +9,7 @@ using Services;
 using Model;
 using Persistence;
 using collectorShop.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace collectorShop
 {
@@ -39,6 +40,7 @@ namespace collectorShop
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
             
+            
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
             services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
             services.AddTransient<IServiceModelo, ServiceModelo>();
@@ -48,7 +50,7 @@ namespace collectorShop
 
 
             //services.AddDefaultIdentity<IdentityUser>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+               //.AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -72,6 +74,7 @@ namespace collectorShop
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+            
 
             app.UseMvc(routes =>
             {
