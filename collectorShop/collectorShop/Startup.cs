@@ -49,9 +49,8 @@ namespace collectorShop
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
 
 
-            //services.AddDefaultIdentity<IdentityUser>()
-               //.AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddDefaultIdentity<IdentityUser>()
+               .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
