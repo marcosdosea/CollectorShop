@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D} = {E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectorShopApi", "CollectorShopApi\CollectorShopApi.csproj", "{0105F184-662C-47BC-913E-350991FF4948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0105F184-662C-47BC-913E-350991FF4948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0105F184-662C-47BC-913E-350991FF4948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0105F184-662C-47BC-913E-350991FF4948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0105F184-662C-47BC-913E-350991FF4948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
