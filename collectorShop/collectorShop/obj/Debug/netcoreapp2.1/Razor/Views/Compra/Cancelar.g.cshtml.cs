@@ -160,7 +160,7 @@ using collectorShop.Models;
             WriteLiteral("  <div class=\"col-md-10\">\r\n            <h3><strong>Cancelar Compra</strong></h3>\r\n\r\n            <hr>\r\n            ");
             EndContext();
             BeginContext(2196, 7151, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3560983cbb544d9386acfcbfe89b148b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a5a6412e2f544a7a5cb1b3affb37ac9", async() => {
                 BeginContext(2294, 404, true);
                 WriteLiteral(@"
                 <div class=""row "">
@@ -173,7 +173,7 @@ using collectorShop.Models;
                                         ");
                 EndContext();
                 BeginContext(2698, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d847ef07eec446159ca840ee3faa4f2f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e90f311a0beb4c5eb40d841c0e0dc270", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
