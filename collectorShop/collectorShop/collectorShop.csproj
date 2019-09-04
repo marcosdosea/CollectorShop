@@ -6,12 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Produto\**" />
     <Compile Remove="wwwroot\lib\bootstrap\**" />
     <Compile Remove="wwwroot\lib\jquery\**" />
+    <Content Remove="Views\Produto\**" />
     <Content Remove="wwwroot\lib\bootstrap\**" />
     <Content Remove="wwwroot\lib\jquery\**" />
+    <EmbeddedResource Remove="Views\Produto\**" />
     <EmbeddedResource Remove="wwwroot\lib\bootstrap\**" />
     <EmbeddedResource Remove="wwwroot\lib\jquery\**" />
+    <None Remove="Views\Produto\**" />
     <None Remove="wwwroot\lib\bootstrap\**" />
     <None Remove="wwwroot\lib\jquery\**" />
   </ItemGroup>

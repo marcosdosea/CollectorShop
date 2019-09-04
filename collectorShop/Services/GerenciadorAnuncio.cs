@@ -112,7 +112,7 @@ namespace Services
                             QuantDisponivel = (int)anuncio.QuantDisponivel,
                             Status = anuncio.Status,
                             Valor = (float)anuncio.Valor,
-                          
+                      //      NomeSubcategoria = anuncio.Anunciomodelo.
 
         };
             return query;
