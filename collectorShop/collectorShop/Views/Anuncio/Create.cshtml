@@ -20,6 +20,12 @@
                 <input asp-for="Valor" class="form-control" placeholder="Valor" />
                 <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Carregar imagem</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <select asp-for="Status" class="form-control">
@@ -46,19 +52,19 @@
                 <span asp-validation-for="CodUsuario" class="text-danger"></span>
             </div>
 
-     <!--       <div class="form-group">
-                <label asp-for="OpcaoEnvio" class="control-label"></label>
-                <br />
-                <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PAC" checked>
-                <label>PAC</label>
+            <!--       <div class="form-group">
+               <label asp-for="OpcaoEnvio" class="control-label"></label>
+               <br />
+               <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PAC" checked>
+               <label>PAC</label>
 
-                <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="SEDEX">
-                <label>SEDEX</label>
+               <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="SEDEX">
+               <label>SEDEX</label>
 
-                <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PESSOALMENTE">
-                <label>Retirar pessoalmente</label>
-                <span asp-validation-for="OpcaoEnvio" class="text-danger"></span>
-            </div> -->
+               <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PESSOALMENTE">
+               <label>Retirar pessoalmente</label>
+               <span asp-validation-for="OpcaoEnvio" class="text-danger"></span>
+           </div> -->
             <div class="form-group">
                 <label asp-for="Descricao" class="control-label"></label>
                 <textarea asp-for="Descricao" rows="8" class="form-control" placeholder="Descrição do produto"></textarea>
