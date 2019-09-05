@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Services;
 using Model;
 using Persistence;
+using collectorShop.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace collectorShop
 {
@@ -33,10 +35,11 @@ namespace collectorShop
             //services.AddDbContext<ApplicationDbContext>(options =>
             //    options.UseSqlServer(
             //        Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("CollectorConection")));
             services.AddDbContext<bancocollectorContext>(options =>
              options.UseMySQL(
                  Configuration.GetConnectionString("CollectorConection")));
+            
             
             services.AddScoped<IService<Categoria>, ServiceCategoria>();
             services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
@@ -46,9 +49,8 @@ namespace collectorShop
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
 
 
-            //services.AddDefaultIdentity<IdentityUser>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddDefaultIdentity<IdentityUser>()
+               .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -71,6 +73,7 @@ namespace collectorShop
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+            
 
             app.UseMvc(routes =>
             {

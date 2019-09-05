@@ -28,10 +28,10 @@ namespace collectorShop.Data.Migrations
                         .IsConcurrencyToken();
 
                     b.Property<string>("Name")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.Property<string>("NormalizedName")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.HasKey("Id");
 
@@ -74,7 +74,7 @@ namespace collectorShop.Data.Migrations
                         .IsConcurrencyToken();
 
                     b.Property<string>("Email")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.Property<bool>("EmailConfirmed");
 
@@ -83,10 +83,10 @@ namespace collectorShop.Data.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd");
 
                     b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.Property<string>("PasswordHash");
 
@@ -99,7 +99,7 @@ namespace collectorShop.Data.Migrations
                     b.Property<bool>("TwoFactorEnabled");
 
                     b.Property<string>("UserName")
-                        .HasMaxLength(256);
+                        .HasMaxLength(127);
 
                     b.HasKey("Id");
 
@@ -137,10 +137,10 @@ namespace collectorShop.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                        .HasMaxLength(127);
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128);
+                        .HasMaxLength(127);
 
                     b.Property<string>("ProviderDisplayName");
 
@@ -172,10 +172,10 @@ namespace collectorShop.Data.Migrations
                     b.Property<string>("UserId");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                        .HasMaxLength(127);
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128);
+                        .HasMaxLength(127);
 
                     b.Property<string>("Value");
 
