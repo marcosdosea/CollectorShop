@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
@@ -10,6 +11,7 @@ using Services;
 
 namespace collectorShop.Controllers
 {
+    [Authorize]
     public class CategoriaController : Controller
     {
         private readonly IService<Categoria> _servicesCategoria;
@@ -33,6 +35,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria/Create
+        [Authorize(Roles ="administrador")]
         public IActionResult Create()
         {
             return View();
@@ -70,6 +73,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria/Edit/5
+        [Authorize(Roles = "administrador")]
         public IActionResult Edit(int id)
 
         {
@@ -96,6 +100,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Categoria/Delete/5
+        [Authorize(Roles = "administrador")]
         public IActionResult Delete(int id)
         {
             Categoria cat = _servicesCategoria.Obter(id);
