@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <title>The Collector Shop</title>
     <!-- Bootstrap core CSS -->
     <link href="~/assets/css/bootstrap.css" rel="stylesheet">
- 
+
     <!-- Fontawesome core CSS -->
     <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--GOOGLE FONT -->
@@ -32,26 +32,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><strong>THE COLECTOR SHOP</strong></a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><strong>THE COLECTOR SHOP</strong></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
+                <!--Adicionando links aos menus-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="cadastroProduto.html">Anunciar grátis</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="novaConta.html">Nova Conta</a></li>
+                    <li><a asp-controller="Anuncio" asp-action="Create">Anunciar grátis</a></li>
+                    <li><a asp-controller="Login" asp-action="Login">Login</a></li>
+                    <li><a asp-controller="Usuario" asp-action="Create">Nova Conta</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Suporte <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="compras.html"><strong>Compras</strong></a></li>
-                            <li><a href="vendas.html"><strong>Vendas </strong></a></li>
+                            <li><a asp-action="Index"><strong>Compras</strong></a></li>
+                            <li><a asp-action="Index"><strong>Vendas </strong></a></li>
                             <li class="divider"></li>
-                            <li><a href="duvidas.html"><strong>Dúvidas</strong>
-                            </a></li>
+                            <li>
+                                <a asp-action="Index">
+                                    <strong>Dúvidas</strong>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -59,7 +62,7 @@
                     <div class="form-group">
                         <input type="text" placeholder="Digite o que deseja ..." class="form-control">
                     </div>
-                    &nbsp; 
+                    &nbsp;
                     <button type="submit" class="btn btn-primary">Pesquisar</button>
                 </form>
             </div>
@@ -70,62 +73,92 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-               
+
                 <div class="main box-border">
                     <div id="mi-slider" class="mi-slider">
                         <ul>
 
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/livro.jpg" alt="img01"><h4>Livros</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/mangas.jpg" alt="img02"><h4>Mangás</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/hqs.jpg" alt="img03"><h4>HQs</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/box.jpg" alt="img04"><h4>Boxes</h4>
-                            </a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/livro.jpg" alt="img01"><h4>Livros</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/mangas.jpg" alt="img02"><h4>Mangás</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/hqs.jpg" alt="img03"><h4>HQs</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/box.jpg" alt="img04"><h4>Boxes</h4>
+                                </a>
+                            </li>
                         </ul>
                         <ul>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/figureaction.jpg" alt="img05"><h4>Figure Action</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/barbie.jpg" alt="img06"><h4>Barbie &amp; cia</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/blythe.jpg" alt="img07"><h4>Blythe</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/bjd.jpg" alt="img08"><h4>BJD</h4>
-                            </a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/figureaction.jpg" alt="img05"><h4>Figure Action</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/barbie.jpg" alt="img06"><h4>Barbie &amp; cia</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/blythe.jpg" alt="img07"><h4>Blythe</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/bjd.jpg" alt="img08"><h4>BJD</h4>
+                                </a>
+                            </li>
                         </ul>
                         <ul>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/filme.jpg" alt="img09"><h4>Filmes</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/anime.jpg" alt="img10"><h4>Anime</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/serie.png" alt="img11"><h4>Séries</h4>
-                            </a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/filme.jpg" alt="img09"><h4>Filmes</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/anime.jpg" alt="img10"><h4>Anime</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/serie.png" alt="img11"><h4>Séries</h4>
+                                </a>
+                            </li>
                         </ul>
                         <ul>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/cd.jpg" alt="img12"><h4>CDs</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/miniatura.jpg" alt="img13"><h4>Miniaturas</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/fantasia.jpg" alt="img14"><h4>Fantasias</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="~/assets/ItemSlider/images/acessorio.png" alt="img15"><h4>Acessórios</h4>
-                            </a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/cd.jpg" alt="img12"><h4>CDs</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/miniatura.jpg" alt="img13"><h4>Miniaturas</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/fantasia.jpg" alt="img14"><h4>Fantasias</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/assets/ItemSlider/images/acessorio.png" alt="img15"><h4>Acessórios</h4>
+                                </a>
+                            </li>
                         </ul>
                         <nav>
                             <a href="#">Livros</a>
@@ -134,14 +167,14 @@
                             <a href="#">Mais</a>
                         </nav>
                     </div>
-                    
+
                 </div>
                 <br />
             </div>
             <!-- /.col -->
-            
+
             <div class="col-md-3 text-center">
-                <div class=" col-md-12 col-sm-6 col-xs-6" >
+                <div class=" col-md-12 col-sm-6 col-xs-6">
                     <div class="offer-text">
                         30% off aqui
                     </div>
@@ -153,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
             <!-- /.col -->
         </div>
@@ -161,99 +194,124 @@
         <div class="row">
             <div class="col-md-3">
                 <div>
-                    <a href="#" class="list-group-item active">Brinquedos
+                    <a href="#" class="list-group-item active">
+                        Brinquedos
                     </a>
                     <ul class="list-group">
 
-                        <li class="list-group-item">Figuras de Ação
-      <span class="label label-primary pull-right">234</span>
+                        <li class="list-group-item">
+                            Figuras de Ação
+                            <span class="label label-primary pull-right">234</span>
                         </li>
-                        <li class="list-group-item">Barbie e cia
-                      <span class="label label-success pull-right">34</span>
+                        <li class="list-group-item">
+                            Barbie e cia
+                            <span class="label label-success pull-right">34</span>
                         </li>
-                        <li class="list-group-item">Hot Toys
-                         <span class="label label-danger pull-right">4</span>
+                        <li class="list-group-item">
+                            Hot Toys
+                            <span class="label label-danger pull-right">4</span>
                         </li>
-                        <li class="list-group-item">Outras marcas
-                             <span class="label label-info pull-right">434</span>
+                        <li class="list-group-item">
+                            Outras marcas
+                            <span class="label label-info pull-right">434</span>
                         </li>
-                        <li class="list-group-item">BJD & Blythe
-                             <span class="label label-success pull-right">34</span>
+                        <li class="list-group-item">
+                            BJD & Blythe
+                            <span class="label label-success pull-right">34</span>
                         </li>
                     </ul>
                 </div>
                 <!-- /.div -->
                 <div>
-                    <a href="#" class="list-group-item active list-group-item-success">DVDS & Jogos
+                    <a href="#" class="list-group-item active list-group-item-success">
+                        DVDS & Jogos
                     </a>
                     <ul class="list-group">
 
-                        <li class="list-group-item">Filmes
-                             <span class="label label-danger pull-right">300</span>
+                        <li class="list-group-item">
+                            Filmes
+                            <span class="label label-danger pull-right">300</span>
                         </li>
-                        <li class="list-group-item">Animes
-                             <span class="label label-success pull-right">340</span>
+                        <li class="list-group-item">
+                            Animes
+                            <span class="label label-success pull-right">340</span>
                         </li>
-                        <li class="list-group-item">Séries
-                             <span class="label label-info pull-right">735</span>
+                        <li class="list-group-item">
+                            Séries
+                            <span class="label label-info pull-right">735</span>
                         </li>
 
                     </ul>
                 </div>
                 <!-- /.div -->
                 <div>
-                    <a href="#" class="list-group-item active">Acessórios & outros
+                    <a href="#" class="list-group-item active">
+                        Acessórios & outros
                     </a>
                     <ul class="list-group">
-                        <li class="list-group-item">CDs
-                             <span class="label label-warning pull-right">456</span>
+                        <li class="list-group-item">
+                            CDs
+                            <span class="label label-warning pull-right">456</span>
                         </li>
-                        <li class="list-group-item">Fantasias
-                             <span class="label label-success pull-right">156</span>
+                        <li class="list-group-item">
+                            Fantasias
+                            <span class="label label-success pull-right">156</span>
                         </li>
-                        <li class="list-group-item">Miniaturas
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Miniaturas
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Outros
-                             <span class="label label-primary pull-right">89</span>
+                        <li class="list-group-item">
+                            Outros
+                            <span class="label label-primary pull-right">89</span>
                         </li>
                     </ul>
                 </div>
-               <div>
-                    <a href="#" class="list-group-item active">Livros &amp; mangás
+                <div>
+                    <a href="#" class="list-group-item active">
+                        Livros &amp; mangás
                     </a>
                     <ul class="list-group">
-                        <li class="list-group-item">Romance
-                             <span class="label label-warning pull-right">456</span>
+                        <li class="list-group-item">
+                            Romance
+                            <span class="label label-warning pull-right">456</span>
                         </li>
-                        <li class="list-group-item">Biografia
-                             <span class="label label-success pull-right">156</span>
+                        <li class="list-group-item">
+                            Biografia
+                            <span class="label label-success pull-right">156</span>
                         </li>
-                        <li class="list-group-item">Ficção 
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Ficção
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Terror
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Terror
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Nacional
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Nacional
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Literatura estrangeira
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Literatura estrangeira
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">HQs
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            HQs
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Mangá
-                             <span class="label label-info pull-right">400</span>
+                        <li class="list-group-item">
+                            Mangá
+                            <span class="label label-info pull-right">400</span>
                         </li>
-                        <li class="list-group-item">Outros
-                             <span class="label label-primary pull-right">89</span>
+                        <li class="list-group-item">
+                            Outros
+                            <span class="label label-primary pull-right">89</span>
                         </li>
                     </ul>
                 </div>
-               
-              
+
+
             </div>
             <!-- /.col -->
             <div class="col-md-9">
@@ -270,7 +328,7 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
                                 Produtos sortidos &nbsp;
-      <span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Por Menor Preço</a></li>
@@ -288,9 +346,9 @@
                 <div class="row">
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto1.jpg" alt="deadpoll toy" style="width:70%" width="200" height="300"/>
+                            <img src="~/assets/img/produto1.jpg" class="imagem"  alt="deadpoll toy" />
                             <div class="caption">
-                                <h3><a href="produto.html">Deadpoll Neca Toys </a></h3>
+                                <h3><a asp-controller="Anuncio" asp-action="Details">Deadpoll Neca Toys </a></h3>
                                 <p>Preço : <strong>R$ 745,900</strong>  </p>
                                 <p><a href="checkout.html" class="btn btn-success" role="button">Comprar </a> <a href="produto.html" class="btn btn-primary" role="button">Ver Detalhes</a></p>
                             </div>
@@ -299,7 +357,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto2.jpg" alt="it a coisa" width="200" height="300" style="width:78%"/>
+                            <img src="~/assets/img/produto2.jpg" class="imagem"  alt="it a coisa"  />
                             <div class="caption">
                                 <h3><a href="#">It Neca Toys </a></h3>
                                 <p>Preço : <strong>R$ 945,900</strong>  </p>
@@ -309,8 +367,8 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto3.jpg" alt="pinguim batman" style="width:52%" />
+                        <div class="thumbnail product-box" style="width: 100%">
+                            <img src="~/assets/img/produto3.jpg" alt="pinguim batman" style="width:80%" height="250" />
                             <div class="caption">
                                 <h3><a href="#">Pinguim 1/4 Neca Toys</a></h3>
                                 <p>Preço : <strong>R$ 1345,900</strong>  </p>
@@ -320,7 +378,7 @@
                     </div>
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto6.jpg" alt="" style="width:60%"/>
+                            <img src="~/assets/img/produto6.jpg" alt="" style="width:80%" height="250" />
                             <div class="caption">
                                 <h3><a href="#">Superman Neca Toys</a></h3>
                                 <p>Preço : <strong>R$ 1000,00</strong>  </p>
@@ -331,9 +389,9 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto5.jpg" alt="" style="width:80%"/>
+                            <img src="~/assets/img/produto5.jpg" alt="" style="width:80%" height="250" />
                             <div class="caption">
                                 <h3><a href="#">Coringa Filme Batman Cavaleiro das Trevas 2010</a></h3>
                                 <p>Preço : <strong>R$ 300,00</strong>  </p>
@@ -344,7 +402,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="~/assets/img/produto4.jpg" alt="" />
+                            <img src="~/assets/img/produto4.jpg" alt="" style="width:80%" height="250"/>
                             <div class="caption">
                                 <h3><a href="#">Batman The Return</a></h3>
                                 <p>Preço : <strong>R$ 900,00</strong>  </p>
@@ -352,8 +410,44 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
+                   
+                        <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                            <div class="thumbnail product-box">
+                                <img src="~/assets/img/Barbie-Silkstone1.jpg" alt="" style="width:80%" height="250"/>
+                                <div class="caption">
+                                    <h3><a href="#">Barbie Silkstone Trench Coat </a></h3>
+                                    <p>Preço : <strong>R$ 600,00</strong>  </p>
+                                    <p>
+                                        <a href="#" class="btn btn-success" role="button">Comprar</a>
+                                        <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                            <div class="thumbnail product-box">
+                                <img src="~/assets/img/Barbie-Silkstone2.jpg" alt="" style="width:80%" height="250" />
+                                <div class="caption">
+                                    <h3><a href="#">Barbie Silkstone Grace Kelly The Bride</a></h3>
+                                    <p>Preço : <strong>R$ 2000,00</strong>  </p>
+                                    <p><a href="#" class="btn btn-success" role="button">Comprar</a> <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                            <div class="thumbnail product-box">
+                                <img src="~/assets/img/Barbie-Silkstone3.jpg" alt="" style="width:80%" height="250"/>
+                                <div class="caption">
+                                    <h3><a href="#">Barbie Silkstone Fashion Model</a></h3>
+                                    <p>Preço : <strong>R$ 500,00</strong>  </p>
+                                    <p><a href="#" class="btn btn-success" role="button">Comprar</a> <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
                 <!-- /.row -->
                 <div class="row">
                     <ul class="pagination alg-right-pad">
@@ -366,87 +460,6 @@
                         <li><a href="#">&raquo;</a></li>
                     </ul>
                 </div>
-                <!-- /.row -->
-                <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Brinquedos</a></li>
-                        <li class="active">Barbie e Cia</li>
-                    </ol>
-                </div>
-                <!-- /.div -->
-                <div class="row">
-                    <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>3005  </strong>itens</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Produtos Sortidos &nbsp;
-      <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Por Menor Preço</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Por Maior Preço</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Por Popularidade</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Por Reviews</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="~/assets/img/Barbie-Silkstone1.jpg" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Barbie Silkstone Trench Coat </a></h3>
-                                <p>Preço : <strong>R$ 600,00</strong>  </p>
-                                <p>
-                                    <a href="#" class="btn btn-success" role="button">Comprar</a>
-                                    <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="~/assets/img/Barbie-Silkstone2.jpg" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Barbie Silkstone Grace Kelly The Bride</a></h3>
-                                <p>Preço : <strong>R$ 2000,00</strong>  </p>
-                                <p><a href="#" class="btn btn-success" role="button">Comprar</a> <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="~/assets/img/Barbie-Silkstone3.jpg" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Barbie Silkstone Fashion Model</a></h3>
-                                <p>Preço : <strong>R$ 500,00</strong>  </p>
-                                <p><a href="#" class="btn btn-success" role="button">Comprar</a> <a href="#" class="btn btn-primary" role="button">Ver Detalhes</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <ul class="pagination alg-right-pad">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-                <!-- /.row -->
             </div>
             <!-- /.col -->
         </div>
@@ -455,7 +468,7 @@
     <!-- /.container -->
     <div class="col-md-12 download-app-box text-center">
 
-        Anuncie grátis seu produto novo/usado sem custos de venda! <a href="#" class="btn btn-danger btn-lg">ANUNCIAR</a>
+        Anuncie *grátis seu produto novo/usado! <a href="#" class="btn btn-danger btn-lg">ANUNCIAR AGORA</a>
 
     </div>
 
@@ -464,29 +477,29 @@
 
 
         <div class="row small-box ">
-            <strong>Livros e mangás:</strong> <a href="#">Fantasia</a> |  <a href="#">Nacional</a> | <a href="#">Internacional</a> | 
+            <strong>Livros e mangás:</strong> <a href="#">Fantasia</a> |  <a href="#">Nacional</a> | <a href="#">Internacional</a> |
             <a href="#">Ficção</a> |  <a href="#">Terror</a> | <a href="#">Suspense</a> |<a href="#">Aventura</a> |
-              <a href="#">Romance</a> | <a href="#">Clássicos</a> |<a href="#">Contemporâneo</a> |  <a href="#">Científico</a> | 
-            <a href="#">Acadêmico</a> |<a href="#">Raros</a> |  <a href="#">Poesia</a> | <a href="#">Biografia</a> | <a href="#">HQs</a> |<a href="#">Ver todos itens</a> 
-         
+            <a href="#">Romance</a> | <a href="#">Clássicos</a> |<a href="#">Contemporâneo</a> |  <a href="#">Científico</a> |
+            <a href="#">Acadêmico</a> |<a href="#">Raros</a> |  <a href="#">Poesia</a> | <a href="#">Biografia</a> | <a href="#">HQs</a> |<a href="#">Ver todos itens</a>
+
         </div>
         <div class="row small-box ">
-            <strong>Acessórios e outros:</strong> <a href="#">CDs</a> |  <a href="#">Fantasias</a> | <a href="#">Outros</a> | 
+            <strong>Acessórios e outros:</strong> <a href="#">CDs</a> |  <a href="#">Fantasias</a> | <a href="#">Outros</a> |
             <a href="#">Miniaturas</a> | <a href="#">Ver todos itens</a>
         </div>
         <div class="row small-box ">
-            <strong>DVDs e Jogos : </strong><a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Box</a> | 
-            <a href="#">Anime </a>|  <a href="#">Jogos</a> | <a href="#">PS4</a> |<a href="#">Outros</a> |<a href="#">Ver todos itens</a> 
-            
+            <strong>DVDs e Jogos : </strong><a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Box</a> |
+            <a href="#">Anime </a>|  <a href="#">Jogos</a> | <a href="#">PS4</a> |<a href="#">Outros</a> |<a href="#">Ver todos itens</a>
+
         </div>
         <div class="row small-box pad-botom ">
-            <strong>Brinquedos :</strong> <a href="#">Barbie</a> |  <a href="#">Batman</a> | <a href="#">Marvel</a> | 
+            <strong>Brinquedos :</strong> <a href="#">Barbie</a> |  <a href="#">Batman</a> | <a href="#">Marvel</a> |
             <a href="#">DC Comics</a> |  <a href="#">Hot Toys</a> | <a href="#">Mattel</a> |<a href="#">Outros</a> |
-              <a href="#">Neca Toys</a> | <a href="#">Disney</a> |<a href="#">Estrela</a> |  <a href="#">SlideShow</a> | 
+            <a href="#">Neca Toys</a> | <a href="#">Disney</a> |<a href="#">Estrela</a> |  <a href="#">SlideShow</a> |
             <a href="#">Integrity Toys</a> |<a href="#">Blythe</a> |  <a href="#">BJD</a> | <a href="#">Superman</a> |
-            <a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Carros</a> || <a href="#">Figure Action</a> |<a href="#">Custom</a> |  
+            <a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Carros</a> || <a href="#">Figure Action</a> |<a href="#">Custom</a> |
             <a href="#">Fashion Royalt</a>| <a href="#">Ver todos itens</a>
-            
+
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -541,9 +554,9 @@
                 </p>
             </div>
             <div class="row small-box pad-botom ">
-            <a href="#">Quem Somos</a>|<a href="#">Como Comprar</a> | <a href="#">Formas de Pagamento</a> | 
-            <a href="#">Entrega</a> |  <a href="#">Política de Privacidade</a> | <a href="#">Trocas e Devoluções</a> |<a href="#">Regras</a>  
-        </div>
+                <a href="#">Quem Somos</a>|<a href="#">Como Comprar</a> | <a href="#">Formas de Pagamento</a> |
+                <a href="#">Entrega</a> |  <a href="#">Política de Privacidade</a> | <a href="#">Trocas e Devoluções</a> |<a href="#">Regras</a>
+            </div>
         </div>
         <hr>
     </div>
@@ -564,8 +577,8 @@
         $(function () {
 
             $('#mi-slider').catslider();
-
+           
         });
-		</script>
+    </script>
 </body>
 </html>

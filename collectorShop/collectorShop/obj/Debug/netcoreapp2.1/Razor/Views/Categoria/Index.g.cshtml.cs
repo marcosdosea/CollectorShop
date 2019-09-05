@@ -319,7 +319,7 @@ using collectorShop.Models;
             WriteLiteral("                            </div> \r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(5721, 51, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a1c99d3a31842ac9025495bc015a9c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "632c3a0fc5304ed499dafa3aa093b88b", async() => {
                 BeginContext(5744, 24, true);
                 WriteLiteral("Cadastrar nova Categoria");
                 EndContext();
