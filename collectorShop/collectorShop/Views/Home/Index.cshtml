@@ -41,17 +41,30 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="cadastroProduto.html">Anunciar grátis</a></li>
-                    <li><a asp-area = "Identity" asp-page="/Account/Login">Login</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
                     <li><a asp-area="Identity" asp-page="/Account/Register">Nova Conta</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Suporte <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="compras.html"><strong>Compras</strong></a></li>
-                            <li><a href="vendas.html"><strong>Vendas </strong></a></li>
+                            <li><a href="#"><strong>Compras</strong></a></li>
+
+
+                            <li><a href="#"><strong>Vendas </strong></a></li>
                             <li class="divider"></li>
-                            <li><a href="duvidas.html"><strong>Dúvidas</strong>
-                            </a></li>
+                            <li>
+                                <a href="#">
+                                    <strong>Compras</strong>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <strong>Dúvidas</strong>
+                                </a>
+                            </li>
+                            <li><a asp-area="Identity" asp-page="/Account/ForgotPassword">Recuperar Senha</a></li>
                         </ul>
                     </li>
                 </ul>

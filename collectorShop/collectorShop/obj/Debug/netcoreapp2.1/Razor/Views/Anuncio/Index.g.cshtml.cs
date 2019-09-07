@@ -68,7 +68,7 @@ using collectorShop.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(95, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "439451acbfdb4a4ba17f47229edc2951", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d45b815e4d3d4da580b2d60713b99ca1", async() => {
                 BeginContext(101, 89, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Anúncio</title>\r\n");
                 EndContext();
@@ -88,12 +88,12 @@ using collectorShop.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(199, 3137, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd0849cb059541a299718c197c2a46b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3830921ed4d64edb9d70c94b75a4060a", async() => {
                 BeginContext(205, 19, true);
                 WriteLiteral("\r\n    <p>\r\n        ");
                 EndContext();
                 BeginContext(224, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "203a7490c95943e29b87b65616cf3c76", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2d6a4391960435685e00be167de169d", async() => {
                     BeginContext(247, 18, true);
                     WriteLiteral("Criar novo anúncio");
                     EndContext();
@@ -115,7 +115,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n        <br />\r\n        ");
                 EndContext();
                 BeginContext(295, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86741141d1584989a1cefbf4852914d0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b2ee7530c6f4643b6e8df8e29491cd9", async() => {
                     BeginContext(316, 14, true);
                     WriteLiteral("Editar anúncio");
                     EndContext();
@@ -137,7 +137,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n        <br />\r\n        ");
                 EndContext();
                 BeginContext(360, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1c4fde640ab484bbc67ba2f0e1b3353", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d497d19d97714baa8574cc2b0c550a29", async() => {
                     BeginContext(383, 14, true);
                     WriteLiteral("Apagar anúncio");
                     EndContext();
@@ -159,7 +159,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n        <br />\r\n        ");
                 EndContext();
                 BeginContext(427, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b9b665b5c034d4eba33168fff55ff63", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db1a01dab935431d83d755205c6dd11a", async() => {
                     BeginContext(451, 18, true);
                     WriteLiteral("Visualizar anúncio");
                     EndContext();
