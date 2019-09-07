@@ -1,4 +1,9 @@
-﻿
+﻿.fixedHeightImg > img {
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
 
 body {
           font-family:'Open Sans', sans-serif;
