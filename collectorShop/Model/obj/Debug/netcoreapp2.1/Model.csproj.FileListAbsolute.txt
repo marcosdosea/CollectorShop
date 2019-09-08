@@ -24,4 +24,3 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb
-D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

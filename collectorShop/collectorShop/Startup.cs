@@ -67,6 +67,7 @@ namespace collectorShop
             services.AddTransient<IGerenciadorUsuario, GerenciadorUsuario>();
             //services.AddScoped<IGerenciadorSubcategoria<Subcategoria>, GerenciadorSubcategoria>();
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
+            services.AddTransient<IServiceNegociacao, ServiceNegociacao>();
 
 
             services.AddDefaultIdentity<IdentityUser>()
