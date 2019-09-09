@@ -99,8 +99,8 @@ namespace collectorShop.Controllers
         public JsonResult CorreiosCalcular(string cep)
         {
             // Dados da empresa, se tiver contrato com os Correios
-            string nCdEmpresa = string.Empty;
-            string sDsSenha = string.Empty;
+            var nCdEmpresa = string.Empty;
+            var sDsSenha = string.Empty;
             //Códigos dos tipos de frete:
             // PAC 41106
             // SEDEX 40010
@@ -108,32 +108,32 @@ namespace collectorShop.Controllers
             // SEDEX 10 40215
             // SEDEX HOJE  40290
             // Código do tipo de frete - por padrão deixei o pac
-            string nCdServico = "41106";
+            var nCdServico = "41106";
             // Cep de origem e destino - apenas números
-            string sCepOrigem = "40280000"; //POR ENQUANTO DEIXEI UM VALOR FIXO
-            string sCepDestino = cep; 
+            var sCepOrigem = "40280000"; //POR ENQUANTO DEIXEI UM VALOR FIXO
+            var sCepDestino = cep; 
             // Peso total da encomenda - por padrão deixei 1kg
-            string nVlPeso = "1";
+            var nVlPeso = "1";
             // Formato da encomenda - por padrão deixei caixa
-            int nCdFormato = 1;
+            var nCdFormato = 1;
             // Para encomenda do tipo PAC, deve-se preencher a dimensão da embalagem
-            decimal nVlComprimento = 20;
-            decimal nVlAltura = 20;
-            decimal nVlLargura = 20;
-            decimal nVlDiametro = 0;
+            var nVlComprimento = 20;
+            var nVlAltura = 20;
+            var nVlLargura = 20;
+            var nVlDiametro = 0;
             // Informa se é por mão própria - por padrão deixei Não
-            string sCdMaoPropria = "N";
+            var sCdMaoPropria = "N";
             // Valor declarado - por padrão não informo
-            decimal nVlValorDeclarado = 0;
+            var nVlValorDeclarado = 0;
             // Se desejo recebr aviso de recebimento - por padrão não quero
-            string sCdAvisoRecebimento = "N";
+            var sCdAvisoRecebimento = "N";
 
             // Instancio o web-service
         
             ServiceReference1.CalcPrecoPrazoWSSoapClient wsCorreios = new ServiceReference1.CalcPrecoPrazoWSSoapClient();
-           
-            //   ServiceCorreios.CalcPrecoPrazoWS webServiceCorreios = new ServicesCorreios.CalcPrecoPrazoWS();
-            cResultado retornoCorreios = (ServiceReference1)wsCorreios.CalcPrecoPrazoAsync(nCdEmpresa,sDsSenha,nCdServico,sCepOrigem,sCepDestino,nVlPeso,nCdFormato,nVlComprimento,nVlAltura,nVlLargura,nVlDiametro,sCdMaoPropria,nVlValorDeclarado,sCdAvisoRecebimento);
+
+            ServiceReference1.CalcPrecoPrazoWS webServiceCorreios = new ServiceReference1.CalcPrecoPrazoWS();
+            cResultado retornoCorreios = <ServiceReference1.cResultado>wsCorreios.CalcPrecoPrazoAsync(nCdEmpresa,sDsSenha,nCdServico,sCepOrigem,sCepDestino,nVlPeso,nCdFormato,nVlComprimento,nVlAltura,nVlLargura,nVlDiametro,sCdMaoPropria,nVlValorDeclarado,sCdAvisoRecebimento);
                 //CalcPrecoPrazoAsync(nCdEmpresa, sDsSenha, nCdServico, sCepOrigem, sCepDestino, nVlPeso, nCdFormato, nVlComprimento, nVlAltura, nVlLargura, nVlDiametro, sCdMaoPropria, nVlValorDeclarado, sCdAvisoRecebimento);
 
             // Efetuo a requisição

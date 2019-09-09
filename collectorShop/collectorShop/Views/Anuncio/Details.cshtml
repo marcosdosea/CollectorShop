@@ -76,6 +76,9 @@
                         <button type="submit" class="btn-success">Comprar agora</button>
                         <!--    <p>Categoria: <a> @Html.DisplayFor(model => model.NomeCategoria)</a></p>
     <p>Subcategoria: <a> @Html.DisplayFor(model => model.NomeSubcategoria)</a></p>-->
+                        @Html.TextBox("txtCep",null,new {@class = "form-control"});
+                        <button class="btn btn-success" id="btnSend">Consultar</button>
+                        <div id="divValor"></div>
                     </div>
                 </div>
             </div>
@@ -192,4 +195,24 @@
     for (i = 0; i < quantidade.length; i = i + 1) {
         console.log(quantidade[i] = i);
     }
+
+    $(document).ready(function ()
+    {
+        $("#btnSend").click(function ()
+        {
+            $.ajax({
+                url: '@Url.Action("CorreiosCalcular", "Anuncio")',
+                type: "GET",
+                contentType: "application/json",
+                data: { cep: $("#txtCep").val() },
+                sucess: function (result) {
+                    $("#divValor").html("<label> <b>Valor:<b>" + result[0] + "R$ Prazo de entrega:</br> " + result[1] + " dias</label>")
+                },
+                error: function (xhr, exception) {
+                    alert("Erro ao calcular prazo!")
+                }
+            });
+
+        })
+    });
 </script>
