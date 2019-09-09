@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Model;
-using ServiceReference1;
+using ServiceCorreios;
 using Services;
 
 
@@ -16,10 +16,15 @@ namespace collectorShop.Controllers
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
         private readonly IGerenciadorUsuario gerenciadorUsuario;
-        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario)
+        private readonly ServiceCorreios.CalcPrecoPrazoWSSoap wsCorreios;
+        
+        //cResultado
+        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario,
+            ServiceCorreios.CalcPrecoPrazoWSSoap _wsCorreios)
         {
             gerenciadorAnuncio = _gerenciadorAnuncio;
             gerenciadorUsuario = _gerenciadorUsuario;
+            wsCorreios = _wsCorreios;
         }
         // GET: Anuncio
         public ActionResult Index()
@@ -95,7 +100,7 @@ namespace collectorShop.Controllers
             gerenciadorAnuncio.Remover(id);
             return RedirectToAction(nameof(Index)); 
         }
-
+        
         public JsonResult CorreiosCalcular(string cep)
         {
             // Dados da empresa, se tiver contrato com os Correios
@@ -129,20 +134,16 @@ namespace collectorShop.Controllers
             var sCdAvisoRecebimento = "N";
 
             // Instancio o web-service
-        
-            ServiceReference1.CalcPrecoPrazoWSSoapClient wsCorreios = new ServiceReference1.CalcPrecoPrazoWSSoapClient();
-
-            ServiceReference1.CalcPrecoPrazoWS webServiceCorreios = new ServiceReference1.CalcPrecoPrazoWS();
-            cResultado retornoCorreios = <ServiceReference1.cResultado>wsCorreios.CalcPrecoPrazoAsync(nCdEmpresa,sDsSenha,nCdServico,sCepOrigem,sCepDestino,nVlPeso,nCdFormato,nVlComprimento,nVlAltura,nVlLargura,nVlDiametro,sCdMaoPropria,nVlValorDeclarado,sCdAvisoRecebimento);
-                //CalcPrecoPrazoAsync(nCdEmpresa, sDsSenha, nCdServico, sCepOrigem, sCepDestino, nVlPeso, nCdFormato, nVlComprimento, nVlAltura, nVlLargura, nVlDiametro, sCdMaoPropria, nVlValorDeclarado, sCdAvisoRecebimento);
-
+            wsCorreios.CalcPrecoPrazoAsync(nCdEmpresa, sDsSenha, nCdServico, sCepOrigem, sCepDestino, nVlPeso, nCdFormato, nVlComprimento, nVlAltura, nVlLargura, nVlDiametro, sCdMaoPropria, nVlValorDeclarado, sCdAvisoRecebimento);
             // Efetuo a requisição
-            //   Correios.cResultado retornoCorreios = webServiceCorreios.CalcPrecoPrazo(nCdEmpresa, sDsSenha, nCdServico, sCepOrigem, sCepDestino, nVlPeso, nCdFormato, nVlComprimento, nVlAltura, nVlLargura, nVlDiametro, sCdMaoPropria, nVlValorDeclarado, sCdAvisoRecebimento);
+            cResultado retornoCorreios; 
+            retornoCorreios= wsCorreios.CalcPrecoPrazoAsync(nCdEmpresa, sDsSenha, nCdServico, sCepOrigem, sCepDestino, nVlPeso, nCdFormato, nVlComprimento, nVlAltura, nVlLargura, nVlDiametro, sCdMaoPropria, nVlValorDeclarado, sCdAvisoRecebimento).Result;
+
             string[] result = new string[2];
             result[1] = retornoCorreios.Servicos[0].PrazoEntrega;
             result[0] = retornoCorreios.Servicos[0].Valor;
             return Json(result);
 
-        }
+        } 
     }
     }

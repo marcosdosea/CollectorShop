@@ -84,9 +84,9 @@ namespace Services
         /// </summary>
         /// <param name="codAnuncio">Identificador da subcategoria</param>
         /// <returns></returns>
-        public Subcategoria Obter(int codAnuncio)
+        public Subcategoria Obter(int codSubcategoria)
         {
-            IEnumerable<Subcategoria> subcategorias = GetQuery().Where(subcategoriaModel => subcategoriaModel.CodSubcategoria.Equals(codAnuncio));
+            IEnumerable<Subcategoria> subcategorias = GetQuery().Where(subcategoriaModel => subcategoriaModel.CodSubcategoria.Equals(codSubcategoria));
             return subcategorias.ElementAtOrDefault(0);
         }
 

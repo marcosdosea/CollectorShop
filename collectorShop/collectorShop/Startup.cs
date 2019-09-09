@@ -42,10 +42,13 @@ namespace collectorShop
             services.AddTransient<IGerenciadorAnuncio, GerenciadorAnuncio>();
             services.AddTransient<IServiceModelo, ServiceModelo>();
             services.AddTransient<IGerenciadorUsuario, GerenciadorUsuario>();
-            //services.AddScoped<IGerenciadorSubcategoria<Subcategoria>, GerenciadorSubcategoria>();
+           // services.AddTransient<ServiceReference1.CalcPrecoPrazoWSSoap, ServiceReference1.CalcPrecoPrazoWSSoapClient>();
+            services.AddTransient<ServiceCorreios.CalcPrecoPrazoWSSoap, ServiceCorreios.CalcPrecoPrazoWSSoap>();
+           // services.AddScoped<ServiceReference1.CalcPrecoPrazoWSSoap, ServiceReference1.CalcPrecoPrazoWSSoapClient>();
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
+        //    services.AddSingleton<ServiceReference1.CalcPrecoPrazoWSSoap, ServiceReference1.CalcPrecoPrazoWSSoapClient>();
 
-
+            
             //services.AddDefaultIdentity<IdentityUser>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
