@@ -105,11 +105,23 @@
             </div>
             <div class="col-md-12 col-sm-12">
                 <p>Iniciar negociação com o vendedor(a) @Html.DisplayFor(model => model.NomeUsuario):</p>
-                <!--   <div class="form-group">
-            <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Digite sua mensagem e o vendedor irá respondê-lo o mais rápido possível"></textarea>
-        </div> -->
+                
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Iniciar uma negociação</button>
+                  
+                    @using (Html.BeginForm("Create", "Negociacao", new { id = Model.CodAnuncio }))
+                    {
+                    <button type="submit" class="btn btn-primary" asp-area="Controllers" asp-action="Create" asp-controller="Negociacao" >Iniciar uma negociação</button>
+                    }
+                    
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <p>Deixar comentário:</p>
+                <div class="form-group">
+                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Digite sua mensagem e o anunciante irá respondê-lo o mais rápido possível"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Enviar comentário</button>
                 </div>
             </div>
         </div>
