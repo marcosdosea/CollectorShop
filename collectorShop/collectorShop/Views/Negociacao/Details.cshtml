@@ -1,0 +1,69 @@
+﻿@model Model.Negociacao
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>Negociacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodNegociacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodNegociacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorProposto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValorProposto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodUsuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nomeUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nomeUsuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

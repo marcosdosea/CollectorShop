@@ -67,7 +67,8 @@ namespace collectorShop
             services.AddTransient<IGerenciadorUsuario, GerenciadorUsuario>();
             //services.AddScoped<IGerenciadorSubcategoria<Subcategoria>, GerenciadorSubcategoria>();
             services.AddTransient<IGerenciadorSubcategoria, GerenciadorSubcategoria>();
-            //services.AddTransient<ServiceCorreios.CalcPrecoPrazoWSSoap, ServiceCorreios.CalcPrecoPrazoWSSoap>();
+            services.AddTransient<IServiceNegociacao, ServiceNegociacao>();
+            services.AddTransient<IServiceNegociacaoAnuncio, ServiceNegociacaoAnuncio>();
 
 
             services.AddDefaultIdentity<IdentityUser>()
