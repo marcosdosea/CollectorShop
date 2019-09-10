@@ -100,7 +100,7 @@ namespace collectorShop.Controllers
             gerenciadorAnuncio.Remover(id);
             return RedirectToAction(nameof(Index)); 
         }
-        
+      /*  
         public JsonResult CorreiosCalcular(string cep)
         {
             // Dados da empresa, se tiver contrato com os Correios
@@ -144,6 +144,6 @@ namespace collectorShop.Controllers
             result[0] = retornoCorreios.Servicos[0].Valor;
             return Json(result);
 
-        } 
+        } */
     }
     }
