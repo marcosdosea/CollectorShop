@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,7 @@ using Services;
 
 namespace collectorShop.Controllers
 {
+    [Authorize(Roles = "usuario")]
     public class ModeloController : Controller
     {
         private readonly IServiceModelo _servicesModelo;
@@ -31,6 +33,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Details/5
+        [AllowAnonymous]
         public IActionResult Details(int id)
         {
             Modelo modelo = _servicesModelo.Obter(id);
@@ -38,6 +41,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Create
+        [Authorize(Roles = "usuario")]
         public IActionResult Create()
         {
             ViewBag.CodCategoria = new SelectList(_gerenciadorCategoria.ObterTodos(), "CodCategoria", "Nome", null);
@@ -59,6 +63,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Edit/5
+        [Authorize(Roles = "usuario")]
         public ActionResult Edit(int id)
         {
             Modelo modelo = _servicesModelo.Obter(id);
@@ -87,6 +92,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Delete/5
+        [Authorize(Roles = "usuario")]
         public ActionResult Delete(int id)
         {
             Modelo modelo = _servicesModelo.Obter(id);

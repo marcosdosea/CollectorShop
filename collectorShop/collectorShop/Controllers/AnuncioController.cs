@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,6 +13,7 @@ using Services;
 
 namespace collectorShop.Controllers
 {
+    [Authorize]
     public class AnuncioController : Controller
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
@@ -33,6 +35,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Anuncio/Details/5
+        [AllowAnonymous]
         public ActionResult Details(int id)
         {
             Anuncio anuncio = gerenciadorAnuncio.Obter(id);
@@ -40,6 +43,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Anuncio/Create
+
         public ActionResult Create()
         {
             ViewBag.CodUsuario= new SelectList(gerenciadorUsuario.ObterTodos(), "CodUsuario", "Nome", null);

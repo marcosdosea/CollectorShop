@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><strong>THE COLECTOR SHOP</strong></a>
+                <a class="navbar-brand" href="#"><strong>THE COLECTOR SHOP</strong></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,24 +36,25 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a asp-controller="Anuncio" asp-action="Create">Anunciar grátis</a></li>
-                    <li><a asp-controller="Login" asp-action="Login">Login</a></li>
-                    <li><a asp-controller="Usuario" asp-action="Create">Nova Conta</a></li>
+                    <li><a href="#">Anunciar grátis</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Register">Nova Conta</a></li>
 
                     <li class="dropdown">
-                        <a asp-controller="#" asp-action="#" class="dropdown-toggle" data-toggle="dropdown">Suporte <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Suporte <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a asp-controller="#" asp-action="#"><strong>Compras</strong></a></li>
-                            <li><a asp-controller="#" asp-action="#"><strong>Vendas </strong></a></li>
+                            <li><a href="#"><strong>Compras</strong></a></li>
+                            <li><a href="#"><strong>Vendas </strong></a></li>
                             <li class="divider"></li>
                             <li>
-                                <a a asp-controller="#" asp-action="#">
+                                <a href="#">
                                     <strong>Dúvidas</strong>
                                 </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+               
                 <form class="navbar-form navbar-right" role="Pesquise">
                     <div class="form-group">
                         <input type="text" placeholder="Digite o que deseja ..." class="form-control">
@@ -74,7 +75,7 @@
 
     <div class="col-md-12 download-app-box text-center">
 
-        Anuncie grátis seu produto novo/usado sem custos de venda! <a asp-controller="Anuncio" asp-action="Create" class="btn btn-danger btn-lg">ANUNCIAR</a>
+        Anuncie grátis seu produto novo/usado sem custos de venda! <a href="#" class="btn btn-danger btn-lg">ANUNCIAR</a>
 
     </div>
 
@@ -83,28 +84,28 @@
 
 
         <div class="row small-box ">
-            <strong>Livros e mangás:</strong> <a asp-controller="Anuncio" asp-action="Create">Fantasia</a> |  <a asp-controller="Anuncio" asp-action="Create">Nacional</a> | <a asp-controller="Anuncio" asp-action="Create">Internacional</a> |
-            <a asp-controller="Anuncio" asp-action="#">Ficção</a> |  <a asp-controller="Anuncio" asp-action="Create">Terror</a> | <a asp-controller="Anuncio" asp-action="Create">Suspense</a> |<a asp-controller="#" asp-action="#">Aventura</a> |
-            <a asp-controller="Anuncio" asp-action="#">Romance</a> | <a asp-controller="Anuncio" asp-action="Create">Clássicos</a> |<a asp-controller="Anuncio" asp-action="Create">Contemporâneo</a> |  <a asp-controller="#" asp-action="#">Científico</a> |
-            <a asp-controller="Anuncio" asp-action="#">Acadêmico</a> |<a asp-controller="Anuncio" asp-action="Create">Raros</a> |  <a asp-controller="Anuncio" asp-action="Create">Poesia</a> | <a asp-controller="#" asp-action="#">Biografia</a> | <a asp-controller="#" asp-action="#">>HQs</a> |<a asp-controller="#" asp-action="#">Ver todos itens</a>
+            <strong>Livros e mangás:</strong> <a href="#">Fantasia</a> |  <a href="#">Nacional</a> | <a href="#">Internacional</a> |
+            <a href="#">Ficção</a> |  <a href="#">Terror</a> | <a href="#">Suspense</a> |<a href="#">Aventura</a> |
+            <a href="#">Romance</a> | <a href="#">Clássicos</a> |<a href="#">Contemporâneo</a> |  <a href="#">Científico</a> |
+            <a href="#">Acadêmico</a> |<a href="#">Raros</a> |  <a href="#">Poesia</a> | <a href="#">Biografia</a> | <a href="#">HQs</a> |<a href="#">Ver todos itens</a>
 
         </div>
         <div class="row small-box ">
-            <strong>Acessórios e outros:</strong> <a asp-controller="#" asp-action="#">CDs</a> |  <a asp-controller="#" asp-action="#">>Fantasias</a> | <a asp-controller="#" asp-action="#">Outros</a> |
-            <a asp-controller="#" asp-action="#">>Miniaturas</a> | <a asp-controller="#" asp-action="#">>Ver todos itens</a>
+            <strong>Acessórios e outros:</strong> <a href="#">CDs</a> |  <a href="#">Fantasias</a> | <a href="#">Outros</a> |
+            <a href="#">Miniaturas</a> | <a href="#">Ver todos itens</a>
         </div>
         <div class="row small-box ">
-            <strong>DVDs e Jogos : </strong><a asp-controller="#" asp-action="#">Filmes</a> |  <a asp-controller="#" asp-action="#">Séries</a> | <a asp-controller="#" asp-action="#">Box</a> |
-            <a asp-controller="#" asp-action="#">Anime </a>|  <a asp-controller="#" asp-action="#">Jogos</a> | <a asp-controller="#" asp-action="#">PS4</a> |<a asp-controller="#" asp-action="#">Outros</a> |<a asp-controller="#" asp-action="#">Ver todos itens</a>
+            <strong>DVDs e Jogos : </strong><a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Box</a> |
+            <a href="#">Anime </a>|  <a href="#">Jogos</a> | <a href="#">PS4</a> |<a href="#">Outros</a> |<a href="#">Ver todos itens</a>
 
         </div>
         <div class="row small-box pad-botom ">
-            <strong>Brinquedos :</strong> <a asp-controller="#" asp-action="#">Barbie</a> |  <a asp-controller="#" asp-action="#">Batman</a> | <a asp-controller="#" asp-action="#">Marvel</a> |
-            <a asp-controller="#" asp-action="#">DC Comics</a> |  <a asp-controller="#" asp-action="#">Hot Toys</a> | <a asp-controller="#" asp-action="#">Mattel</a> |<a asp-controller="#" asp-action="#">Outros</a> |
-            <a asp-controller="#" asp-action="#">Neca Toys</a> | <a asp-controller="#" asp-action="#">Disney</a> |<a asp-controller="#" asp-action="#">Estrela</a> |  <a asp-controller="#" asp-action="#">SlideShow</a> |
-            <a asp-controller="#" asp-action="#">Integrity Toys</a> |<a asp-controller="#" asp-action="#">Blythe</a> |  <a asp-controller="#" asp-action="#">BJD</a> | <a asp-controller="#" asp-action="#">Superman</a> |
-            <a asp-controller="#" asp-action="#">Filmes</a> |  <a asp-controller="#" asp-action="#">Séries</a> | <a asp-controller="#" asp-action="#">Carros</a> || <a asp-controller="#" asp-action="#">Figure Action</a> |<a asp-controller="#" asp-action="#">Custom</a> |
-            <a asp-controller="#" asp-action="#">Fashion Royalt</a>| <a asp-controller="#" asp-action="#">Ver todos itens</a>
+            <strong>Brinquedos :</strong> <a href="#">Barbie</a> |  <a href="#">Batman</a> | <a href="#">Marvel</a> |
+            <a href="#">DC Comics</a> |  <a href="#">Hot Toys</a> | <a href="#">Mattel</a> |<a href="#">Outros</a> |
+            <a href="#">Neca Toys</a> | <a href="#">Disney</a> |<a href="#">Estrela</a> |  <a href="#">SlideShow</a> |
+            <a href="#">Integrity Toys</a> |<a href="#">Blythe</a> |  <a href="#">BJD</a> | <a href="#">Superman</a> |
+            <a href="#">Filmes</a> |  <a href="#">Séries</a> | <a href="#">Carros</a> || <a href="#">Figure Action</a> |<a href="#">Custom</a> |
+            <a href="#">Fashion Royalt</a>| <a href="#">Ver todos itens</a>
 
         </div>
         <div class="row">
@@ -150,18 +151,18 @@
             <div class="col-md-4 social-box">
                 <strong>THE COLLECTOR SHOP</strong>
                 <hr>
-                <a asp-controller="#" asp-action="#"><i class="fa fa-facebook-square fa-3x "></i></a>
-                <a asp-controller="#" asp-action="#"><i class="fa fa-twitter-square fa-3x "></i></a>
-                <a asp-controller="#" asp-action="#"><i class="fa fa-google-plus-square fa-3x c"></i></a>
-                <a asp-controller="#" asp-action="#"><i class="fa fa-linkedin-square fa-3x "></i></a>
-                <a asp-controller="#" asp-action="#"><i class="fa fa-pinterest-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-google-plus-square fa-3x c"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-pinterest-square fa-3x "></i></a>
                 <p>
                     Nos encontre nas nossas redes sociais!
                 </p>
             </div>
             <div class="row small-box pad-botom ">
-                <a asp-controller="#" asp-action="#">Quem Somos</a>|<a asp-controller="#" asp-action="#">Como Comprar</a> | <a asp-controller="#" asp-action="#">Formas de Pagamento</a> |
-                <a asp-controller="#" asp-action="#">Entrega</a> |  <a asp-controller="#" asp-action="#">Política de Privacidade</a> | <a asp-controller="#" asp-action="#">Trocas e Devoluções</a> |<a asp-controller="#" asp-action="#">Regras</a>
+                <a href="#">Quem Somos</a>|<a href="#">Como Comprar</a> | <a href="#">Formas de Pagamento</a> |
+                <a href="#">Entrega</a> |  <a href="#">Política de Privacidade</a> | <a href="#">Trocas e Devoluções</a> |<a href="#">Regras</a>
             </div>
         </div>
         <hr>

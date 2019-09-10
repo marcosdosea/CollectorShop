@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using Services;
@@ -7,6 +8,7 @@ using System.Linq;
 
 namespace collectorShop.Controllers
 {
+    
     public class UsuarioController : Controller
     {
         private readonly IGerenciadorUsuario gerenciadorUsuario;
@@ -22,6 +24,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: usuario/Details/5
+        [Authorize(Roles = "administrador,usuario")]
         public ActionResult Details(int id)
         {
             Usuario usuario = gerenciadorUsuario.Obter(id);
@@ -29,6 +32,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Usuario/Create
+        [AllowAnonymous]
         public ActionResult Create()
         {
             return View();
@@ -48,6 +52,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: usuario/Edit/5
+        [Authorize(Roles = "administrador,usuario")]
         public ActionResult Edit(int id)
         {
             Usuario usuario = gerenciadorUsuario.Obter(id);
@@ -69,6 +74,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: usuario/Delete/5
+        [Authorize(Roles = "administrador")]
         public ActionResult Delete(int id)
         {
             Usuario usuario = gerenciadorUsuario.Obter(id);

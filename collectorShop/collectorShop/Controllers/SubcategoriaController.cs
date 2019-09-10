@@ -1,18 +1,16 @@
-﻿using Google.Protobuf.WellKnownTypes;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Model;
-using Persistence;
 using Services;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace collectorShop.Controllers
 {
+    [Authorize]
     public class SubcategoriaController : Controller
     {
         private readonly IGerenciadorSubcategoria gerenciadorSubcategoria;
@@ -30,15 +28,17 @@ namespace collectorShop.Controllers
         }
 
         // GET: Subcategoria/Details/5
+        [AllowAnonymous]
         public ActionResult Details(int id)
         {
             Subcategoria subcategoria = gerenciadorSubcategoria.Obter(id);
             return View(subcategoria);
         }
         // GET: Subcategoria/Create
+        [Authorize(Roles = "administrador")]
         public ActionResult Create()
         {
-            ViewBag.CodCategoria = new SelectList(gerenciadorCategoria.ObterTodos(), "CodCategoria", "Nome",null);
+            ViewBag.CodCategoria = new SelectList(gerenciadorCategoria.ObterTodos(), "codCategoria", "Nome", null);
             return View();
         }
 
@@ -56,6 +56,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Subcategoria/Edit/5
+        [Authorize(Roles = "administrador")]
         public ActionResult Edit(int id)
         {
             Subcategoria subcategoria = gerenciadorSubcategoria.Obter(id);
@@ -80,6 +81,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Subcategoria/Delete/5
+        [Authorize(Roles = "administrador")]
         public ActionResult Delete(int id)
         {
             Subcategoria subcategoria = gerenciadorSubcategoria.Obter(id);
