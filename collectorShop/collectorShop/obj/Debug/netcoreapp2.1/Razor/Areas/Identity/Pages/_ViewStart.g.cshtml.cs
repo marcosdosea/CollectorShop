@@ -13,12 +13,12 @@ namespace collectorShop.Areas.Identity.Pages
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 3 "D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\Areas\Identity\Pages\_ViewImports.cshtml"
+#line 3 "C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\Areas\Identity\Pages\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Identity;
 
 #line default
 #line hidden
-#line 2 "D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\Areas\Identity\Pages\_ViewImports.cshtml"
+#line 2 "C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\Areas\Identity\Pages\_ViewImports.cshtml"
 using collectorShop.Areas.Identity;
 
 #line default
