@@ -90,7 +90,7 @@ using collectorShop.Models;
             <h5>");
             EndContext();
             BeginContext(355, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1371a85bee3f4c47b221108d8053de2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70359c0659d546ad8484646be9854956", async() => {
                 BeginContext(395, 24, true);
                 WriteLiteral("&laquo;Voltar para lista");
                 EndContext();
@@ -122,7 +122,7 @@ using collectorShop.Models;
                             ");
             EndContext();
             BeginContext(737, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dc7f5ca467534250a7976ad67fd6ee55", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f3470ace3dd1437fae2c5a674b858609", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -142,7 +142,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"carousel-item mySlides\">\r\n                        <div class=\"item fixedHeightImg\">\r\n                            ");
             EndContext();
             BeginContext(1020, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3ba7c996e93549ed9a00aa8ac16e0c5d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d0d49f516a464cfa824202882d709e4d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -162,7 +162,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"carousel-item mySlides\">\r\n                        <div class=\"item fixedHeightImg\">\r\n                            ");
             EndContext();
             BeginContext(1301, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ebb07365714741b7a7478f48b8098fce", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "86f6ca1996cc4238bcac0ebffde40490", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -182,7 +182,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"carousel-item mySlides\">\r\n                        <div class=\"item fixedHeightImg\">\r\n                            ");
             EndContext();
             BeginContext(1582, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5b144b8b3fa64b4bb5dbbcd4e7c627ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "07da0a419cf5434f846c6dc2a178ab3d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -202,7 +202,7 @@ using collectorShop.Models;
             WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"carousel-item mySlides\">\r\n                        <div class=\"item fixedHeightImg\">\r\n                            ");
             EndContext();
             BeginContext(1863, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "196a8da7c7b9476aa580cefc4753b1ab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b2c5f47350a24679a94c76395af8b91e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -255,7 +255,7 @@ using collectorShop.Models;
             WriteLiteral("</strong>  </p>\r\n                        <p>\r\n                            <a href=\"#\">12x nos Cartões de crédito: </a><br>\r\n                            ");
             EndContext();
             BeginContext(2736, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7d3d55b346264c11af6f39d1d3f96a9c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "590fc7fe884244d098e0d0dba3b66581", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -294,12 +294,12 @@ using collectorShop.Models;
             WriteLiteral("</strong></p>\r\n                        ");
             EndContext();
             BeginContext(3072, 226, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "024c45ccf34545e2b6077946cca81ca7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66d1ea3a29924cd0ab47e7acfd2a2c2f", async() => {
                 BeginContext(3127, 30, true);
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(3157, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f05344abc64794a9bc21349d085a0a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "549c42ed78a84009b397705c32e3caff", async() => {
                     BeginContext(3174, 23, true);
                     WriteLiteral("Selecione a quantidade:");
                     EndContext();
@@ -321,7 +321,7 @@ using collectorShop.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(3236, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30d998d50efa438bb4d37757c06ed212", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa061515b9b341ec87c7791c1079ba3a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();

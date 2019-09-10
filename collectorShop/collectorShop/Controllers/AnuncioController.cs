@@ -16,15 +16,15 @@ namespace collectorShop.Controllers
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
         private readonly IGerenciadorUsuario gerenciadorUsuario;
-        private readonly ServiceCorreios.CalcPrecoPrazoWSSoap wsCorreios;
+     //   private readonly ServiceCorreios.CalcPrecoPrazoWSSoap wsCorreios;
         
         //cResultado
-        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario,
-            ServiceCorreios.CalcPrecoPrazoWSSoap _wsCorreios)
+        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario)
+           // ,ServiceCorreios.CalcPrecoPrazoWSSoap _wsCorreios)
         {
             gerenciadorAnuncio = _gerenciadorAnuncio;
             gerenciadorUsuario = _gerenciadorUsuario;
-            wsCorreios = _wsCorreios;
+          //  wsCorreios = _wsCorreios;
         }
         // GET: Anuncio
         public ActionResult Index()
@@ -100,7 +100,7 @@ namespace collectorShop.Controllers
             gerenciadorAnuncio.Remover(id);
             return RedirectToAction(nameof(Index)); 
         }
-        
+    /*    
         public JsonResult CorreiosCalcular(string cep)
         {
             // Dados da empresa, se tiver contrato com os Correios
@@ -144,6 +144,6 @@ namespace collectorShop.Controllers
             result[0] = retornoCorreios.Servicos[0].Valor;
             return Json(result);
 
-        } 
+        } */
     }
     }

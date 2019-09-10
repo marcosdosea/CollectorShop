@@ -226,12 +226,12 @@ using collectorShop.Models;
             WriteLiteral("\r\n        </dd>\r\n        \r\n    </dl>\r\n    \r\n    ");
             EndContext();
             BeginContext(1628, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd17e748430430fa983a4934bdeb3ac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04e6c93ce7444eb086766313051a6ec7", async() => {
                 BeginContext(1654, 84, true);
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-default\" /> |\r\n        ");
                 EndContext();
                 BeginContext(1738, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4eec13c050e4c8eab683c639ffb2219", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4a1cab2b9ec4b06b4072ea5d7838a40", async() => {
                     BeginContext(1760, 12, true);
                     WriteLiteral("Back to List");
                     EndContext();
