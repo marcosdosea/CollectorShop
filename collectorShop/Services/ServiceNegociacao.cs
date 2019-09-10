@@ -3,6 +3,8 @@ using Model;
 using System.Collections.Generic;
 using Persistence;
 using System.Linq;
+using System.Collections.Generic;
+
 
 namespace Services
 {
@@ -51,8 +53,10 @@ namespace Services
 
         }
 
-        public Negociacao Obter(int codNegociacao)
+       
+            public Negociacao Obter(int codNegociacao)
         {
+
             return _Contexto.Tbnegociacao
                 .Where(x => x.CodNegociacao == codNegociacao)
                 .Select(x => new Negociacao {

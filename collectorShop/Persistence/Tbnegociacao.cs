@@ -19,6 +19,7 @@ namespace Persistence
         public string Status { get; set; }
         public string Tipo { get; set; }
         public int CodUsuario { get; set; }
+        
 
         public virtual Tbusuario CodUsuarioNavigation { get; set; }
         public virtual ICollection<Negociacaoanuncio> Negociacaoanuncio { get; set; }

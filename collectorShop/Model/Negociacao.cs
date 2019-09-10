@@ -22,5 +22,6 @@ namespace Model
         public int CodUsuario { get; set; }
         [System.ComponentModel.DataAnnotations.Required]
         public string nomeUsuario { get; set; }
+        public int AnuncioUsuario { get; set; }
     }
 }

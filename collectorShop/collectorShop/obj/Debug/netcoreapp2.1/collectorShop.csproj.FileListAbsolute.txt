@@ -264,3 +264,8 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collec
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csproj.CopyComplete
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\NegociacaoAnuncio\Index.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\NegociacaoAnuncio\Details.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\NegociacaoAnuncio\Create.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\NegociacaoAnuncio\Edit.g.cshtml.cs
+D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\NegociacaoAnuncio\Delete.g.cshtml.cs
