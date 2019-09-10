@@ -30,3 +30,4 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persis
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
