@@ -10,7 +10,7 @@ namespace Services
         void Editar(Pagamento pagamentoModel);
         int Inserir(Pagamento pagamentoModel);
         Pagamento Obter(int negociacao);
-       // IEnumerable<Pagamento> ObterPorNome(string nome);
+       // IEnumerable<Pagamento> ObterPorNomeDestinario(string nome);
         IEnumerable<Pagamento> ObterTodos();
         void Remover(int idPagamento);
     }

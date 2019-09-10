@@ -125,8 +125,8 @@ namespace Services
             try
             {
                 subcategoria.CodSubcategoria = subcategoriaModel.CodSubcategoria;
-                subcategoria.Nome = subcategoria.Nome;
-                subcategoria.CodCategoria = subcategoria.CodCategoria;
+                subcategoria.Nome = subcategoriaModel.Nome;
+                subcategoria.CodCategoria = subcategoriaModel.CodCategoria;
 
             }
             catch (Exception e)
