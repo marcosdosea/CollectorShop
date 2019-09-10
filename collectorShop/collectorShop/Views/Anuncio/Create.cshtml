@@ -4,57 +4,72 @@
     Layout = "_Layout";
 }
 
-<h2>Create</h2>
-
-<h4>Anuncio</h4>
+<h4>Cadastrar novo anúncio</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" placeholder="Título" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input asp-for="Valor" class="form-control" placeholder="Valor" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+            <form action="~/assets/img/" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Carregar imagem</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <select asp-for="Status" class="form-control">
+                    <option value="">Selecione um status</option>
                     <option value="ativo">ATIVO</option>
                     <option value="inativo">INATIVO</option>
                 </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="QuantAnunciada" class="control-label"></label>
-                <input asp-for="QuantAnunciada" class="form-control" />
-                <span asp-validation-for="QuantAnunciada" class="text-danger"></span>
-            </div>
+            <!--   <div class="form-group">
+            <label asp-for="QuantAnunciada" class="control-label"></label>
+            <input asp-for="QuantAnunciada" class="form-control" placeholder="Quantidade anunciada" />
+            <span asp-validation-for="QuantAnunciada" class="text-danger"></span>
+        </div>
+        -->
             <div class="form-group">
                 <label asp-for="QuantDisponivel" class="control-label"></label>
-                <input asp-for="QuantDisponivel" class="form-control" />
+                <input asp-for="QuantDisponivel" class="form-control" placeholder="Quantidade disponível" />
                 <span asp-validation-for="QuantDisponivel" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
-                <input asp-for="Titulo" class="form-control" />
-                <span asp-validation-for="Titulo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
-                <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Valor" class="control-label"></label>
-                <input asp-for="Valor" class="form-control" />
-                <span asp-validation-for="Valor" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="CodUsuario" class="control-label"></label>
                 <input asp-for="CodUsuario" class="form-control" />
                 <span asp-validation-for="CodUsuario" class="text-danger"></span>
             </div>
+
+            <!--       <div class="form-group">
+        <label asp-for="OpcaoEnvio" class="control-label"></label>
+        <br />
+        <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PAC" checked>
+        <label>PAC</label>
+
+        <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="SEDEX">
+        <label>SEDEX</label>
+
+        <input asp-for="OpcaoEnvio" class="w3-radio" type="checkbox" name="envio" value="PESSOALMENTE">
+        <label>Retirar pessoalmente</label>
+        <span asp-validation-for="OpcaoEnvio" class="text-danger"></span>
+    </div> -->
             <div class="form-group">
-                <label asp-for="Msg" class="control-label"></label>
-                <input asp-for="Msg" class="form-control" />
-                <span asp-validation-for="Msg" class="text-danger"></span>
+                <label asp-for="Descricao" class="control-label"></label>
+                <textarea asp-for="Descricao" rows="8" class="form-control" placeholder="Descrição do produto"></textarea>
+                <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -69,4 +84,17 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function valida()
+        {
+          if (document.form1.sel.options[sel.selectedIndex].value=="")
+          {
+               alert("Escolha uma opção");
+               document.form1.sel.focus();
+               return false;
+          }
+        return true;
+        }
+
+    </script>
 }

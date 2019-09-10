@@ -1,17 +1,167 @@
 ﻿@model IEnumerable<Model.Anuncio>
 
 @{
-   Layout = "_Layout";
+    Layout = "_Layout";
 }
-<!DOCTYPE html>
+<div class="col-md-3">
+    <div>
+        <a href="#" class="list-group-item active">
+            Menu do Usuário
+        </a>
+        <ul class="list-group">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Anúncio</title>
-</head>
-<body>
-    <p>
+            <li class="list-group-item">
+
+                @Html.ActionLink("Meus dados", "Details", "Usuario")
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Modificar dados</a>
+
+            </li>
+
+            <li class="list-group-item">
+                <a href="#">Segurança</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Saldo</a>
+
+            </li>
+        </ul>
+    </div>
+    <!-- /.div -->
+    <div>
+        <a href="#" class="list-group-item active list-group-item-success">
+            Compras
+        </a>
+        <ul class="list-group">
+
+            <li class="list-group-item">
+                <a href="#">Compras</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Perguntas</a>
+
+            </li>
+
+        </ul>
+    </div>
+    <!-- /.div -->
+    <div>
+        <a href="#" class="list-group-item active">
+            Vendas
+        </a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#">Anúncios</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Vendas</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Perguntas</a>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="col-md-9">
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <h3><strong>Anúncios</strong></h3>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                        <h4>Ativos</h4>
+                        <hr>
+                        <div class="row">
+
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
+                                    <div class="thumbnail product-box">
+                                        <img src="assets/img/produto4.jpg" alt="" width="75" height="100" />
+                                        <div class="caption">
+                                            <h5><input type="checkbox" name="sel" value="selecionar"><a href="#">@Html.DisplayFor(modelItem => item.Titulo)</a></h5>
+                                            <p>Preço : <strong>R$ @Html.DisplayFor(modelItem => item.Valor)</strong>  </p>
+                                            @using (Html.BeginForm("Details", "Anuncio", new { id = item.CodAnuncio }))
+                                            {
+                                                <button type="submit" class="btn btn-primary">Ver detalhes</button>
+                                            }
+                                        </div>
+                                        @using (Html.BeginForm("Delete", "Anuncio", new { id = item.CodAnuncio }))
+                                        {
+                                            <button type="submit" class="btn btn-primary">Apagar</button>
+                                        }
+
+                                        @using (Html.BeginForm("Edit", "Anuncio", new { id = item.CodAnuncio }))
+                                        {
+                                            <button type="submit" class="btn btn-warning">Editar</button>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Create", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Criar novo anúncio</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Details", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Detalhes</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Edit", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            }
+                        </div>
+                        <div class="col-md-3">
+                            @using (Html.BeginForm("Delele", "Anuncio", FormMethod.Get))
+                            {
+                                <button type="submit" class="btn btn-primary">Apagar</button>
+                            }
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                                    <h4>Inativos</h4>
+                                    <hr>
+                                    <div class="col-md-12 download-app-box text-center">
+
+                                        Você não tem anúncios finalizados!
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<p>
+    <!--
         <a asp-action="Create">Criar novo anúncio</a>
         <br />
         <a asp-action="Edit">Editar anúncio</a>
@@ -20,6 +170,7 @@
         <br />
         <a asp-action="Details">Visualizar anúncio</a>
     </p>
+
     <table class="table">
         <thead>
             <tr>
@@ -36,6 +187,9 @@
                     @Html.DisplayNameFor(model => model.QuantDisponivel)
                 </th>
                 <th>
+                    @Html.DisplayNameFor(model => model.OpcaoEnvio)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.Titulo)
                 </th>
                 <th>
@@ -47,12 +201,11 @@
                 <th>
                     @Html.DisplayNameFor(model => model.CodUsuario)
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Msg)
-                </th>
+
                 <th></th>
             </tr>
         </thead>
+
         <tbody>
             @foreach (var item in Model)
             {
@@ -72,6 +225,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Titulo)
                     </td>
+                  <th>
+                    @Html.DisplayNameFor(model => model.OpcaoEnvio)
+                </th>
                     <td>
                         @Html.DisplayFor(modelItem => item.Descricao)
                     </td>
@@ -81,9 +237,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.CodUsuario)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Msg)
-                    </td>
+
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.CodAnuncio }) |
                         @Html.ActionLink("Create", "Create", new { id = item.CodAnuncio }) |
@@ -94,5 +248,4 @@
             }
         </tbody>
     </table>
-</body>
-</html>
+    -->

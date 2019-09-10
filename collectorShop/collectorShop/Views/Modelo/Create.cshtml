@@ -5,68 +5,131 @@
     Layout = "_Layout";
 }
 
-<h2>Create</h2>
+    <div class="col-md-3">
+        <div>
+            <a href="#" class="list-group-item active">
+                Menu do Usuário
+            </a>
+            <ul class="list-group">
 
-<h4>Modelo</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CodModelo" class="control-label"></label>
-                <input asp-for="CodModelo" class="form-control" />
-                <span asp-validation-for="CodModelo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="QuantTiragem" class="control-label"></label>
-                <input asp-for="QuantTiragem" class="form-control" />
-                <span asp-validation-for="QuantTiragem" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Colecao" class="control-label"></label>
-                <input asp-for="Colecao" class="form-control" />
-                <span asp-validation-for="Colecao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Label" class="control-label"></label>
-                <input asp-for="Label" class="form-control" />
-                <span asp-validation-for="Label" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Marca" class="control-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Ano" class="control-label"></label>
-                <input asp-for="Ano" class="form-control" />
-                <span asp-validation-for="Ano" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CodSubcategoria" class="control-label"></label>
-                <input asp-for="CodSubcategoria" class="form-control" />
-                <span asp-validation-for="CodSubcategoria" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CodUsuario" class="control-label"></label>
-                <input asp-for="CodUsuario" class="form-control" />
-                <span asp-validation-for="CodUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
+                <li class="list-group-item">
+                    <a href="#">Meus dados</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Modificar dados</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Apagar conta</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Segurança</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Saldo</a>
+
+                </li>
+            </ul>
+        </div>
+        <!-- /.div -->
+        <div>
+            <a href="#" class="list-group-item active list-group-item-success">
+                Compras
+            </a>
+            <ul class="list-group">
+
+                <li class="list-group-item">
+                    <a href="#">Compras</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Perguntas</a>
+
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.div -->
+        <div>
+            <a href="#" class="list-group-item active">
+                Vendas
+            </a>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#">Anúncios</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Vendas</a>
+
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Perguntas</a>
+
+                </li>
+            </ul>
+        </div>
+
     </div>
-</div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Cadastrar novo Modelo</h3>
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label"></label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="QuantTiragem" class="control-label"></label>
+                    <input asp-for="QuantTiragem" class="form-control" />
+                    <span asp-validation-for="QuantTiragem" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Colecao" class="control-label"></label>
+                    <input asp-for="Colecao" class="form-control" />
+                    <span asp-validation-for="Colecao" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Label" class="control-label"></label>
+                    <input asp-for="Label" class="form-control" />
+                    <span asp-validation-for="Label" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Marca" class="control-label"></label>
+                    <input asp-for="Marca" class="form-control" />
+                    <span asp-validation-for="Marca" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Ano" class="control-label"></label>
+                    <input asp-for="Ano" class="form-control" />
+                    <span asp-validation-for="Ano" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CodSubcategoria" class="control-label"></label>
+                    <select asp-for="CodSubcategoria" asp-items="ViewBag.CodSubcategoria">
+                    </select>
+                    <span asp-validation-for="CodSubcategoria" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CodUsuario" class="control-label"></label>
+                    <input asp-for="CodUsuario" class="form-control" />
+                    <span asp-validation-for="CodUsuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para a listagem</a>
 </div>
 
 @section Scripts {

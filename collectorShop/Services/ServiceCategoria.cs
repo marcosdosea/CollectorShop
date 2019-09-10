@@ -94,7 +94,23 @@ namespace Services
         /// </summary>
         /// <returns></returns>
         public IEnumerable<Categoria> ObterTodos()
-            => _Contexto.Tbcategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
+        {
+            return GetQuery();
+        }
+        private IQueryable<Categoria> GetQuery()
+        {
+
+            IQueryable<Tbcategoria> Tbcategoria = _Contexto.Tbcategoria;
+            var query = from categoria in Tbcategoria
+                        select new Categoria
+                        {
+                            CodCategoria = categoria.CodCategoria,
+                            Nome = categoria.Nome,
+                           
+                        };
+            return query;
+        }
+        //  => _Contexto.Tbcategoria.Select(x => new Categoria { Nome = x.Nome, CodCategoria = x.CodCategoria }).ToList();
 
         /*public void Remover(Categoria entidade)
         {
