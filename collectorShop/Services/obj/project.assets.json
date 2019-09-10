@@ -5440,24 +5440,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igsan\\.nuget\\packages\\": {},
+    "C:\\Users\\barbi\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\igsan\\.nuget\\packages\\",
-      "outputPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Services\\obj\\",
+      "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\igsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\barbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -5469,11 +5472,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
-              "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
             },
-            "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\6 periodo\\Engenharia de Software 2\\Projeto\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
             }
           }
         }

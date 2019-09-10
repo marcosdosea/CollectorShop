@@ -17,12 +17,14 @@ namespace collectorShop.Controllers
         private readonly IServiceModelo _servicesModelo;
         private readonly IGerenciadorSubcategoria _gerenciadorSubcategoria;
         private readonly IGerenciadorUsuario _gerenciadorUsuario;
+        private readonly IService<Categoria> _gerenciadorCategoria;
         // GET: Modelo
 
-        public ModeloController(IServiceModelo serviceModelo, IGerenciadorSubcategoria gerenciadorSubcategoria, IGerenciadorUsuario gerenciadorUsuario)
+        public ModeloController(IServiceModelo serviceModelo, IGerenciadorSubcategoria gerenciadorSubcategoria, IService<Categoria> gerenciadorCategoria, IGerenciadorUsuario gerenciadorUsuario)
         {
             _servicesModelo = serviceModelo;
             _gerenciadorSubcategoria = gerenciadorSubcategoria;
+            _gerenciadorCategoria = gerenciadorCategoria;
             _gerenciadorUsuario = gerenciadorUsuario;
         }
         public IActionResult Index()
@@ -42,6 +44,8 @@ namespace collectorShop.Controllers
         [Authorize(Roles = "usuario")]
         public IActionResult Create()
         {
+            ViewBag.CodCategoria = new SelectList(_gerenciadorCategoria.ObterTodos(), "CodCategoria", "Nome", null);
+            ViewBag.CodSubcategoria = new SelectList(_gerenciadorSubcategoria.ObterTodos(), "CodSubcategoria", "Nome", null);
             return View();
         }
 

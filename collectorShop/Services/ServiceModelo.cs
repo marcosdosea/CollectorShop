@@ -60,7 +60,8 @@ namespace Services
                 Colecao = x.Colecao,
                 Label = x.Label,
                 Marca = x.Marca,
-                QuantTiragem = x.QuantTiragem
+                QuantTiragem = x.QuantTiragem,
+                nomeSubCategoria = x.CodSubcategoriaNavigation.Nome
             }).SingleOrDefault();
             
         }
@@ -77,7 +78,9 @@ namespace Services
                Colecao = x.Colecao,
                Label = x.Label,
                Marca = x.Marca,
-               QuantTiragem = x.QuantTiragem
+               QuantTiragem = x.QuantTiragem,
+               nomeSubCategoria = x.CodSubcategoriaNavigation.Nome,
+               nomeUsuario = x.TbUsuarioCodUsuarioNavigation.Nome
            }).ToList();
 
 

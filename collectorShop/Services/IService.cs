@@ -13,7 +13,7 @@ namespace Services
         T Obter(int idEntidade);
         void Remover(int codCategoria);
         //IEnumerable<Categoria> ObterTodos();
-        //IEnumerable<Categoria> ObterPorNome(string nome);
+        //IEnumerable<Categoria> ObterPorNomeDestinario(string nome);
         IEnumerable<T> ObterTodos();
         IEnumerable<Categoria> ObterPorNome(string nome);
     }

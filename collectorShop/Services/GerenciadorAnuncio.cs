@@ -106,11 +106,13 @@ namespace Services
                             Titulo = anuncio.Titulo,
                             CodUsuario = anuncio.CodUsuario,
                             Descricao = anuncio.Descricao,
-                          //  Msg = anuncio.Msg,
+                        //    OpcaoEnvio = anuncio.Negociacaoanuncio.
+                            NomeUsuario = anuncio.CodUsuarioNavigation.Nome,
                             QuantAnunciada = anuncio.QuantAnunciada,
                             QuantDisponivel = (int)anuncio.QuantDisponivel,
                             Status = anuncio.Status,
                             Valor = (float)anuncio.Valor,
+                      //      NomeSubcategoria = anuncio.Anunciomodelo.
 
         };
             return query;

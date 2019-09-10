@@ -84,9 +84,9 @@ namespace Services
         /// </summary>
         /// <param name="codAnuncio">Identificador da subcategoria</param>
         /// <returns></returns>
-        public Subcategoria Obter(int codAnuncio)
+        public Subcategoria Obter(int codSubcategoria)
         {
-            IEnumerable<Subcategoria> subcategorias = GetQuery().Where(subcategoriaModel => subcategoriaModel.CodSubcategoria.Equals(codAnuncio));
+            IEnumerable<Subcategoria> subcategorias = GetQuery().Where(subcategoriaModel => subcategoriaModel.CodSubcategoria.Equals(codSubcategoria));
             return subcategorias.ElementAtOrDefault(0);
         }
 
@@ -100,6 +100,7 @@ namespace Services
                             CodSubcategoria = subcategoria.CodSubcategoria,
                             Nome = subcategoria.Nome,
                             CodCategoria = subcategoria.CodCategoria,
+                            NomeCategoria = subcategoria.CodCategoriaNavigation.Nome
                         };
             return query;
         }
@@ -124,8 +125,8 @@ namespace Services
             try
             {
                 subcategoria.CodSubcategoria = subcategoriaModel.CodSubcategoria;
-                subcategoria.Nome = subcategoria.Nome;
-                subcategoria.CodCategoria = subcategoria.CodCategoria;
+                subcategoria.Nome = subcategoriaModel.Nome;
+                subcategoria.CodCategoria = subcategoriaModel.CodCategoria;
 
             }
             catch (Exception e)

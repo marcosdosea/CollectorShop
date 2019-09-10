@@ -35,12 +35,16 @@ namespace Model
         [StringLength(4)]
         public string Ano { get; set; }
         [Required]
-        [Display(Name = "Codigo da SubCategoria")]
+        [Display(Name = "SubCategoria")]
         public int CodSubcategoria { get; set; }
         [Required]
         [Display(Name = "Codigo do Usuario")]
         public int CodUsuario { get; set; }
-
+        public string Edicao { get; set; }
+        public string Roteirista { get; set; }
+        public string Desenhista { get; set; }
+        public string Isbn { get; set; }
+        public string Autor { get; set; }
         public string nomeSubCategoria { get; set; }
         public string nomeUsuario { get; set; }
 
