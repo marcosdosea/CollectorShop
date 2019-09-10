@@ -286,3 +286,8 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Details.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Edit.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Modelo\Index.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Create.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Delete.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Details.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Edit.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Index.g.cshtml.cs
