@@ -18,15 +18,15 @@ namespace collectorShop.Controllers
     {
         private readonly IGerenciadorAnuncio gerenciadorAnuncio;
         private readonly IGerenciadorUsuario gerenciadorUsuario;
-        private readonly ServiceCorreios.CalcPrecoPrazoWSSoap wsCorreios;
+    //    private readonly ServiceCorreios.CalcPrecoPrazoWSSoap wsCorreios;
         
         //cResultado
-        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario,
-            ServiceCorreios.CalcPrecoPrazoWSSoap _wsCorreios)
+        public AnuncioController(IGerenciadorAnuncio _gerenciadorAnuncio, IGerenciadorUsuario _gerenciadorUsuario)
+           // ,ServiceCorreios.CalcPrecoPrazoWSSoap _wsCorreios)
         {
             gerenciadorAnuncio = _gerenciadorAnuncio;
             gerenciadorUsuario = _gerenciadorUsuario;
-            wsCorreios = _wsCorreios;
+          //  wsCorreios = _wsCorreios;
         }
         // GET: Anuncio
         public ActionResult Index()
