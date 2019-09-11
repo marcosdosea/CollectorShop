@@ -4,17 +4,146 @@
     Layout = "_Layout";
 }
 
-<!DOCTYPE html>
+<div class="col-md-3">
+    <div>
+        <a href="#" class="list-group-item active">
+            Menu do Usuário
+        </a>
+        <ul class="list-group">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+            <li class="list-group-item">
+
+                @Html.ActionLink("Meus dados", "Details", "Usuario")
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Modificar dados</a>
+
+            </li>
+
+            <li class="list-group-item">
+                <a href="#">Segurança</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Saldo</a>
+
+            </li>
+        </ul>
+    </div>
+    <!-- /.div -->
+    <!-- /.div -->
+    <div>
+        <a href="#" class="list-group-item active">
+            Anúncios
+        </a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#">Compras</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Vendas</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Negociações</a>
+
+            </li>
+            <li class="list-group-item">
+                <a href="#">Perguntas</a>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="col-md-9">
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <h3><strong>Negociações</strong></h3>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                        <h4>Abertas</h4>
+                        <hr>
+                        <div class="row">
+
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-3 text-center col-sm-4 col-xs-4">
+                                    <div class="thumbnail product-box">
+
+                                        <div class="caption">
+
+                                            <p>Modalidade : <strong> @Html.DisplayFor(modelItem => item.Tipo)</strong>  </p>
+                                            <p>Valor proposto : <strong>R$ @Html.DisplayFor(modelItem => item.ValorProposto)</strong>  </p>
+                                            <p>Data : <strong> @Html.DisplayFor(modelItem => item.Data)</strong>  </p>
+                                            @using (Html.BeginForm("Details", "Negociacao", new { id = item.CodNegociacao }))
+                                            {
+                                                <button type="submit" class="btn btn-primary">Ver detalhes</button>
+                                            }
+                                        </div>
+                                        @using (Html.BeginForm("Delete", "Negociacao", new { id = item.CodNegociacao }))
+                                        {
+                                            <button type="submit" class="btn btn-primary">Apagar</button>
+                                        }
+
+                                        @using (Html.BeginForm("Edit", "Negociacao", new { id = item.CodNegociacao }))
+                                        {
+                                            <button type="submit" class="btn btn-warning">Editar</button>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                                    <h4>Aguardando contraproposta</h4>
+                                    <hr>
+                                    <div class="col-md-12 download-app-box text-center">
+
+                                        Você não tem negociações em espera!
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <img src="assets/img/anuncio.jpg" width="20px" height="30px" align="left">
+                                    <h4>Finalizadas</h4>
+                                    <hr>
+                                    <div class="col-md-12 download-app-box text-center">
+
+                                        Você não tem negociações finalizadas!
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--
+<a asp-action="Create">Create New</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -43,37 +172,37 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodNegociacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValorProposto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodUsuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nomeUsuario)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.CodNegociacao  }) 
-                @Html.ActionLink("Details", "Details", new {  id=item.CodNegociacao  }) 
-                @Html.ActionLink("Delete", "Delete", new {  id=item.CodNegociacao })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodNegociacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValorProposto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nomeUsuario)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CodNegociacao })
+                    @Html.ActionLink("Details", "Details", new { id = item.CodNegociacao })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CodNegociacao })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
-</body>
-</html>
+-->
