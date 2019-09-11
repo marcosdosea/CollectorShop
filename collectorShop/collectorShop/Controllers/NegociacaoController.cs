@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services;
+using Persistence;
 
 namespace collectorShop.Controllers
 {
@@ -22,6 +23,7 @@ namespace collectorShop.Controllers
         // GET: Negociacao
         public ActionResult Index()
         {
+            
             return View(_serviceNegociacao.ObterTodos());
         }
 
@@ -35,7 +37,10 @@ namespace collectorShop.Controllers
 
         // GET: Negociacao/Create
         public ActionResult Create()
+            
         {
+            var func = new Tbnegociacao();
+            func.Data = DateTime.Now;
             return View();
         }
 
@@ -44,6 +49,8 @@ namespace collectorShop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Negociacao negociacao)
         {
+            Tbnegociacao tbnegociacao = new Tbnegociacao();
+            tbnegociacao.Data = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _serviceNegociacao.Inserir(negociacao);
@@ -85,6 +92,10 @@ namespace collectorShop.Controllers
         {
             Negociacao negociacao = _serviceNegociacao.Obter(id);
             return View(negociacao);
+        }
+        public ActionResult Grafico()
+        {
+            return View();
         }
 
         // POST: Negociacao/Delete/5
