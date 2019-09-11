@@ -107,12 +107,12 @@
                 <p>Iniciar negociação com o vendedor(a) @Html.DisplayFor(model => model.NomeUsuario):</p>
                 
                 <div class="form-group">
-                  
+                   
                     @using (Html.BeginForm("Create", "Negociacao", new { id = Model.CodAnuncio }))
                     {
-                    <button type="submit" class="btn btn-primary" asp-area="Controllers" asp-action="Create" asp-controller="Negociacao" >Iniciar uma negociação</button>
+                        <button type="submit" class="btn btn-primary" asp-area="Controllers" asp-action="Create" asp-controller="Negociacao">Iniciar uma negociação</button>
                     }
-                    
+
                 </div>
             </div>
             <div class="col-md-12 col-sm-12">
