@@ -3,105 +3,205 @@
 @{
     Layout = "_Layout";
 }
+<style>
+    #regForm {
+  background-color: aliceblue;
+  margin: auto;
+  padding: 60px;
+  width: auto;
+  min-width: 300px;
+}
 
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
 <h4>Iniciar Negociacao</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <!--    <div class="form-group">
-                    <label asp-for="CodNegociacao" class="control-label"></label>
-                    <input asp-for="CodNegociacao" class="form-control" />
-                    <span asp-validation-for="CodNegociacao" class="text-danger"></span>
-                </div> -->
-            <div class="form-group">
-                <label asp-for="Data" class="control-label"></label>
-                <input  asp-for="Data" class="form-control" id="DATE" />
-                <span asp-validation-for="Data" class="text-danger"></span>
+    <div class="col-sm-6 text-justify">
+        <form id="regForm" asp-action="Create">
+            <div class="tab">
+                <h5 class="bg-primary text-center"> Escolha a modalidade da negociação: </h5>
+                <!--  <form asp-action="Create"> -->
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <!--    <div class="form-group">
+            <label asp-for="CodNegociacao" class="control-label"></label>
+            <input asp-for="CodNegociacao" class="form-control" />
+            <span asp-validation-for="CodNegociacao" class="text-danger"></span>
+        </div> -->
+                <div class="form-group">
+                    <label asp-for="Data" class="control-label"></label>
+                    <input asp-for="Data" value="@DateTime.Now" class="form-control" type="datetime" readonly />
+                    <span asp-validation-for="Data" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tipo" class="control-label"></label>
+                    <select asp-for="Tipo" class="form-control">
+                        <option value="">Selecione o tipo:</option>
+                        <option value="venda">venda</option>
+                        <option value="troca" disabled>troca</option>
+                        <option value="vendaTroca" disabled>venda/Troca</option>
+                    </select>
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="ValorProposto" class="control-label"></label>
-                <input asp-for="ValorProposto" class="form-control" />
-                <span asp-validation-for="ValorProposto" class="text-danger"></span>
+            <div class="tab">
+                <div class="form-group">
+                    <label asp-for="ValorProposto" class="control-label"></label>
+                    <input asp-for="ValorProposto" class="form-control" />
+                    <span asp-validation-for="ValorProposto" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label"></label>
+
+                    <select asp-for="Status" class="form-control">
+                        <option value="">Selecione o status:</option>
+                        <option value="Aberto">Aberto</option>
+                        <option value="Aguardando contraproposta">Aguardando contraproposta</option>
+                        <option value="Fechado">Fechado</option>
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
+            <div class="tab">
+                <div class="form-group">
+                    <label asp-for="CodUsuario" class="control-label"></label>
+                    <input asp-for="CodUsuario" class="form-control" />
+                    <span asp-validation-for="CodUsuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="nomeUsuario" class="control-label"></label>
+                    <input asp-for="nomeUsuario" class="form-control" />
+                    <span asp-validation-for="nomeUsuario" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label"></label>
-                <input asp-for="Tipo" class="form-control" />
-                <span asp-validation-for="Tipo" class="text-danger"></span>
+            <div class="tab">
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default"/> 
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="CodUsuario" class="control-label"></label>
-                <input asp-for="CodUsuario" class="form-control" />
-                <span asp-validation-for="CodUsuario" class="text-danger"></span>
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" class="btn btn bg-primary" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                    <button type="button" class="btn btn bg-primary" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="nomeUsuario" class="control-label"></label>
-                <input asp-for="nomeUsuario" class="form-control" />
-                <span asp-validation-for="nomeUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
             </div>
         </form>
+        <!--  </form>-->
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="alert-info" asp-controller="Home" asp-action="Index">Voltar para Home</a>
 </div>
 <script>
-    /*  // Obtém a data/hora atual
-  var data = new Date();
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
 
-  // Guarda cada pedaço em uma variável
-  var dia     = data.getDate();           // 1-31
-  var dia_sem = data.getDay();            // 0-6 (zero=domingo)
-  var mes     = data.getMonth();          // 0-11 (zero=janeiro)
-  var ano2    = data.getYear();           // 2 dígitos
-  var ano4    = data.getFullYear();       // 4 dígitos
-  var hora    = data.getHours();          // 0-23
-  var min     = data.getMinutes();        // 0-59
-  var seg     = data.getSeconds();        // 0-59
-  var mseg    = data.getMilliseconds();   // 0-999
-  var tz      = data.getTimezoneOffset(); // em minutos
+function showTab(n) {
+  // This function will display the specified tab of the form ...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  // ... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  // ... and run a function that displays the correct step indicator:
+  fixStepIndicator(n)
+}
 
-  // Formata a data e a hora (note o mês + 1)
-  var str_data = dia + '/' + (mes+1) + '/' + ano4;
-  var str_hora = hora + ':' + min + ':' + seg;
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form... :
+  if (currentTab >= x.length) {
+    //...the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
 
-  // Mostra o resultado
-  //alert('Hoje é ' + str_data + ' às ' + str_hora);
-      var data = new Date();
-  var dias = new Array(
-   'domingo','segunda','terça','quarta','quinta','sexta','sábado'
-  );
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
 
-      alert('Hoje é ' + dias[data.getDay()]);
-
-      var today = new Date();
-      var dd = today.getDate();
-      var mm = today.getMonth() + 1; //January is 0!
-
-      var yyyy = today.getFullYear();
-      if (dd < 10) {
-        dd = '0' + dd;
-      }
-      if (mm < 10) {
-        mm = '0' + mm;
-      }
-      var today = dd + '/' + mm + '/' + yyyy;
-      document.getElementById('DATE').value = today;*/
-    //document.getElementById("date").value = new Date().toJSON().slice(0, 10)
-
-    var d1 = new Date();
-    d1.toString('dd-MM-yyyy');
-    document.getElementById("#DATE").value = d1;
-   // d1.toString('dddd, MMMM ,yyyy')
-  //  document.getElementById('DATE').value = (new Date()).getTime();
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class to the current step:
+  x[n].className += " active";
+}
 </script>
