@@ -291,3 +291,4 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Details.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Edit.g.cshtml.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Index.g.cshtml.cs
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Negociacao\Grafico.g.cshtml.cs
