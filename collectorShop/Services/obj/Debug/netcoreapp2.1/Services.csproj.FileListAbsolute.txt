@@ -20,7 +20,6 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Model.pdb
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\Persistence.pdb
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
-C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
