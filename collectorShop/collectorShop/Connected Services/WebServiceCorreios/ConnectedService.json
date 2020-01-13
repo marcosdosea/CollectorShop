@@ -1,12 +1,12 @@
 ﻿{
   "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
-  "Version": "15.0.30730.948",
+  "Version": "15.0.31022.994",
   "GettingStartedDocument": {
     "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
   },
   "ExtendedData": {
     "inputs": [
-      "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx"
+      "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?wsdl"
     ],
     "collectionTypes": [
       "System.Array",
@@ -17,6 +17,9 @@
     ],
     "references": [
       "BouncyCastle.Crypto, {BouncyCastle.NetCore, 1.8.3}",
+      "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\bin\\Debug\\netcoreapp2.1\\Model.dll",
+      "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\bin\\Debug\\netcoreapp2.1\\Persistence.dll",
+      "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\bin\\Debug\\netcoreapp2.1\\Services.dll",
       "dotnet-aspnet-codegenerator-design, {Microsoft.VisualStudio.Web.CodeGeneration.Design, 2.1.9}",
       "Google.Protobuf, {Google.Protobuf, 3.6.1}",
       "Microsoft.AspNetCore, {Microsoft.AspNetCore, 2.1.1}",
