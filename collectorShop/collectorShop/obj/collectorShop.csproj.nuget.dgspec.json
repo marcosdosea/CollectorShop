@@ -74,6 +74,14 @@
               "target": "Package",
               "version": "[2.1.9, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.10.1, )"
+            },
+            "Ninject.MVC5": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "System.Runtime": {
               "target": "Package",
               "version": "[4.3.1, )"

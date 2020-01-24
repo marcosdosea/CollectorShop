@@ -3,8 +3,6 @@ using Model;
 using System.Collections.Generic;
 using Persistence;
 using System.Linq;
-using System.Collections.Generic;
-
 
 namespace Services
 {

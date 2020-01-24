@@ -293,5 +293,5 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Edit.cshtml.g.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Index.cshtml.g.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\Connected Services\WebServiceCorreios\ConnectedService.json
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
