@@ -14,7 +14,6 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb
-C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.deps.json
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.pdb
@@ -24,3 +23,12 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Mono.Cecil.Mdb.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Mono.Cecil.Pdb.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Mono.Cecil.Rocks.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\nunit.core.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\nunit.core.interfaces.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\nunit.util.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

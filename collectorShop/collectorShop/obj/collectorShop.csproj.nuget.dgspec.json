@@ -113,6 +113,10 @@
             "System.ServiceModel.Security": {
               "target": "Package",
               "version": "[4.4.*, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

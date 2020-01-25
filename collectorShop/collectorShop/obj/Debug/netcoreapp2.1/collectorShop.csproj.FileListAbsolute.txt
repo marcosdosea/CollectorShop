@@ -302,3 +302,4 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\bin\Debug\netco
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\nunit.core.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\nunit.core.interfaces.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\nunit.util.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
