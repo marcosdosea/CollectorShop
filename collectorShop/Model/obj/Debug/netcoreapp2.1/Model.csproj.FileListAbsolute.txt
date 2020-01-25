@@ -24,3 +24,11 @@ D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb
 D:\6 periodo\Engenharia de Software 2\Projeto\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\igsan\Desktop\collector\CollectorShop\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb

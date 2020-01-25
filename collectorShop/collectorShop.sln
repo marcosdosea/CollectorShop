@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeTeste", "UnidadeTeste\UnidadeTeste.csproj", "{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProjectCollectorIgor", "XUnitTestProjectCollectorIgor\XUnitTestProjectCollectorIgor.csproj", "{653005F4-729E-4105-8977-64E0E20CD51C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653005F4-729E-4105-8977-64E0E20CD51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653005F4-729E-4105-8977-64E0E20CD51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653005F4-729E-4105-8977-64E0E20CD51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653005F4-729E-4105-8977-64E0E20CD51C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
