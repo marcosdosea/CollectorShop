@@ -11,7 +11,7 @@ using Services;
 
 namespace collectorShop.Controllers
 {
-    [Authorize(Roles = "usuario")]
+    [Authorize]
     public class ModeloController : Controller
     {
         private readonly IServiceModelo _servicesModelo;
@@ -39,9 +39,9 @@ namespace collectorShop.Controllers
             Modelo modelo = _servicesModelo.Obter(id);
             return View(modelo);
         }
-
+     //   [Authorize(Roles = "administrador")]
         // GET: Modelo/Create
-        [Authorize(Roles = "usuario")]
+    //    [Authorize(Roles = "administrador")]
         public IActionResult Create()
         {
             ViewBag.CodCategoria = new SelectList(_gerenciadorCategoria.ObterTodos(), "CodCategoria", "Nome", null);
@@ -63,7 +63,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Edit/5
-        [Authorize(Roles = "usuario")]
+      //  [Authorize(Roles = "usuario")]
         public ActionResult Edit(int id)
         {
             Modelo modelo = _servicesModelo.Obter(id);
@@ -92,7 +92,7 @@ namespace collectorShop.Controllers
         }
 
         // GET: Modelo/Delete/5
-        [Authorize(Roles = "usuario")]
+    //    [Authorize(Roles = "usuario")]
         public ActionResult Delete(int id)
         {
             Modelo modelo = _servicesModelo.Obter(id);
