@@ -37,3 +37,4 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\bin\Debug\netcore
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\nunit.core.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\nunit.core.interfaces.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\bin\Debug\netcoreapp2.1\nunit.util.dll
+C:\Users\barbi\Desktop\CollectorShop\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache

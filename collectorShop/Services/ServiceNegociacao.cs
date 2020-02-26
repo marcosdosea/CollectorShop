@@ -44,7 +44,7 @@ namespace Services
             }
             catch (Exception e)
             {
-               // throw new Exception($"Não foi possivel inserir a negociacao {entidadeParaTabela.CodNegociacao} do usuario  {entidadeParaTabela.CodUsuarioNavigation.Nome} com a seguinte exceção {e.Message}");
+                throw new Exception($"Não foi possivel inserir a negociacao {entidadeParaTabela.CodNegociacao} do usuario  {entidadeParaTabela.CodUsuarioNavigation.Nome} com a seguinte exceção {e.Message}");
 
             }
             return negociacaoModel.CodNegociacao;
