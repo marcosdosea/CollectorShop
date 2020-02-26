@@ -32,7 +32,6 @@
           "Moq": "4.10.1",
           "NUnit": "3.12.0",
           "NUnitTestAdapter": "2.2.0",
-          "Ninject.MVC5": "3.3.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0",
           "Services": "1.0.0",
@@ -374,17 +373,6 @@
         },
         "compile": {
           "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.dll": {}
-        }
-      },
-      "Ninject.MVC5/3.3.0": {
-        "runtime": {
-          "lib/net45/Ninject.Web.Mvc.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.0.0"
-          }
-        },
-        "compile": {
-          "lib/net45/Ninject.Web.Mvc.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -4231,13 +4219,6 @@
       "sha512": "sha512-AmkCIt8sAM6Jo8kSCjxLd/1rPSC3TCm3Jg8k9uLI/+btSWxSbANkyS9a//NRmdYGmvSPKEmNSHJOpIqygGsupA==",
       "path": "mysql.data.entityframeworkcore/8.0.17",
       "hashPath": "mysql.data.entityframeworkcore.8.0.17.nupkg.sha512"
-    },
-    "Ninject.MVC5/3.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NLmpKSb6OXyWR17NCdeqqpMcvyW2AXlQu5SrICQLXwYYwvCgGX++GfJ3ieeyvjSDkf2q8GihPk6Jhkf+Q0/TPw==",
-      "path": "ninject.mvc5/3.3.0",
-      "hashPath": "ninject.mvc5.3.3.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

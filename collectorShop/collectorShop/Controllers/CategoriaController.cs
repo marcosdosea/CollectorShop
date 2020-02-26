@@ -30,10 +30,10 @@ namespace collectorShop.Controllers
         // GET: Categoria/Details/5
         public IActionResult Details(int id)
         {
-            if (id == null)
+            /*if (id == null)
             {
                 return BadRequest();
-            }
+            }*/
             Categoria cat = _servicesCategoria.Obter(id);
             if (cat == null)
             {
