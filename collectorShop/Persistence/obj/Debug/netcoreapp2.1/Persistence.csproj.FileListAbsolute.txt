@@ -47,3 +47,4 @@ C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\obj\Debug\n
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
