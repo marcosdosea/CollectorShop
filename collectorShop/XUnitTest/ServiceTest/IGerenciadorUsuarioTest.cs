@@ -66,8 +66,6 @@ namespace XUnitTest.ServiceTest
 
             Assert.NotNull(model);
 
-            Assert.Equal(1, model.Count());
-
             Assert.NotNull(result);
 
         }
