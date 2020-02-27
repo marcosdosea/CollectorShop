@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -80,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

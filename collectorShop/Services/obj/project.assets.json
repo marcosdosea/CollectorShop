@@ -6113,11 +6113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj",
+      "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\obj\\",
+      "outputPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6138,11 +6138,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Model\\Model.csproj"
             },
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -6185,7 +6185,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

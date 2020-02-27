@@ -2867,15 +2867,6 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Ninject.MVC5/3.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Ninject.Web.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Ninject.Web.Mvc.dll": {}
-        }
-      },
       "NuGet.Frameworks/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -8348,19 +8339,6 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
-      ]
-    },
-    "Ninject.MVC5/3.3.0": {
-      "sha512": "NLmpKSb6OXyWR17NCdeqqpMcvyW2AXlQu5SrICQLXwYYwvCgGX++GfJ3ieeyvjSDkf2q8GihPk6Jhkf+Q0/TPw==",
-      "type": "package",
-      "path": "ninject.mvc5/3.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Ninject.Web.Mvc.dll",
-        "lib/net45/Ninject.Web.Mvc.xml",
-        "ninject.mvc5.3.3.0.nupkg.sha512",
-        "ninject.mvc5.nuspec"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -14154,7 +14132,6 @@
       "Moq >= 4.10.1",
       "NUnit >= 3.12.0",
       "NUnitTestAdapter >= 2.2.0",
-      "Ninject.MVC5 >= 3.3.0",
       "Persistence >= 1.0.0",
       "Selenium.WebDriver >= 3.141.0",
       "Services >= 1.0.0",
@@ -14173,11 +14150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+      "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\collectorShop\\collectorShop.csproj",
       "projectName": "collectorShop",
-      "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\collectorShop.csproj",
+      "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\collectorShop\\collectorShop.csproj",
       "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\collectorShop\\obj\\",
+      "outputPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\collectorShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -14198,14 +14175,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Model\\Model.csproj"
+            "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Model\\Model.csproj"
             },
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Persistence\\Persistence.csproj"
+            "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj"
             },
-            "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\barbi\\Desktop\\CollectorShop\\collectorShop\\Services\\Services.csproj"
+            "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Services\\Services.csproj"
             }
           }
         }
@@ -14252,10 +14229,6 @@
             "target": "Package",
             "version": "[2.2.0, )"
           },
-          "Ninject.MVC5": {
-            "target": "Package",
-            "version": "[3.3.0, )"
-          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.141.0, )"
@@ -14291,20 +14264,8 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Ninject.MVC5 3.3.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Ninject.MVC5",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }
