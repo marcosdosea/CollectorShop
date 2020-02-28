@@ -322,7 +322,6 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\bin\Debug
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csprojAssemblyReference.cache
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorAssemblyInfo.cache
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.RazorAssemblyInfo.cs
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.AssemblyInfoInputs.cache
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.AssemblyInfo.cs
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.TagHelpers.input.cache
