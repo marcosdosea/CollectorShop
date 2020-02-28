@@ -30,7 +30,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
           "Model": "1.0.0",
           "Moq": "4.10.1",
-          "NUnit": "3.12.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0",
           "Services": "1.0.0",
@@ -385,20 +384,6 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
-        }
-      },
-      "NUnit/3.12.0": {
-        "dependencies": {
-          "NETStandard.Library": "2.0.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.12.0.0",
-            "fileVersion": "3.12.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/nunit.framework.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -929,7 +914,6 @@
       },
       "Model/1.0.0": {
         "dependencies": {
-          "NUnit": "3.12.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "runtime": {
@@ -943,7 +927,6 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
           "MySql.Data.EntityFrameworkCore": "8.0.17",
-          "NUnit": "3.12.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "runtime": {
@@ -956,7 +939,6 @@
       "Services/1.0.0": {
         "dependencies": {
           "Model": "1.0.0",
-          "NUnit": "3.12.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0"
         },
@@ -4151,13 +4133,6 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
-    },
-    "NUnit/3.12.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
-      "path": "nunit/3.12.0",
-      "hashPath": "nunit.3.12.0.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

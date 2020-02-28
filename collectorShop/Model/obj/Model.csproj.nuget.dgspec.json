@@ -49,10 +49,6 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.12.0, )"
-            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[3.141.0, )"

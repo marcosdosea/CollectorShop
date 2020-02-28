@@ -2879,21 +2879,6 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
-      "NUnit/3.12.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/nunit.framework.dll": {}
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -5092,7 +5077,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "NUnit": "3.12.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "compile": {
@@ -5108,7 +5092,6 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
           "MySql.Data.EntityFrameworkCore": "8.0.17",
-          "NUnit": "3.12.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "compile": {
@@ -5123,7 +5106,6 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Model": "1.0.0",
-          "NUnit": "3.12.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0"
         },
@@ -8347,36 +8329,6 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
-      ]
-    },
-    "NUnit/3.12.0": {
-      "sha512": "3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
-      "type": "package",
-      "path": "nunit/3.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGES.md",
-        "LICENSE.txt",
-        "NOTICES.txt",
-        "build/NUnit.props",
-        "lib/net35/nunit.framework.dll",
-        "lib/net35/nunit.framework.pdb",
-        "lib/net35/nunit.framework.xml",
-        "lib/net40/nunit.framework.dll",
-        "lib/net40/nunit.framework.pdb",
-        "lib/net40/nunit.framework.xml",
-        "lib/net45/nunit.framework.dll",
-        "lib/net45/nunit.framework.pdb",
-        "lib/net45/nunit.framework.xml",
-        "lib/netstandard1.4/nunit.framework.dll",
-        "lib/netstandard1.4/nunit.framework.pdb",
-        "lib/netstandard1.4/nunit.framework.xml",
-        "lib/netstandard2.0/nunit.framework.dll",
-        "lib/netstandard2.0/nunit.framework.pdb",
-        "lib/netstandard2.0/nunit.framework.xml",
-        "nunit.3.12.0.nupkg.sha512",
-        "nunit.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -14100,7 +14052,6 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
       "Model >= 1.0.0",
       "Moq >= 4.10.1",
-      "NUnit >= 3.12.0",
       "Persistence >= 1.0.0",
       "Selenium.WebDriver >= 3.141.0",
       "Services >= 1.0.0",
@@ -14189,10 +14140,6 @@
           "Moq": {
             "target": "Package",
             "version": "[4.10.1, )"
-          },
-          "NUnit": {
-            "target": "Package",
-            "version": "[3.12.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
