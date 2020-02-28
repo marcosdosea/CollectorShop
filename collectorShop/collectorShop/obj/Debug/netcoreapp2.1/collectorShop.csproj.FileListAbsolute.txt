@@ -418,3 +418,4 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csproj.CopyComplete
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
+C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
