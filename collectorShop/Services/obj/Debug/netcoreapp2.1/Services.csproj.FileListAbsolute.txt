@@ -47,14 +47,6 @@ C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.core.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.core.interfaces.dll
 C:\Users\barbi\Desktop\CollectorShop\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.util.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\NUnit.VisualStudio.TestAdapter.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Mono.Cecil.Mdb.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Mono.Cecil.Pdb.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Mono.Cecil.Rocks.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.core.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.core.interfaces.dll
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\nunit.util.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.deps.json
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.pdb

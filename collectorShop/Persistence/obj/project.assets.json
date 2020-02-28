@@ -499,12 +499,6 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnitTestAdapter/2.2.0": {
-        "type": "package",
-        "build": {
-          "build/NUnitTestAdapter.props": {}
-        }
-      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2527,27 +2521,6 @@
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.12.0.nupkg.sha512",
         "nunit.nuspec"
-      ]
-    },
-    "NUnitTestAdapter/2.2.0": {
-      "sha512": "03cLhGVG29wQAQ2pmh9CF6vlRofrTs888w2bRB2DYRhRXqr5k8yCk1WSv6oG4h918wMObnzotq4LuzNcgzqieg==",
-      "type": "package",
-      "path": "nunittestadapter/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "build/Mono.Cecil.Mdb.dll",
-        "build/Mono.Cecil.Pdb.dll",
-        "build/Mono.Cecil.Rocks.dll",
-        "build/Mono.Cecil.dll",
-        "build/NUnit.VisualStudio.TestAdapter.dll",
-        "build/NUnitTestAdapter.props",
-        "build/nunit.core.dll",
-        "build/nunit.core.interfaces.dll",
-        "build/nunit.util.dll",
-        "nunittestadapter.2.2.0.nupkg.sha512",
-        "nunittestadapter.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -6059,7 +6032,6 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.17",
       "NUnit >= 3.12.0",
-      "NUnitTestAdapter >= 2.2.0",
       "Selenium.WebDriver >= 3.141.0"
     ]
   },
@@ -6071,11 +6043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\barbi\\source\\repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\barbi\\source\\repos\\CollectorShop2\\collectorShop\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\barbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\barbi\\Source\\Repos\\CollectorShop2\\collectorShop\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\barbi\\source\\repos\\CollectorShop2\\collectorShop\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6124,10 +6096,6 @@
           "NUnit": {
             "target": "Package",
             "version": "[3.12.0, )"
-          },
-          "NUnitTestAdapter": {
-            "target": "Package",
-            "version": "[2.2.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",

@@ -31,7 +31,6 @@
           "Model": "1.0.0",
           "Moq": "4.10.1",
           "NUnit": "3.12.0",
-          "NUnitTestAdapter": "2.2.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0",
           "Services": "1.0.0",
@@ -402,7 +401,6 @@
           "lib/netstandard2.0/nunit.framework.dll": {}
         }
       },
-      "NUnitTestAdapter/2.2.0": {},
       "Remotion.Linq/2.2.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -932,7 +930,6 @@
       "Model/1.0.0": {
         "dependencies": {
           "NUnit": "3.12.0",
-          "NUnitTestAdapter": "2.2.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "runtime": {
@@ -947,7 +944,6 @@
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
           "MySql.Data.EntityFrameworkCore": "8.0.17",
           "NUnit": "3.12.0",
-          "NUnitTestAdapter": "2.2.0",
           "Selenium.WebDriver": "3.141.0"
         },
         "runtime": {
@@ -961,7 +957,6 @@
         "dependencies": {
           "Model": "1.0.0",
           "NUnit": "3.12.0",
-          "NUnitTestAdapter": "2.2.0",
           "Persistence": "1.0.0",
           "Selenium.WebDriver": "3.141.0"
         },
@@ -4163,13 +4158,6 @@
       "sha512": "sha512-3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
       "path": "nunit/3.12.0",
       "hashPath": "nunit.3.12.0.nupkg.sha512"
-    },
-    "NUnitTestAdapter/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-03cLhGVG29wQAQ2pmh9CF6vlRofrTs888w2bRB2DYRhRXqr5k8yCk1WSv6oG4h918wMObnzotq4LuzNcgzqieg==",
-      "path": "nunittestadapter/2.2.0",
-      "hashPath": "nunittestadapter.2.2.0.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

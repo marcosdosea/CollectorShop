@@ -22,7 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D} = {E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{8B4C347B-D85B-4AFF-A243-A047F4A86846}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{8B4C347B-D85B-4AFF-A243-A047F4A86846}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

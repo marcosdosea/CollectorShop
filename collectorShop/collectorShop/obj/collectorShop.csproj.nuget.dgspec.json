@@ -82,10 +82,6 @@
               "target": "Package",
               "version": "[3.12.0, )"
             },
-            "NUnitTestAdapter": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -174,10 +170,6 @@
               "target": "Package",
               "version": "[3.12.0, )"
             },
-            "NUnitTestAdapter": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -254,10 +246,6 @@
               "target": "Package",
               "version": "[3.12.0, )"
             },
-            "NUnitTestAdapter": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -332,10 +320,6 @@
             "NUnit": {
               "target": "Package",
               "version": "[3.12.0, )"
-            },
-            "NUnitTestAdapter": {
-              "target": "Package",
-              "version": "[2.2.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
