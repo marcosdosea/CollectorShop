@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-collectorShop-4900DDEC-6912-402C-BFBD-067E4C5B3FD4</UserSecretsId>
+    <StartupObject>collectorShop.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
