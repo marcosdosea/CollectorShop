@@ -22,9 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 		{E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D} = {E7E32ECE-B4F6-475B-B9B5-6E2C967BF77D}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnidadeTeste", "UnidadeTeste\UnidadeTeste.csproj", "{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.Utils", "Selenium.Utils\Selenium.Utils.csproj", "{87896A50-BFFF-4911-86DA-C16DA03B1B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium.Utils", "Selenium.Utils\Selenium.Utils.csproj", "{87896A50-BFFF-4911-86DA-C16DA03B1B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +46,6 @@ Global
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13076E9E-4F9D-45E5-9574-E23B1002D727}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB60A787-5F5C-478B-8F6E-1491FBC9EAD8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87896A50-BFFF-4911-86DA-C16DA03B1B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87896A50-BFFF-4911-86DA-C16DA03B1B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87896A50-BFFF-4911-86DA-C16DA03B1B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
