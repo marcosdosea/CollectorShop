@@ -418,7 +418,7 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.csproj.CopyComplete
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\collectorShop.pdb
-C:\Users\barbi\source\repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\collectorShop\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\collectorShop\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

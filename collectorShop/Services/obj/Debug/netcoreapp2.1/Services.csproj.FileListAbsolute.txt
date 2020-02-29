@@ -60,3 +60,8 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\obj\Debug\netc
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Services\obj\Debug\netcoreapp2.1\Services.pdb
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.runtimeconfig.json
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\Services.runtimeconfig.dev.json
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Services\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

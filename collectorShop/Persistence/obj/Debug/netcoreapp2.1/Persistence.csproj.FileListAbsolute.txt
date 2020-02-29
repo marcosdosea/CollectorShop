@@ -40,3 +40,6 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Persistence\obj\Debug\n
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Persistence\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

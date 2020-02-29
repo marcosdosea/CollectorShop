@@ -32,3 +32,8 @@ C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Model\obj\Debug\netcore
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.dll
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.pdb
 C:\Users\barbi\source\repos\CollectorShop2\collectorShop\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Model\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Model\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\barbi\Source\Repos\CollectorShop2\collectorShop\Model\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
